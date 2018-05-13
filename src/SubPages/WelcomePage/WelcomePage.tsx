@@ -2,11 +2,15 @@ import { Col, Row } from 'antd';
 import { Layout } from 'antd';
 import * as React from 'react';
 import {} from 'react-router';
-import pic from '../images/main_center.jpg'
+import pic from '../../images/main_center.jpg'
 import './WelcomePage.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
-class WelcomePage extends React.Component {
+interface IProps{
+  name: string;
+}
+
+class WelcomePage extends React.Component<IProps,object> {
   public render() {
     let test = { titel: 'hallo' };
     const test3 = test.titel;
@@ -17,7 +21,7 @@ class WelcomePage extends React.Component {
       <Layout className='container'>
         <Row type='flex' justify="center">
           <Col className='center' span={24}>
-            <h1 style={{ color: '#D7A200' }}>Willkommen {test3}</h1>
+            <h1 style={{ color: '#D7A200' }}>Willkommen {test3} {this.props.name}</h1>
 
           </Col>
         </Row>

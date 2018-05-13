@@ -4,6 +4,6 @@ import WelcomePage from './WelcomePage';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<WelcomePage />, div);
+  ReactDOM.render(<WelcomePage name='test' />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
