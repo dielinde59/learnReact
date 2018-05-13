@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import './index.scss';
+import Main from './Main';
 import registerServiceWorker from './registerServiceWorker';
-import WelcomePage from './SubPages/WelcomePage/WelcomePage';
 
 ReactDOM.render(
-  <WelcomePage name='Diete' />,
+  <Main />,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker(); 

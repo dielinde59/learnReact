@@ -8,6 +8,7 @@ import './WelcomePage.scss';
 
 interface IProps{
   name: string;
+  age?: number;
 }
 
 class WelcomePage extends React.Component<IProps,object> {
@@ -15,13 +16,13 @@ class WelcomePage extends React.Component<IProps,object> {
     let test = { titel: 'hallo' };
     const test3 = test.titel;
     test = test;
-
+    const ageX10 = this.props.age ? this.props.age * 10 : 0;
 
     return (
       <Layout className='container'>
         <Row type='flex' justify="center">
           <Col className='center' span={24}>
-            <h1 style={{ color: '#D7A200' }}>Willkommen {test3} {this.props.name}</h1>
+            <h1 style={{ color: '#D7A200' }}>Willkommen {test3} {this.props.name} {ageX10}</h1>
 
           </Col>
         </Row>
