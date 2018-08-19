@@ -1,0 +1,35 @@
+p {
+  margin: 0;
+}
+.container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(255, 240, 203);
+  color: #D7A200;
+  .center {
+    text-align: center;
+    
+    }
+  .center1 {
+    text-align: center;
+    width: 10%;
+  }
+  
+  .image35{
+     width: 35%;
+    box-align: center;
+    vertical-align: top;
+    padding: 0;
+  }
+  
+  .citeBox {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 5%;
+    text-align: left;
+    width: 90%;
+  }
+  .author {
+    margin-top: 4px;
+    font-size: small;
+  }
+  }

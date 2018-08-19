@@ -1,4 +1,5 @@
 $headerHeight: 90px;
+$footerHeight: 220px;
 .layout {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #D7A200;
@@ -6,19 +7,37 @@ $headerHeight: 90px;
 }
 .background {
     background-color: rgb(255, 240, 203);
-    
-}
+ }
 
 .header{
     background-color: white;
     padding-right: 15px;
     height: $headerHeight;
     line-height: normal;
+    height: 18%;
+
 }
+.footer{
+    height: $footerHeight;
+    line-height: normal;
+    padding: 5% 5px;
+}
+
+.footer2{
+    height: $footerHeight;
+    line-height: normal;
+    background-color: rgb(255, 240, 203);
+
+}
+
+
 .alignRight{
     text-align: right;
 }
 
+.colRight{
+    box-align: right ;
+}
 #subtitle{
     color:#D7A200;
 }
@@ -28,10 +47,4 @@ $headerHeight: 90px;
 }
 #Logo{
     height: $headerHeight;
-}
-.ant-menu-item-selected{
-    background-color: transparent;
-}
-.ant-menu-item::after{
-    background-color: transparent;
 }

@@ -2,9 +2,7 @@ p {
   margin: 0;
 }
 .container {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgb(255, 240, 203);
-  color: #D7A200;
+
   .center {
     text-align: center;
     
@@ -14,9 +12,8 @@ p {
   }
   .citeBox {
     font-size: 16px;
-    .author {
-      margin-top: 4px;
-      font-size: small;
-    }
+    width: 100%
+
   }
+
 }

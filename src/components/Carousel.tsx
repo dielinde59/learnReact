@@ -1,15 +1,15 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import Slider from "react-slick";
-// import "./index.css";
+//  import React from "react";
+//  import ReactDOM from "react-dom";
+//  import Slider from "react-slick";
+//  import "./index.css";
 
-// class ReactSlickDemo extends React.Component {
-//   render() {
-//     var settings = {
-//       dots: false,
-//       infinite: true,
-//       speed: 5,
-//       easing: false,
+//  class ReactSlickDemo extends React.Component {
+//    public render() {
+//      const settings = {
+//        dots: false,
+//        infinite: true,
+//        speed: 5,
+//        easing: false,
 //       slidesToShow: 1,
 //       slidesToScroll: 0.021,
 //       arrows: false,
@@ -30,7 +30,7 @@
 //           <div>
 //             <img src="http://placekitten.com/g/400/200" />
 //           </div>
-          
+
 //         </Slider>
 //       </div>
 //     );
