@@ -56,6 +56,12 @@ class UeberUns extends React.Component<IProps, object> {
                   Hunde sind unsere besten Lehrmeister, die uns konsequent und beständig jede
                   emotionale Schwäche aufzeigen. Meinen beiden Lausern an dieser Stelle vielen Dank!
                 </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
               </div>
             </Row>
           </Col>
@@ -65,7 +71,13 @@ class UeberUns extends React.Component<IProps, object> {
               <img className='image35' src={pic} alt='bild' style={picStyle} />
             </div>
           </Col>
-
+          <br />
+                <br />
+                <br />
+                <br />                <br />
+                <br />
+                <br />
+                <br />
         </Row>
 
       </Layout>

@@ -14,6 +14,18 @@ interface IProps {
 
 class Gelaende extends React.Component<IProps, object> {
   public render() {
+
+    const obj = {
+      feld1: 'hallo',
+      feld5: 4,
+      irgendwas: undefined,
+    }
+
+    for(const sth in obj){
+      if(sth!==undefined && sth ==='feld1'){
+        obj[sth]= 'tschuesss'
+      }
+    }
     // let test = { titel: 'hallo' };
     // const test3 = test.titel;
     // test = test;
@@ -26,8 +38,8 @@ class Gelaende extends React.Component<IProps, object> {
             <h1 style={{ color: '#D7A200' }}>Trainingsgelände</h1>
           </Col>
         </Row>
-        <table>
-          <Col xl={{ span: 10 }} xxl={{ span: 12 }}>
+        <Row>
+          <Col span={16}>
 
             <Row type='flex' >
               <div className='citeBox'>
@@ -49,20 +61,23 @@ class Gelaende extends React.Component<IProps, object> {
             </Row>
           </Col>
 
-          <Col>
+          <Col span={8}>
             <Row justify="center">
               <div className='colRight'>
                 <div>
-                  <img className='image35' src={pic} alt='bild' />
+                  <img className='image35' src={pic} alt='bild' style={{ width: "100%" }} />
                 </div>
-                <div>
-                  <img className='image35' src={pic} alt='bild' />
-                </div>
+              </div>
+            </Row>
+            <Row>
+
+              <div>
+                <img className='image35' src={pic} alt='bild' />
               </div>
             </Row>
           </Col>
 
-        </table>
+        </Row>
 
       </Layout>
     );

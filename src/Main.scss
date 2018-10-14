@@ -1,4 +1,4 @@
-$headerHeight: 90px;
+$headerHeight: 100px;
 $footerHeight: 220px;
 .layout {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -7,16 +7,33 @@ $footerHeight: 220px;
 }
 .background {
     background-color: rgb(255, 240, 203);
- }
+  }
+
+  .menubackground {
+    background-color: rgb(255, 240, 203);
+    height: 40px;
+    padding: 0;
+  }
+
+  .menubackground1 {
+    background-color: rgb(255, 240, 203);
+    max-height: 30px;
+    padding: 0;
+  }
 
 .header{
-    background-color: white;
-    padding-right: 15px;
-    height: $headerHeight;
+    //background-color: white;
+    background-color: rgb(255, 240, 203);
+    //padding-right: 15px;
+    // height: $headerHeight;
     line-height: normal;
-    height: 18%;
-
+    // height: 18%;
 }
+
+.image{
+    width: 100%
+}
+
 .footer{
     height: $footerHeight;
     line-height: normal;
@@ -27,6 +44,7 @@ $footerHeight: 220px;
     height: $footerHeight;
     line-height: normal;
     background-color: rgb(255, 240, 203);
+    padding-left: 12%;
 
 }
 

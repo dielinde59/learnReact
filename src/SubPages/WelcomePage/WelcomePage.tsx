@@ -1,17 +1,17 @@
 import { Col, Row } from 'antd';
 import { Layout } from 'antd';
 import * as React from 'react';
-import {} from 'react-router';
-import pic from '../../images/main_center.jpg'
+import { } from 'react-router';
+import pic from '../../images/Startseite.jpg'
 import './WelcomePage.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
-interface IProps{
+interface IProps {
   name: string;
   age?: number;
 }
 
-class WelcomePage extends React.Component<IProps,object> {
+class WelcomePage extends React.Component<IProps, object> {
   public render() {
     let test = { titel: 'hallo' };
     const test3 = test.titel;
@@ -26,7 +26,15 @@ class WelcomePage extends React.Component<IProps,object> {
 
           </Col>
         </Row>
-        <Row type='flex' justify="center">
+        <hr style={{
+          height: '20px',
+          backgroundColor: 'rgb(255, 240, 203)', 
+          border:'0'}}
+          />
+          
+
+          
+        <Row type='flex' justify="center"  >
           <Col xs={{ span: 20 }} xxl={{ span: 16 }} >
             <img className='image' src={pic} alt='bild' />
             <div className='center citeBox'>
@@ -39,6 +47,11 @@ class WelcomePage extends React.Component<IProps,object> {
           </Col>
 
         </Row>
+        <hr style={{
+          height: '30px',
+          backgroundColor: 'rgb(255, 240, 203)', 
+          border:'0'}}
+          />
       </Layout>
     );
   }

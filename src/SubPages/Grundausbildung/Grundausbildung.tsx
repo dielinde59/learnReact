@@ -26,7 +26,7 @@ class Grundausbildung extends React.Component<IProps, object> {
 
           </Col>
         </Row>
-        <table>
+        <Row>
 
           <Col xl={{ span: 10 }} xxl={{ span: 15 }}>
             <Row type='flex' >
@@ -48,7 +48,7 @@ class Grundausbildung extends React.Component<IProps, object> {
             </div>
           </Col>
 
-        </table>
+        </Row>
 
       </Layout>
     );
