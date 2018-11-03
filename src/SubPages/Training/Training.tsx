@@ -12,7 +12,7 @@ import './Training.scss';
 interface IProps {
   titel: string;
   foto1: string;
-  foto2: string;
+  foto2: string; 
   text: string;
   age?: number;
   name: string;
