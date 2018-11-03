@@ -1,9 +1,8 @@
-import { Col, Row } from 'antd';
-import { Layout } from 'antd';
+import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-import pic1 from '../../images/Aktuelles20161.jpg'
-import pic2 from '../../images/Aktuelles20162.jpg'
+import pic1 from '../../images/Aktuelles20161.jpg';
+import pic2 from '../../images/Aktuelles20162.jpg';
 import './Aktuelles.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
@@ -27,8 +26,7 @@ class Aktuelles extends React.Component<IProps, object> {
 
           </Col>
         </Row>
-        <table>
-
+        <Row>
           <Col xl={{ span: 10 }} xxl={{ span: 15 }}>
             <Row type='flex' >
               <div className='citeBox'>
@@ -61,8 +59,7 @@ class Aktuelles extends React.Component<IProps, object> {
             </div>
           </Col>
 
-        </table>
-
+        </Row>
       </Layout>
     );
   }

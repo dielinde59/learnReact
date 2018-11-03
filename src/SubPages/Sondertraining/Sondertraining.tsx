@@ -1,8 +1,7 @@
-import { Col, Row } from 'antd';
-import { Layout } from 'antd';
+import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-import pic from '../../images/lauser.jpg'
+import pic from '../../images/lauser.jpg';
 import './Sondertraining.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
@@ -26,7 +25,7 @@ class Sondertraining extends React.Component<IProps, object> {
 
           </Col>
         </Row>
-        <table>
+        <Row>
 
           <Col xl={{ span: 10 }} xxl={{ span: 15 }}>
             <Row type='flex' >
@@ -56,7 +55,7 @@ class Sondertraining extends React.Component<IProps, object> {
             </Row>
           </Col>
 
-        </table>
+        </Row>
 
       </Layout>
     );

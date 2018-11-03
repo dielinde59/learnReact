@@ -1,8 +1,7 @@
-import { Col, Row } from 'antd';
-import { Layout } from 'antd';
+import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-import pic from '../../images/lauser.jpg'
+import pic from '../../images/lauser.jpg';
 import './Rueckblick.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
@@ -26,7 +25,7 @@ class Rueckblick extends React.Component<IProps, object> {
 
           </Col>
         </Row>
-        <table>
+        <Row>
 
           <Col xl={{ span: 10 }} xxl={{ span: 15 }}>
             <Row type='flex' >
@@ -48,7 +47,7 @@ class Rueckblick extends React.Component<IProps, object> {
             </div>
           </Col>
 
-        </table>
+        </Row>
 
       </Layout>
     );

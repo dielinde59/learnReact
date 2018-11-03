@@ -1,33 +1,151 @@
 // tslint:disable:jsx-no-lambda
-import { Layout, Menu, Row, Col } from 'antd';
+import { Col, Layout, Menu, Row } from 'antd';
+import SubMenu from 'antd/lib/menu/SubMenu';
+import 'rc-menu/assets/index.css';
 import * as React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import 'rc-menu/assets/index.css';
-import pic2 from './images/header-photo.jpg'
-import pic1 from './images/header-text.jpg'
+import { DogCarousel } from './components/DogCarousel';
+import pic2 from './images/header-photo.jpg';
+import pic1 from './images/header-text.jpg';
 import './Main.scss';
-
 import Aktuelles from './SubPages/Aktuelles/Aktuelles';
 import Gelaende from './SubPages/Gelaende/Gelaende';
 // import Welpen from './SubPages/Welpen/Welpen';
 import Kontakt from './SubPages/Kontakt/Kontakt';
+import { pages } from './SubPages/pageContent';
 import Rueckblick from './SubPages/Rueckblick/Rueckblick';
+import Training from './SubPages/Training/Training';
 // import Sondertraining from './SubPages/Sondertraining/Sondertraining';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
-import SubMenu from 'antd/lib/menu/SubMenu';
-import { DogCarousel } from './components/DogCarousel';
-import Training from './SubPages/Training/Training';
 
 
 const { Header, Sider, Content, Footer } = Layout;
 
 class Main extends React.Component {
+    constructor(props: any) {
+        super(props);
+        this.renderSider = this.renderSider.bind(this);
+    }
+
+
+    public renderSider() {
+        return (
+
+
+            < Sider className='background' >
+                <Menu className='menubackground' defaultSelectedKeys={['1']} mode="vertical" >
+                    <Menu.Item key="1" itemicon={pic2} alt='bild'>
+                        <Link style={{ height: '100%' }} to='/willkommen'>
+                            <span >Willkommen</span>
+                            {/* <div style={{marginTop: '50%' ,height: "50%", backgroundColor: 'white'}}>
+                            <span >Willkommen</span>
+                            </div> */}
+                        </Link>
+                    </Menu.Item>
+
+                    <Menu.Item key="2">
+                        <Link style={{ height: '100%' }} to='/UeberUns'>
+                            <span>Über uns</span>
+                        </Link>
+                    </Menu.Item>
+                    <Menu.Item key="3">
+                        <Link to='/aktuelles'>
+                            <span>Aktuelles</span>
+                        </Link>
+                    </Menu.Item>
+
+                    {/* <SubMenu className='menubackground' border='0' title={<span>Grundausbildung</span>} key="4"> */}
+                    <SubMenu className='menubackground' title={<span>Grundausbildung</span>} key="4">
+                        <Menu.Item className='menubackground' key="4-1">
+                            <Link to='/welpen'>
+                                <span>Welpen</span>
+                            </Link>
+                            Welpen
+                </Menu.Item>
+
+                        <Menu.Item className='menubackground' key="4-2">
+                            <Link to='/junghunde'>
+                                <span>Junghunde</span>
+                            </Link>
+                            Junghunde
+                </Menu.Item>
+                        <Menu.Item className='menubackground' key="4-3">
+                            <Link to='/gemischt'>
+                                <span>Gemischte Gruppen</span>
+                            </Link>
+                        </Menu.Item>
+
+                        <Menu.Item className='menubackground' key="4-4">
+                            <Link to='/einzel'>
+                                <span>Einzelstunden</span>
+                            </Link>
+                        </Menu.Item>
+
+                        <Menu.Item className='menubackground' key="4-5">
+                            <Link to='/begleit'>
+                                <span>Vorbereitung auf die Begleithundeprüfung</span>
+                            </Link>
+                        </Menu.Item>
+                    </SubMenu>
+                    <SubMenu className='menubackground' border='0' title={<span>Sondertraining</span>} key="5">
+                        <Menu.Item className='menubackground' key="5-1">
+                            <Link to='/obi'>
+                                <span>Obedience</span>
+                            </Link>
+                        </Menu.Item>
+
+                        <Menu.Item className='menubackground' key="5-2">
+                            <Link to='/longieren'>
+                                <span>Longierarbeit</span>
+                            </Link>
+                        </Menu.Item>
+
+                        <Menu.Item className='menubackground' key="5-3">
+                            <Link to='/stoebern'>
+                                <span>Stöbern</span>
+                            </Link>
+                        </Menu.Item>
+
+                        <Menu.Item className='menubackground' key="5-4">
+                            <Link to='/stadt'>
+                                <span>Stadt- und Spaziergänge</span>
+                            </Link>
+                        </Menu.Item>
+
+                        <Menu.Item className='menubackground' key="5-5">
+                            <Link to='/kurse'>
+                                <span>Kurse externer Hundetrainer</span>
+                            </Link>
+                        </Menu.Item>
+
+                    </SubMenu>
+                    <Menu.Item key="6">
+                        <Link to='/gelaende'>
+                            <span>Trainingsgelände</span>
+                        </Link>
+                    </Menu.Item>
+                    <Menu.Item key="7">
+                        <Link to='/kontakt'>
+                            <span>Kontakt/Anfahrt</span>
+                        </Link>
+                    </Menu.Item>
+                    <Menu.Item className='menubackground' key="8">
+                        <Link to='/rueckblick'>
+                            <span>Rückblick </span>
+                        </Link>
+                    </Menu.Item>
+                </Menu>
+                <div id='Logo' />
+
+            </Sider>
+        )
+    }
     public render() {
         return (
             // tslint:disable-next-line:no-unused-expression
             <Router >
-                <Layout className='layout background' style={{minHeight: "100%"}}>
+                <Layout className='layout background' style={{ minHeight: "100%" }}>
                     <Header className='header' style={{ width: '100%', padding: '0px', height: 'auto' }} >
                         <Row type={"flex"}
                             align={'middle'}
@@ -74,114 +192,8 @@ class Main extends React.Component {
                     </Header>
 
                     <Layout>
-                        < Sider className='background' >
-                            
-                            <Menu className='menubackground' defaultSelectedKeys={['1']} mode="vertical" >
-                                 <Menu.Item key="1" itemicon={pic2} alt='bild'> 
-                                    <Link style={{height: '100%'}} to='/willkommen'>
-                                    <span >Willkommen</span>
-                                    {/* <div style={{marginTop: '50%' ,height: "50%", backgroundColor: 'white'}}>
-                                    
-                                    <span >Willkommen</span>
-                                    </div> */}
-                                    </Link>
-                                </Menu.Item>
-                                <Menu.Item key="2">
-                                    <Link style={{height: '100%'}} to='/UeberUns'>
-                                        <span>Über uns</span>
-                                    </Link>
-                                </Menu.Item>
-                                <Menu.Item key="3">
-                                    <Link to='/aktuelles'>
-                                        <span>Aktuelles</span>
-                                    </Link>
-                                </Menu.Item>
 
-                                {/* <SubMenu className='menubackground' border='0' title={<span>Grundausbildung</span>} key="4"> */}
-                                <SubMenu className='menubackground' title={<span>Grundausbildung</span>} key="4">
-                                    <Menu.Item className='menubackground'  key="4-1">
-                                    <Link to='/welpen'>
-                                            <span>Welpen</span>
-                                        </Link>
-                                    Welpen
-                                    </Menu.Item>
-
-                                    <Menu.Item className='menubackground' key="4-2">
-                                    <Link to='/junghunde'>
-                                            <span>Junghunde</span>
-                                        </Link>
-                                        Junghunde
-                                    </Menu.Item>
-                                    <Menu.Item className='menubackground' key="4-3">
-                                    <Link to='/gemischt'>
-                                            <span>Gemischte Gruppen</span>
-                                        </Link>
-                                    </Menu.Item>
-
-                                    <Menu.Item className='menubackground' key="4-4">
-                                    <Link to='/einzel'>
-                                            <span>Einzelstunden</span>
-                                        </Link>
-                                    </Menu.Item>
-
-                                    <Menu.Item className='menubackground' key="4-5">
-                                    <Link to='/begleit'>
-                                            <span>Vorbereitung auf die Begleithundeprüfung</span>
-                                        </Link>
-                                    </Menu.Item>
-                                </SubMenu>
-                                <SubMenu className='menubackground' border='0' title={<span>Sondertraining</span>} key="5">
-                                <Menu.Item className='menubackground' key="5-1">    
-                                        <Link to='/obi'>
-                                            <span>Obedience</span>
-                                        </Link>
-                                </Menu.Item>
-
-                                <Menu.Item className='menubackground' key="5-2">
-                                    <Link to='/longieren'>
-                                            <span>Longierarbeit</span>
-                                        </Link>
-                                </Menu.Item>
-
-                                <Menu.Item className='menubackground' key="5-3">
-                                    <Link to='/stoebern'>
-                                            <span>Stöbern</span>
-                                        </Link>
-                                </Menu.Item>
-
-                                <Menu.Item className='menubackground' key="5-4">
-                                    <Link to='/stadt'>
-                                            <span>Stadt- und Spaziergänge</span>
-                                        </Link>
-                                </Menu.Item>
-
-                                    <Menu.Item className='menubackground' key="5-5">
-                                        <Link to='/kurse'>
-                                            <span>Kurse externer Hundetrainer</span>
-                                        </Link>
-                                    </Menu.Item>
-
-                                </SubMenu>
-                                <Menu.Item key="6">
-                                    <Link to='/gelaende'>
-                                        <span>Trainingsgelände</span>
-                                    </Link>
-                                </Menu.Item>
-                                <Menu.Item key="7">
-                                    <Link to='/kontakt'>
-                                        <span>Kontakt/Anfahrt</span>
-                                    </Link>
-                                </Menu.Item>
-                                <Menu.Item className='menubackground' key="8">
-                                    <Link to='/rueckblick'>
-                                        <span>Rückblick </span>
-                                    </Link>
-                                </Menu.Item>
-                            </Menu>
-                            <div id='Logo' />
-                          
-                        </Sider>
-
+                        {this.renderSider()}
 
                         <Content className='background' style={{ overflow: 'hidden' }}>
                             {/* { <Route
@@ -211,17 +223,39 @@ class Main extends React.Component {
                                     <Aktuelles name='' />
                                 )
                             } />
-
-                            <Route exact={true} path='/junghunde' render={
-                                () => (
-                                    <Training name='' titel='Junghunde' foto1='../../images/welpen1k.jpg' foto2='../../images/welpen1k.jpg' 
-                                    text='Wenn der Welpe ins „Flegelalter“ kommt, braucht es viel Geduld und Beständigkeit, ihm seinen Rang im Rudel klarzumachen. In dieser Entwicklungsphase will er täglich aufs Neue seine Grenzen ausloten. Durch unmissverständliche Kommandos und deutliche Körpersprache kann dem Hund geholfen werden, zu lernen, was erwünscht und was unerwünscht ist. Lernziele sind darüber hinaus lockeres An-der-Leine-Gehen und freies Bei-mir-Gehen – auch unter Ablenkung durch Artgenossen, andere Menschen etc. – sowie sicherer Rückruf und Freiablage.
-                                    Wir trainieren maximal sechs Hunde pro Gruppe/Stunde, um auf jedes Mensch-Hund-Team individuell eingehen zu können.'
-                                    />
+                            {/* <Route exact={true} path={pages[0].path} render={
+                                () => {
+                                    return (
+                                        <Training name={pages[0].name} titel={pages[0].titel} text={pages[0].text} pics={pages[0].pics} />
+                                    )
+                                }
+                            } /> */}
+                            {
+                                // tslint:disable-next-line:no-console
+                                console.log(pages)}
+                            {this.renderRoutes()}
+                            {/* {pages.forEach(page => {
+                                // tslint:disable-next-line:no-console
+                                console.log(`rendering ${page.path}`)
+                                return (
+                                    <div>
+                                        {
+                                        // tslint:disable-next-line:no-console
+                                        console.log(`in for Each ${page.path}`) 
+                                        }  
+                                        <Route exact={true} path={page.path} render={
+                                            () => {
+                                                return (
+                                                    <Training name={page.name} titel={page.titel} text={page.text} pics={page.pics} />
+                                                )
+                                            }
+                                        } />
+                                    </div>
                                 )
-                            } />
+                            })} */}
 
-                            <Route exact={true} path='/welpen' render={
+
+                            {/* <Route exact={true} path='/welpen' render={
                                 () => (
                                     <Training name='' titel='Welpen' foto1='../../images/welpen1k.jpg' foto2='../../images/welpen1k.jpg' text='Nachdem der Welpe die ersten Wochen im neuen Zuhause verbracht und in dieser Zeit eine Beziehung zu seinen Menschen aufgebaut hat, wird er nun bei uns behutsam an Artgenossen und die restliche „große Welt“ herangeführt. In unseren Welpenstunden vermitteln wir ersten Grundbenimm im Umgang mit anderen Hunden und Menschen bei gleichzeitiger Festigung der Bindung zum Halter. Wir helfen, die Grundkommandos Sitz, Platz und Steh mit viel Spaß und Zuneigung sowie notwendiger Konsequenz zu erlernen. Beim kontrollierten Spiel mit Artgenossen ist meistens ein gut sozialisierter, erwachsener Hund anwesend. Zudem werden die Welpen nach Größe und Temperament aufeinander abgestimmt.'
                                     />
@@ -300,7 +334,7 @@ class Main extends React.Component {
                                     Termine werden rechtzeitig hier angekündigt.'
                                     />
                                 )
-                            } />
+                            } /> */}
 
 
                             {/* <Route exact={true} path='/sondertraining' render={
@@ -334,6 +368,22 @@ class Main extends React.Component {
 
             </Router >
         );
+    }
+    public renderRoutes(){
+        const  obj:JSX.Element[] = [];
+        for(const page of pages){
+            obj.push(
+                    (
+                        <Route key={'route'+page.titel} exact={true} path={page.path} render={
+                            () => {
+                                return (
+                                    <Training titel={page.titel} text={page.text} pics={page.pics} />
+                                )}}
+                        />
+                    )
+            )
+        }
+        return obj;
     }
 }
 export default Main; 

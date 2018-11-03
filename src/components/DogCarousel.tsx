@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import Slider from "react-slick";
-import imgArray from '../images/carousel'
+import imgArray from '../images/carousel';
 
 export class DogCarousel extends React.Component {
     public render() {
@@ -21,7 +21,7 @@ export class DogCarousel extends React.Component {
             swipe: true,
         };
         // tslint:disable-next-line:no-console
-        console.log(imgArray);
+        // console.log(imgArray);
 
         const imgStyle:CSSProperties ={
             maxWidth: '100%',
