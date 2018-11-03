@@ -1,7 +1,7 @@
 p {
   margin: 0;
 }
-.fcontainer {
+.container {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: rgb(255, 240, 203);
   color: #D7A200;
@@ -10,20 +10,15 @@ p {
     
   }
   
-  .image35{
-    width: 30%;
-    box-align: right;
-    vertical-align: top;
-    padding: 0;
+  .left{
+    text-align:left
+    }
 
-    
-  }
-  
-  .citeBox {
-    font-size: 10px;
-    margin-left: 10px;
-    margin-right: 5%;
-    //width: 25%;
+  .citeBox2 {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 15%;
+    width: 100%;
   }
   .author {
     margin-top: 4px;

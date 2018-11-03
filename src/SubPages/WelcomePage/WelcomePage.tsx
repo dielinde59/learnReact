@@ -21,13 +21,13 @@ class WelcomePage extends React.Component<IProps, object> {
     return (
       <Layout className='container'>
         <Row type='flex' justify="center">
-          <Col className='center' span={24}>
+          <Col className='center' span={20}>
             <h1 style={{ color: '#D7A200' }}>Willkommen {test3} {this.props.name} {ageX10}</h1>
 
           </Col>
         </Row>
         <hr style={{
-          height: '20px',
+          height: '15px',
           backgroundColor: 'rgb(255, 240, 203)', 
           border:'0'}}
           />
@@ -36,12 +36,13 @@ class WelcomePage extends React.Component<IProps, object> {
           
         <Row type='flex' justify="center"  >
           <Col xs={{ span: 20 }} xxl={{ span: 16 }} >
+          <div className='center'>
             <img className='image' src={pic} alt='bild' />
+            </div>
             <div className='center citeBox'>
-              <div>
                 <p>Jede Beziehung zwischen einem Tier und einem Menschen</p>
                 <p>ist eine einzigartige Brücke, gebaut, um nur diese beiden zu tragen.</p>
-                <p>Deshalb muss sie auch von ihnen selbst erschaffen werden.</p> </div>
+                <p>Deshalb muss sie auch von ihnen selbst erschaffen werden.</p> 
               <div className='author'>Suzanne Clothier</div>
             </div>
           </Col>

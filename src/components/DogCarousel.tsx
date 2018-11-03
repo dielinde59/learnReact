@@ -8,7 +8,7 @@ export class DogCarousel extends React.Component {
         const settings = {
             // dots: false,
             infinite: true,
-            speed: 1000,
+            speed: 5000,
             cssEase: "linear",
             slidesToShow: 3,
             slidesToScroll: 1,

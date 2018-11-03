@@ -1,5 +1,50 @@
 $headerHeight: 100px;
 $footerHeight: 220px;
+#root{
+    height: 100%
+  }
+.ant-menu-vertical{
+
+    .ant-menu-submenu-title
+    {
+        font-family: Comic Sans MS, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        height: 50px;
+    } 
+    .ant-menu-item
+    {
+        font-family: Comic Sans MS, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .ant-menu-item-active
+    {
+        font-family: Comic Sans MS, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ant-menu-item:not(:last-child)
+    {
+        font-family: Comic Sans MS, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
 .layout {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #D7A200;
@@ -11,15 +56,11 @@ $footerHeight: 220px;
 
   .menubackground {
     background-color: rgb(255, 240, 203);
-    height: 40px;
     padding: 0;
+    border: 0px;
   }
 
-  .menubackground1 {
-    background-color: rgb(255, 240, 203);
-    max-height: 30px;
-    padding: 0;
-  }
+
 
 .header{
     //background-color: white;
@@ -33,6 +74,20 @@ $footerHeight: 220px;
 .image{
     width: 100%
 }
+.image35{
+    width: 30%;
+    box-align: right;
+    vertical-align: top;
+    padding: 0;
+  }
+  
+ .image20{
+    width: 20%;
+    box-align: right;
+    vertical-align: top;
+    padding: 10;
+  }
+  
 
 .footer{
     height: $footerHeight;
