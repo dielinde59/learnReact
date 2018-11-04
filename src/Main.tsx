@@ -85,7 +85,7 @@ class Main extends React.Component {
                         }
                     })}
 
-                    <SubMenu className='menubackground' title={<span>Grundausbildung</span>} key="4">
+                    {/* <SubMenu className='menubackground' title={<span>Grundausbildung</span>} key="4">
                         <Menu.Item className='menubackground' key="4-1">
                             <Link to='/welpen'>
                                 <span>Welpen</span>
@@ -148,7 +148,7 @@ class Main extends React.Component {
                             </Link>
                         </Menu.Item>
 
-                    </SubMenu>
+                    </SubMenu> */}
                     <Menu.Item key="6">
                         <Link to='/gelaende'>
                             <span>Trainingsgelände</span>
