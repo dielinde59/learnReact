@@ -31,8 +31,6 @@ class Main extends React.Component {
 
     public renderSider() {
         return (
-
-
             < Sider className='background' >
                 <Menu className='menubackground' defaultSelectedKeys={['1']} mode="vertical" >
                     <Menu.Item key="1" itemicon={pic2} alt='bild'>
@@ -56,6 +54,37 @@ class Main extends React.Component {
                     </Menu.Item>
 
                     {/* <SubMenu className='menubackground' border='0' title={<span>Grundausbildung</span>} key="4"> */}
+                    {menu.map((categorie) => {
+                        if (categorie.subroutes && categorie.subroutes.length > 0) {
+                            return (
+                                <SubMenu className='menubackground' title={<span>Grundausbildung</span>} key="4">
+                                    {categorie.subroutes.map((item) => {
+                                        return (
+                                            // todo
+                                            <Menu.Item className='menubackground' key="4-1">
+                                                <Link to='/welpen'>
+                                                    <span>Welpen</span>
+                                                </Link>
+                                                Welpen
+                                             </Menu.Item>
+                                        )
+                                    })}
+                                </SubMenu>
+                            )
+                        } 
+                        // todo: maybe not neccessary ;)
+                        else {
+                            return (
+                                // todo
+                                <Menu.Item key="3">
+                                    <Link to='/aktuelles'>
+                                        <span>Aktuelles</span>
+                                    </Link>
+                                </Menu.Item>
+                            )
+                        }
+                    })}
+
                     <SubMenu className='menubackground' title={<span>Grundausbildung</span>} key="4">
                         <Menu.Item className='menubackground' key="4-1">
                             <Link to='/welpen'>
@@ -231,9 +260,9 @@ class Main extends React.Component {
                                 }
                             } /> */}
                             {this.renderRoutes()}
-                            
-                            
-                            
+
+
+
                             {/* {pages.forEach(page => {
                                 // tslint:disable-next-line:no-console
                                 console.log(`rendering ${page.path}`)
@@ -368,22 +397,23 @@ class Main extends React.Component {
             </Router >
         );
     }
-    public renderRoutes(){
-        const  obj:JSX.Element[] = [];
-        for(const categorie of menu){
-            if(categorie.subroutes && categorie.subroutes.length!==0){
-                for(const item of categorie.subroutes){
-                    if(item.path!==undefined && item.text!==undefined){
-                        const text:string = item.text;
+    public renderRoutes() {
+        const obj: JSX.Element[] = [];
+        for (const categorie of menu) {
+            if (categorie.subroutes && categorie.subroutes.length > 0) {
+                for (const item of categorie.subroutes) {
+                    if (item.path !== undefined && item.text !== undefined) {
+                        const text: string = item.text;
                         obj.push(
-                                (
-                                    <Route key={'route'+item.titel} exact={true} path={item.path} render={
-                                        () => {
-                                            return (
-                                                <Training titel={item.titel} text={text} pics={item.pics} />
-                                            )}}
-                                    />
-                                )
+                            (
+                                <Route key={'route' + item.titel} exact={true} path={item.path} render={
+                                    () => {
+                                        return (
+                                            <Training titel={item.titel} text={text} pics={item.pics} />
+                                        )
+                                    }}
+                                />
+                            )
                         )
                     }
                 }
