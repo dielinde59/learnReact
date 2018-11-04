@@ -54,32 +54,36 @@ class Main extends React.Component {
                     </Menu.Item>
 
                     {/* <SubMenu className='menubackground' border='0' title={<span>Grundausbildung</span>} key="4"> */}
-                    {menu.map((categorie) => {
+                    {menu.map((categorie, index) => {
+                        index = index + 4
                         if (categorie.subroutes && categorie.subroutes.length > 0) {
                             return (
-                                <SubMenu className='menubackground' title={<span>Grundausbildung</span>} key="4">
-                                    {categorie.subroutes.map((item) => {
-                                        return (
-                                            // todo
-                                            <Menu.Item className='menubackground' key="4-1">
-                                                <Link to='/welpen'>
-                                                    <span>Welpen</span>
-                                                </Link>
-                                                Welpen
-                                             </Menu.Item>
-                                        )
+                                <SubMenu className='menubackground' title={<span>{categorie.titel}</span>} key={index}>
+                                    {categorie.subroutes.map((item, itemIndex) => {
+                                        if (item.path) {
+                                            return (
+                                                <Menu.Item className='menubackground' key={`${index}-${itemIndex}`}>
+                                                    <Link to={item.path}>
+                                                        <span style={{ padding: "0px 10px" }}>{item.titel}</span>
+                                                    </Link>
+                                                    {/* Welpen */}
+                                                </Menu.Item>
+                                            )
+                                        }
+                                        return;
                                     })}
                                 </SubMenu>
                             )
-                        } 
+                        }
                         // todo: maybe not neccessary ;)
                         else {
                             return (
-                                // todo
-                                <Menu.Item key="3">
-                                    <Link to='/aktuelles'>
-                                        <span>Aktuelles</span>
-                                    </Link>
+                                <Menu.Item key={index}>
+                                    {categorie.path &&
+                                        <Link to={categorie.path}>
+                                            <span>{categorie.text}</span>
+                                        </Link>
+                                    }
                                 </Menu.Item>
                             )
                         }
