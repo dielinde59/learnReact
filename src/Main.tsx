@@ -12,7 +12,7 @@ import Aktuelles from './SubPages/Aktuelles/Aktuelles';
 import Gelaende from './SubPages/Gelaende/Gelaende';
 // import Welpen from './SubPages/Welpen/Welpen';
 import Kontakt from './SubPages/Kontakt/Kontakt';
-import { pages } from './SubPages/pageContent';
+import { menu } from './SubPages/pageContent';
 import Rueckblick from './SubPages/Rueckblick/Rueckblick';
 import Training from './SubPages/Training/Training';
 // import Sondertraining from './SubPages/Sondertraining/Sondertraining';
@@ -230,10 +230,10 @@ class Main extends React.Component {
                                     )
                                 }
                             } /> */}
-                            {
-                                // tslint:disable-next-line:no-console
-                                console.log(pages)}
                             {this.renderRoutes()}
+                            
+                            
+                            
                             {/* {pages.forEach(page => {
                                 // tslint:disable-next-line:no-console
                                 console.log(`rendering ${page.path}`)
@@ -252,10 +252,9 @@ class Main extends React.Component {
                                         } />
                                     </div>
                                 )
-                            })} */}
-
-
-                            {/* <Route exact={true} path='/welpen' render={
+                            })} 
+                            
+                            <Route exact={true} path='/welpen' render={
                                 () => (
                                     <Training name='' titel='Welpen' foto1='../../images/welpen1k.jpg' foto2='../../images/welpen1k.jpg' 
                                     text='Nachdem der Welpe die ersten Wochen im neuen Zuhause verbracht und in dieser Zeit eine Beziehung zu seinen Menschen aufgebaut hat, wird er nun bei uns behutsam an Artgenossen und die restliche „große Welt“ herangeführt. In unseren Welpenstunden vermitteln wir ersten Grundbenimm im Umgang mit anderen Hunden und Menschen bei gleichzeitiger Festigung der Bindung zum Halter. Wir helfen, die Grundkommandos Sitz, Platz und Steh mit viel Spaß und Zuneigung sowie notwendiger Konsequenz zu erlernen. Beim kontrollierten Spiel mit Artgenossen ist meistens ein gut sozialisierter, erwachsener Hund anwesend. Zudem werden die Welpen nach Größe und Temperament aufeinander abgestimmt.'
@@ -335,10 +334,9 @@ class Main extends React.Component {
                                     Termine werden rechtzeitig hier angekündigt.'
                                     />
                                 )
-                            } /> */}
-
-
-                            {/* <Route exact={true} path='/sondertraining' render={
+                            } /> 
+                            
+                            <Route exact={true} path='/sondertraining' render={
                                 () => (
                                     <Sondertraining name='diete' />
                                 )
@@ -372,17 +370,24 @@ class Main extends React.Component {
     }
     public renderRoutes(){
         const  obj:JSX.Element[] = [];
-        for(const page of pages){
-            obj.push(
-                    (
-                        <Route key={'route'+page.titel} exact={true} path={page.path} render={
-                            () => {
-                                return (
-                                    <Training titel={page.titel} text={page.text} pics={page.pics} />
-                                )}}
-                        />
-                    )
-            )
+        for(const categorie of menu){
+            if(categorie.subroutes && categorie.subroutes.length!==0){
+                for(const item of categorie.subroutes){
+                    if(item.path!==undefined && item.text!==undefined){
+                        const text:string = item.text;
+                        obj.push(
+                                (
+                                    <Route key={'route'+item.titel} exact={true} path={item.path} render={
+                                        () => {
+                                            return (
+                                                <Training titel={item.titel} text={text} pics={item.pics} />
+                                            )}}
+                                    />
+                                )
+                        )
+                    }
+                }
+            }
         }
         return obj;
     }
