@@ -36,12 +36,11 @@ $footerHeight: 220px;
 
     .ant-menu-item:not(:last-child)
     {
-        font-family: Comic Sans MS, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-
         height: 50px;
         margin: 0;
+        font-family: Comic Sans MS, sans-serif;
+        font-size: 20px;
+        font-weight: bold;gin: 0;
         padding: 0;
     }
     
@@ -55,6 +54,7 @@ $footerHeight: 220px;
     background-color: rgb(255, 240, 203);
   }
 
+
   .menubackground {
     background-color: rgb(255, 240, 203);
     padding: 0;
@@ -62,6 +62,13 @@ $footerHeight: 220px;
   }
 
 
+.link {
+    background-color: rgb(255, 240, 203);
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #D7A200;
+  }
 
 .header{
     //background-color: white;

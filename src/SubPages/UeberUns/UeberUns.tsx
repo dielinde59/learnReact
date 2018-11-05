@@ -57,6 +57,7 @@ class UeberUns extends React.Component<IProps, object> {
                   emotionale Schwäche aufzeigen. Meinen beiden Lausern an dieser Stelle vielen Dank!
                 </p>
                 <br />
+                <a href={'/pdfs/p2.pdf'} >Read More</a>
                 <br />
                 <br />
                 <br />

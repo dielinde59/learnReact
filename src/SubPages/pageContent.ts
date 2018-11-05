@@ -16,15 +16,52 @@
 
 export interface IMenuItem {
     titel: string,
+    subtitel?: string,
     pics?: string[],
     text?: string,
     path?: string,
-    subroutes?: IMenuItem[]
+    subroutes?: IMenuItem[],
+    xy?:boolean,
+    pdf?: string,
 }
+
+
+
 export const menu: IMenuItem[] = 
 [
     {
-        titel: "Sondertraing",
+        titel: "Willkommen",
+        path: "/willkommen"
+    },
+    {
+        titel: "Über uns",
+        path: "/UeberUns"
+    },
+    {
+        titel: "Aktuelles",
+        path: "/aktuelles",
+        xy: true,
+        subroutes:[
+            {
+                titel:'Trainingsplan',
+                subtitel:'ab November 2018',
+                pics: [require('../images/welpen1k.jpg'),require('../images/Welpen2k.jpg')],
+                text: 'Trainingsplan bitte hier ansehen.',
+                pdf: './pdfs/p2.pdf'
+            },
+            {
+                titel:'Stadtgang am Sonntag',
+                text: 'entfällt am 11.11.2018',
+            },
+            {
+                titel:'Nochmal Stadtgang am Sonntag',
+                text: 'entfällt nicht am 11.11.2018',
+            },
+        ]
+
+    },
+    {
+        titel: "Grundausbildung",
         subroutes:[
 
             {
@@ -62,8 +99,14 @@ export const menu: IMenuItem[] =
         ]
     },
     {
-        titel: "Grundausbildung",
+        titel: "Sondertraining",
         subroutes:[
+            {
+                titel:'Agility',
+                pics: [require('../images/welpen1k.jpg'),require('../images/Welpen2k.jpg')],
+                text: 'Agi-Text.',
+                path: '/agi',
+            },
             {
                 titel:'Obedience',
                 pics: [require('../images/welpen1k.jpg'),require('../images/Welpen2k.jpg')],
@@ -96,6 +139,25 @@ export const menu: IMenuItem[] =
                 path: '/kurse',
             },
 
+        ]
+    },
+    {
+        titel: "Rückblick",
+        path: "/rueckblick",
+        xy: true,
+        subroutes:[
+            {
+                titel:'Erste Hilfe am Hund mit Dr. Christine Mayer',
+                subtitel:'am 04.11.2018',
+                pics: [require('../images/welpen1k.jpg'),require('../images/Welpen2k.jpg')],
+                text: 'Wir laden immer wieder auswärtige Trainer und Hundeexperten ein, die bei uns in speziellen Seminaren ihre Fachgebiete und Trainingsmethoden vorstellen. Termine werden rechtzeitig hier angekündigt.',
+                pdf: './pdfs/p2.pdf'
+            },
+            {
+                titel:'Kurse externer Hundetrainer',
+                pics: [require('../images/welpen1k.jpg'),require('../images/welpen1k.jpg')],
+                text: 'Wir laden immer wieder auswärtige Trainer und Hundeexperten ein, die bei uns in speziellen Seminaren ihre Fachgebiete und Trainingsmethoden vorstellen. Termine werden rechtzeitig hier angekündigt.',
+            },
         ]
     }
 ]
