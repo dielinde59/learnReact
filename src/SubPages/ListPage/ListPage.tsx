@@ -18,7 +18,7 @@ class ListPage extends React.Component<IProps, object> {
     <div style={{textAlign:'left',padding:'35px'}}>
         <h1 style={{textDecoration: "underline"}}>{title}</h1>
       <Row className='container'>
-        <Col style={{width:'80%'}}>
+        <Col style={{width:'70%'}}>
         {eintraege.map((eintrag,index)=>{
           return(
             <div key={`eintrag-${index}`} >
@@ -26,12 +26,14 @@ class ListPage extends React.Component<IProps, object> {
               <h2>{eintrag.subtitel}</h2>
               <div>
                 {eintrag.text}
+                {eintrag.text1}
                 <br/>
                 {eintrag.pdf &&
                   <a href={eintrag.pdf} target = "_blank">Mehr lesen</a>
                 }
 
               </div>
+              <br/>
               {eintrag.pics &&
                 <Row>
                   {eintrag.pics.map((pic,picIndex)=>{

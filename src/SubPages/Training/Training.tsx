@@ -7,8 +7,11 @@ import './Training.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
 interface IProps {
+  utitel: string;
   titel: string;
+  titel1?:string;
   text: string;
+  text1: string;
   age?: number;
   pics?: string[];
 }
@@ -27,8 +30,7 @@ class Training extends React.Component<IProps, object> {
       <Layout className='container'>
         <Row type={'flex'} justify="center">
           <Col className='center' span={24}>
-            <h1 style={{ color: '#D7A200' }}>Grundausbildung</h1>
-
+            <h1 style={{ color: '#D7A200' }}>{this.props.utitel}</h1>
           </Col>
         </Row>
         <br />
@@ -36,11 +38,15 @@ class Training extends React.Component<IProps, object> {
 
           <Col xl={{ span: 15 }} xxl={{ span: 25 }}>
             <Row type='flex' >
-              <div className='citeBox2'> {this.props.titel}</div>
+              <div className='title'> {this.props.titel}</div>
               <br />
               <div className='citeBox2'>
                 <div>
                   {this.props.text}
+                </div>
+
+                <div>
+                  {this.props.text1}
                 </div>
               </div>
             </Row>
@@ -60,6 +66,7 @@ class Training extends React.Component<IProps, object> {
                     <div>
                       <img className='image20' src={pic} alt='bild' />
                     </div>
+
                   </div>
                 )
               })

@@ -7,7 +7,7 @@ $footerHeight: 220px;
 
     .ant-menu-submenu-title
     {
-        font-family: Comic Sans MS, sans-serif;
+        font-family: BlacklightD,Comic Sans MS;
         font-size: 20px;
         font-weight: bold;
         height: 50px;
@@ -15,38 +15,49 @@ $footerHeight: 220px;
     } 
     .ant-menu-item
     {
-        font-family: Comic Sans MS, sans-serif;
+        font-family: BlacklightD, sans-serif;
         font-size: 20px;
         font-weight: bold;
-
         height: 50px;
         margin: 0;
         padding: 0;
+        background-color: rgb(255, 240, 203);
+        a:hover {
+            color: #2bad32;
+        }
     }
     .ant-menu-item-active
     {
-        font-family: Comic Sans MS, sans-serif;
+        font-family: BlacklightD, sans-serif;
         font-size: 20px;
         font-weight: bold;
         color: black;
         height: 50px;
         margin: 0;
         padding: 0;
+        background-color: rgb(255, 240, 203);
     }
 
+    .ant-menu-item-selected 
+    {
+        color: green;
+        background-color: rgb(255, 240, 203);
+
+    }
     .ant-menu-item:not(:last-child)
     {
         height: 50px;
         margin: 0;
-        font-family: Comic Sans MS, sans-serif;
+        font-family: BlacklightD, sans-serif;
         font-size: 20px;
         font-weight: bold;gin: 0;
         padding: 0;
+        background-color: rgb(255, 240, 203);
     }
     
 }
 .layout {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: BlacklightD, "Times New Roman", Times, serif;
     color: #D7A200;
     padding: 0 5%;
 }
@@ -64,8 +75,8 @@ $footerHeight: 220px;
 
 .link {
     background-color: rgb(255, 240, 203);
-    font-family:Georgia, "Times New Roman", Times, serif;
-    font-size: 16px;
+    font-family:BlacklightD, "Times New Roman", Times, serif;
+    font-size: 14px;
     font-weight: bold;
     color: #D7A200;
   }
@@ -93,7 +104,8 @@ $footerHeight: 220px;
     width: 20%;
     box-align: right;
     vertical-align: top;
-    padding: 10;
+    padding: 0;
+
   }
   
 

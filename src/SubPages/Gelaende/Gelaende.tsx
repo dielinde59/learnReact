@@ -2,7 +2,8 @@ import { Col, Row } from 'antd';
 import { Layout } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-import pic from '../../images/lauser.jpg'
+import pic from '../../images/Trainingsplatz.jpg'
+import pic1 from '../../images/Stüberl4.jpg'
 // import '../UeberUns/UeberUns.scss';
 import './Gelaende.scss';
 // const { Header, Footer, Sider, Content } = Layout;
@@ -43,19 +44,14 @@ class Gelaende extends React.Component<IProps, object> {
 
             <Row type='flex' >
               <div className='citeBox'>
-                <p>Hunde faszinierten mich schon von klein auf. Als vor einigen Jahren die beiden
-                Mischlinge Banya und Ördög in mein Leben traten, wollte ich bei meinen ersten
-                eigenen Hunden auf keinen Fall Fehler machen.</p>
+                <p>Die Hundeschule Hundefreu(n)de – Monika Frei liegt im schönen Chiemgau in Oberbayern. Unser ca. 2.500 m² großer, eingezäunter Trainingsplatz befindet sich in ländlicher Umgebung mit freiem Bergblick und garantiert entspannte Atmosphäre für Hund und Halter.</p>
                 <br />
-                <p>Dann hatte ich das große Glück, auf den Schweizer Hundeexperten Hans Schlegel
-                zu stoßen. </p>
+                <p>An heißen Tagen steht selbstverständlich jedem ein entspanntes Schattenplätzchen zur Verfügung.</p>
+                <br/>
+                <p>Dank unserer Außenbeleuchtung können wir auch in der Winterzeit unsere regulären Trainingszeiten bis in die Abendstunden einhalten.</p>
+                <br/>
+                <p>In unserem gemütlichen „Stüberl“ nehmen wir uns Zeit für Theorie und Sachkundeunterricht, feiern aber auch gerne die Erfolge unserer Hundefreunde.</p>
                 <br />
-                <p>
-                  Banya und Ördög unterstützen mich tagtäglich bei dieser wundervollen Arbeit.
-                  Hunde sind unsere besten Lehrmeister, die uns konsequent und beständig jede
-                  emotionale Schwäche aufzeigen. Meinen beiden Lausern an dieser Stelle vielen Dank!
-                </p>
-
               </div>
 
             </Row>
@@ -65,14 +61,14 @@ class Gelaende extends React.Component<IProps, object> {
             <Row justify="center">
               <div className='colRight'>
                 <div>
-                  <img className='image35' src={pic} alt='bild' style={{ width: "100%" }} />
+                  <img className='image35' src={pic} alt='bild' style={{ width: "80%" }} />
                 </div>
               </div>
             </Row>
             <Row>
 
               <div>
-                <img className='image35' src={pic} alt='bild' />
+                <img className='image35' src={pic1} alt='bild' style={{ width: "80%" }} />
               </div>
             </Row>
           </Col>

@@ -9,13 +9,13 @@ import pic2 from './images/header-photo.jpg';
 import pic1 from './images/header-text.jpg';
 import pic3 from './images/Logo.jpg';
 import './Main.scss';
-import Gelaende from './SubPages/Gelaende/Gelaende';
+// import Gelaende from './SubPages/Gelaende/Gelaende';
 // import Welpen from './SubPages/Welpen/Welpen';
 import Kontakt from './SubPages/Kontakt/Kontakt';
 import { menu } from './SubPages/pageContent';
 // import Rueckblick from './SubPages/Rueckblick/Rueckblick';
-import Training from './SubPages/Training/Training';
-// import Sondertraining from './SubPages/Sondertraining/Sondertraining';
+// import Training from './SubPages/Training/Training';
+import BasicPage from './SubPages/BasicPage/BasicPage';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
 import ListPage from './SubPages/ListPage/ListPage'
@@ -67,16 +67,26 @@ class Main extends React.Component {
                             )
                         }
                     })}
-                    <Menu.Item key="6">
+                    {/* <Menu.Item key="6">
                         <Link to='/gelaende'>
                             <span>Trainingsgelände</span>
                         </Link>
-                    </Menu.Item>
-                    <Menu.Item key="7">
+                    </Menu.Item> */}
+                    <Menu.Item className='menubackground' key="6">
                         <Link to='/kontakt'>
                             <span>Kontakt/Anfahrt</span>
                         </Link>
                     </Menu.Item>
+ {/* 09.05.2019 Versuch, den weissen Fleck im menü wegzubekommen */}
+{/*                     <hr style={{
+                            backgroundColor: 'rgb(255, 240, 203)',
+                            height: '50px',
+                            border: '0',
+                            margin: '0',
+                            padding: '0',
+                            width: '100%',
+                        }} /> */}
+
 
                 </Menu>
                 <div id='Logo' />
@@ -89,7 +99,7 @@ class Main extends React.Component {
                                     // width: 'auto',
                                 }} />
                 <div className='citeBox'>
-                <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu.n.de.de</a>
+                <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu-n-de.de</a>
                 </div>
                     </Col>
             </Sider>
@@ -178,11 +188,11 @@ class Main extends React.Component {
                             {this.renderRoutes()}
 
 
-                            <Route exact={true} path='/gelaende' render={
+                            {/* <Route exact={true} path='/gelaende' render={
                                 () => (
                                     <Gelaende name='diete' />
                                 )
-                            } />
+                            } /> */}
                             <Route exact={true} path='/kontakt' render={
                                 () => (
                                     <Kontakt name='diete' />
@@ -202,6 +212,7 @@ class Main extends React.Component {
     public renderRoutes() {
         const obj: JSX.Element[] = [];
         for (const categorie of menu) {
+            const utitel: string=categorie.titel;
             if (categorie.xy) {
                 // mach das selbe nur mit 
                 obj.push(
@@ -223,19 +234,71 @@ class Main extends React.Component {
                     for (const item of categorie.subroutes) {
                         if (item.path !== undefined && item.text !== undefined) {
                             const text: string = item.text;
-                            obj.push(
-                                (
-                                    <Route key={'route' + item.titel} exact={true} path={item.path} render={
-                                        () => {
-                                            return (
-                                                <Training titel={item.titel} text={text} pics={item.pics} />
-                                            )
-                                        }}
-                                    />
+                            // const br: string = "\n \r \n \t";
+                            if (item.text1 !==undefined) 
+                            { 
+                                // const nlocation =  item.text1.search('<br>');
+                                // const nlength = item.text1.length;
+                                // const text1:string  = item.text1.substring(0,nlocation);
+                                // const teil2:string = item.text1.substring(nlocation + 4,nlength);
+                               const text1:string = item.text1; 
+                               // let text2:string = "";
+                               // const ctext:string[] = item.ctext[];
+                                // if(nlength > nlocation) { text2 = teil2} else {text2= "";};
+                                obj.push(
+                                    (
+                                        <Route key={'route' + item.titel} exact={true} path={item.path} render={
+                                            () => {
+                                                return (
+                                                    <BasicPage utitel={utitel} titel={item.titel} text={text} text1={text1} pics={item.pics} />
+                                                )
+                                            }}
+                                        />
+                                    )
                                 )
-                            )
+    
+                            }
+                            else
+                            {
+                                obj.push(
+                                    (
+                                        <Route key={'route' + item.titel} exact={true} path={item.path} render={
+                                            () => {
+                                                return (
+                                                    <BasicPage utitel={utitel} titel={item.titel} text={text} text1={""} pics={item.pics} />
+                                                )
+                                            }}
+                                        />
+                                    )
+                                )
+    
+                            }
                         }
                     }
+                }
+                else 
+                {
+                    if (categorie.path !==undefined && categorie.text !==undefined){
+                        const text: string = categorie.text;
+                        let text1:string = "";
+                        if (categorie.text1 !==undefined) 
+                        { 
+                            text1 = categorie.text1
+                        }
+                    obj.push(
+                        (
+                            <Route key={'route' + categorie.titel} exact={true} path={categorie.path} render={
+                                () => {
+                                    
+                                        return (
+                                            <BasicPage utitel={utitel} titel="" text={text} text1={text1} pics={categorie.pics} />
+                                        )
+                                    
+                                }}
+                            />
+                        )
+                    )
+                }
                 }
             }
         }
