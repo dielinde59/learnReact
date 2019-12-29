@@ -3,7 +3,8 @@ import * as React from 'react';
 import { } from 'react-router';
 // import pic1 from {this:props.foto1}
 // import pic2 from {this:props.foto2}
-import './Training.scss';
+import '../../Main.scss';
+
 // const { Header, Footer, Sider, Content } = Layout;
 
 interface IProps {
@@ -18,14 +19,14 @@ interface IProps {
 
 
 
-class Training extends React.Component<IProps, object> {
+class AGBs extends React.Component<IProps, object> {
   public render() {
     // let test = { titel: 'hallo' };
     // const test3 = test.titel;
     // test = test;
     // const ageX10 = this.props.age ? this.props.age * 10 : 0;
     // tslint:disable-next-line:no-console
-    console.log("training page")
+    console.log("agbs page")
     return (
       <Layout className='container'>
           <Row type={'flex'} justify="center">
@@ -81,4 +82,4 @@ class Training extends React.Component<IProps, object> {
 
 
 
-export default Training;
+export default AGBs;

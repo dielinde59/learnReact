@@ -1,6 +1,6 @@
-import { Col, Row } from 'antd';
+import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
-import {IMenuItem} from '../pageContent'
+import { IMenuItem } from '../pageContent'
 import '../../Main.scss';
 
 interface IProps {
@@ -11,49 +11,65 @@ interface IProps {
 
 class ListPage extends React.Component<IProps, object> {
   public render() {
-    const {title,eintraege} = this.props; 
+    const { title, eintraege } = this.props;
 
-    return(
-     
-    <div style={{textAlign:'left',padding:'35px'}}>
-        <h1 style={{textDecoration: "underline"}}>{title}</h1>
-      <Row className='container'>
-        <Col style={{width:'70%'}}>
-        {eintraege.map((eintrag,index)=>{
-          return(
-            <div key={`eintrag-${index}`} >
-              <h1>{eintrag.titel}</h1>
-              <h2>{eintrag.subtitel}</h2>
-              <div>
-                {eintrag.text}
-                {eintrag.text1}
-                <br/>
-                {eintrag.pdf &&
-                  <a href={eintrag.pdf} target = "_blank">Mehr lesen</a>
-                }
+    return (
+      <Layout className='container'>
 
-              </div>
-              <br/>
-              {eintrag.pics &&
-                <Row>
-                  {eintrag.pics.map((pic,picIndex)=>{
-                    return(
-                      <img key={ `list:${title}picture#${picIndex}` } className='image20' src={pic} alt='bild' />
-                    )
-                  })}
+        <Row type={'flex'} justify="center">
+          <Col className='center' span={24} >
+            <div className='titlegross'> {title} </div>
+          </Col>
+        </Row>
+
+        <Row className='container'>
+          {eintraege.map((eintrag, index) => {
+            return (
+
+              <div key={`eintrag-${index}`} >
+                <Row type={'flex'} justify="start">
+                  <Col span={24} lg={{ span: 18 }}>
+                    <div className='title citeBox'>{eintrag.titel}</div>
+                    <div className='title citeBox'>{eintrag.subtitel}</div>
+                    <br />
+                    <div className='citeBox'>
+                      <p> {eintrag.text} </p>
+                      <p> {eintrag.text1}  </p>
+                      <br />
+                      {eintrag.pdf &&
+                        <a href={eintrag.pdf} target="_blank">weiterlesen</a>
+                      }
+                    </div>
+                  </Col>
+
+                  <Col span={24} lg={{ span: 6 }}>
+                    {eintrag.pics &&
+                      <Row>
+                        {eintrag.pics.map((pic, picIndex) => {
+                          if (picIndex === 0) {
+                            return (
+                              <img key={`list:${title}picture#${picIndex}`} className='image70' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0', marginTop: "58px" }} />
+                            )
+                          } else {
+                            return (
+                              <img key={`list:${title}picture#${picIndex}`} className='image70' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0' }} />
+                            )
+                          }
+                        }
+                        )}
+                      </Row>
+                    }
+                  </Col>
                 </Row>
-              }
-              <hr style={{borderColor: 'black'}}/>
-            </div>
-          )
-        }
-        )}
-        </Col>
-      </Row>
-      </div>
-   
-    )
-}
+                <hr style={{ borderColor: 'black' }} />
+              </div>
+            )
+          }
+          )}
+        </Row>
+      </Layout>
+    );
+  }
 }
 
 export default ListPage;

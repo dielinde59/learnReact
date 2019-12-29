@@ -1,143 +1,231 @@
 $headerHeight: 100px;
 $footerHeight: 220px;
-#root{
-    height: 100%
+
+* {
+    color: black;
+    background-color: rgb(255, 240, 203);
+    font-size: 18px;
+    font-family: BlacklightD, "Times New Roman", Times, serif;
+}
+.container {
+    scroll-margin-left: 11;
+    scroll-behavior: smooth; 
+    color: black;
+    font-size: 18px;
+    background-color: rgb(255, 240, 203);
+    font-family: BlacklightD, "Times New Roman", Times, serif;
+   // background-color: (255,240,203);
+}
+
+a {
+  color: #d7a200;
+}
+
+a::selection {
+  color: #d7a200;
   }
-.ant-menu-vertical{
+ a:hover {
+   color: #2bad32;
+  }
+p {
+  margin: 0;
+}
 
-    .ant-menu-submenu-title
-    {
-        font-family: BlacklightD,Comic Sans MS;
-        font-size: 20px;
-        font-weight: bold;
-        height: 50px;
-        padding: 0;
-    } 
-    .ant-menu-item
-    {
-        font-family: BlacklightD, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        height: 50px;
-        margin: 0;
-        padding: 0;
-        background-color: rgb(255, 240, 203);
-        a:hover {
-            color: #2bad32;
-        }
-    }
-    .ant-menu-item-active
-    {
-        font-family: BlacklightD, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        color: black;
-        height: 50px;
-        margin: 0;
-        padding: 0;
-        background-color: rgb(255, 240, 203);
+.ant-menu-vertical {
+  .ant-menu-submenu {
+    font-family: BlacklightD, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(255, 240, 203);
+    a:hover {
+      color: #2bad32;
     }
 
-    .ant-menu-item-selected 
-    {
-        color: green;
-        background-color: rgb(255, 240, 203);
+    .ant-menu-submenu-title {
+      margin: 0;
+      padding: 0;
+    }  
+  }
 
+  .ant-menu-item {
+    font-family: BlacklightD, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(255, 240, 203);
+    a:hover {
+      color: #2bad32;
     }
-    .ant-menu-item:not(:last-child)
-    {
-        height: 50px;
-        margin: 0;
-        font-family: BlacklightD, sans-serif;
-        font-size: 20px;
-        font-weight: bold;gin: 0;
-        padding: 0;
-        background-color: rgb(255, 240, 203);
+  }
+  .ant-menu-item-active {
+    font-family: BlacklightD, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    height: 50px;
+    margin: 0;
+    // padding: 0;
+    background-color: rgb(255, 240, 203);
+    a:hover {
+      color: #2bad32;
     }
-    
+  }
+
+  .ant-menu-item-selected {
+    color: green;
+    background-color: rgb(255, 240, 203);
+  }
+  .ant-menu-item:not(:last-child) {
+    height: 50px;
+    margin: 0;
+    font-family: BlacklightD, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    // padding: 0;
+    background-color: rgb(255, 240, 203);
+  }
 }
 .layout {
-    font-family: BlacklightD, "Times New Roman", Times, serif;
-    color: #D7A200;
-    padding: 0 5%;
+  font-family: BlacklightD, "Times New Roman", Times, serif;
+  color: #d7a200;
+  padding: 0 5%;
 }
 .background {
-    background-color: rgb(255, 240, 203);
-  }
+  background-color: rgb(255, 240, 203);
+  height: auto;
+}
 
-
-  .menubackground {
-    background-color: rgb(255, 240, 203);
-    padding: 0;
-    border: 0px;
-  }
-
-
+.menubackground {
+  background-color: rgb(255, 240, 203);
+  padding: 0;
+  border: 0px;
+}
+.menubackground:visited {
+  color: #d7a200;
+  background-color: rgb(255, 240, 203);
+  padding: 0;
+  border: 0px;
+}
 .link {
+  background-color: rgb(255, 240, 203);
+  font-family: BlacklightD, "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d7a200;
+  }
+
+  .link:visited{
     background-color: rgb(255, 240, 203);
-    font-family:BlacklightD, "Times New Roman", Times, serif;
+    font-family: BlacklightD, "Times New Roman", Times, serif;
     font-size: 14px;
     font-weight: bold;
-    color: #D7A200;
-  }
-
-.header{
-    //background-color: white;
-    background-color: rgb(255, 240, 203);
-    //padding-right: 15px;
-    // height: $headerHeight;
-    line-height: normal;
-    // height: 18%;
-}
-
-.image{
-    width: 100%
-}
-.image35{
-    width: 30%;
-    box-align: right;
-    vertical-align: top;
-    padding: 0;
-  }
+    color: #d7a200;
+    }
   
- .image20{
-    width: 20%;
-    box-align: right;
-    vertical-align: top;
-    padding: 0;
-
-  }
-  
-
-.footer{
-    height: $footerHeight;
-    line-height: normal;
-    padding: 5% 5px;
+.header {
+  //background-color: white;
+  background-color: rgb(255, 240, 203);
+  //padding-right: 15px;
+  // height: $headerHeight;
+  line-height: normal;
+  // height: 18%;
 }
 
-.footer2{
-    height: $footerHeight;
-    line-height: normal;
-    background-color: rgb(255, 240, 203);
-    padding-left: 12%;
-
+.citeBox  {
+  white-space: pre-wrap;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  margin-left: 7%;
+  padding-right: 15%;
+  width: 100%;
+  scroll-behavior: smooth;
+  scroll-margin: 3px; 
+}
+.citeBox::selection {
+  background-color: #2bad32;
+}
+.titlegross {
+  font-size: 28px;
+  color: #D7A200;
+  width: 100%;
+  margin: 30px 0 0 0
 }
 
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+ 
 
-.alignRight{
-    text-align: right;
+.image {
+  width: 100%;
+}
+.image70 {
+  width: 65%;
 }
 
-.colRight{
-    box-align: right ;
+.image35 {
+  width: 30%;
+  box-align: right;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 0px 30px 0;
 }
-#subtitle{
-    color:#D7A200;
+.image351 {
+  width: 20%;
+  vertical-align: top;
+  padding: 0;
 }
-#title{
-    color:black;
-    font-weight: bold;
+
+
+.image20 {
+  width: 20%;
+  box-align: right;
+  vertical-align: top;
+  padding: 0;
 }
-#Logo{
-    height: $headerHeight;
+
+
+.footer2 {
+  line-height: normal;
+  background-color: rgb(255, 240, 203);
+  padding-left: 12%;
+  padding:10px 0 0 0;
+  margin: 10px 0 0 0;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.colRight {
+  box-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#root {
+  height: 100%;
+}
+#subtitle {
+  color: #d7a200;
+  // font-weight: bold;
+  font-size: 26;
+}
+#title {
+  color: black;
+  font-weight: bold;
+}
+#Logo {
+  height: $headerHeight;
 }

@@ -3,7 +3,7 @@ import * as React from 'react';
 import { } from 'react-router';
 // import pic1 from {this:props.foto1}
 // import pic2 from {this:props.foto2}
-import './BasicPage.scss';
+import '../../Main.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
 interface IProps {
@@ -51,7 +51,7 @@ class BasicPage extends React.Component<IProps, object> {
         <br />
 
         <Row>
-
+          
           <Col xl={{ span: 15 }} xxl={{ span: 25 }}>
             <Row type={'flex'}  >
               <div className='title'> {this.props.titel}</div>
@@ -119,7 +119,7 @@ class BasicPage extends React.Component<IProps, object> {
  */}
 
 
-          {this.props.pics &&
+{this.props.pics &&
           <Col>
             {
               this.props.pics.map((pic, index, array) => {
@@ -138,7 +138,7 @@ class BasicPage extends React.Component<IProps, object> {
               })
             } 
           </Col>
-          }
+          } 
 
         </Row>
 

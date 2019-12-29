@@ -5,7 +5,9 @@ import 'rc-menu/assets/index.css';
 import * as React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { DogCarousel } from './components/DogCarousel';
+//  Photo links
 import pic2 from './images/header-photo.jpg';
+import pic4 from './images/header-photo1.jpg';
 import pic1 from './images/header-text.jpg';
 import pic3 from './images/Logo.jpg';
 import './Main.scss';
@@ -13,26 +15,41 @@ import './Main.scss';
 // import Welpen from './SubPages/Welpen/Welpen';
 import Kontakt from './SubPages/Kontakt/Kontakt';
 import { menu } from './SubPages/pageContent';
-// import Rueckblick from './SubPages/Rueckblick/Rueckblick';
-// import Training from './SubPages/Training/Training';
-import BasicPage from './SubPages/BasicPage/BasicPage';
+import agbs from './SubPages/agbs/agbs';
+import Training  from './SubPages/Training/Training';
+// import BasicPage from './SubPages/BasicPage/BasicPage';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
 import ListPage from './SubPages/ListPage/ListPage'
-
+// import Impressum from './SubPages/Impressum/Impressum'
 
 const { Header, Sider, Content, Footer } = Layout;
+interface IMainState {
+    collapsed: boolean
+}
 
-class Main extends React.Component {
+class Main extends React.Component<any,IMainState> {
     constructor(props: any) {
         super(props);
+        this.state={collapsed: false}
         this.renderSider = this.renderSider.bind(this);
+        this.onCollapse = this.onCollapse.bind(this);
+        this.setState({collapsed: false})
     }
-
+    public onCollapse = (collapsed:boolean) => {
+        this.setState({ collapsed });
+      }
 
     public renderSider() {
         return (
-            < Sider className='background' >
+            < Sider
+                className='background container'
+                // collapsible /// diese zeile entfernen um normale seitenleist zu bekommen
+                collapsed={this.state.collapsed}
+                onCollapse={this.onCollapse}
+                style={{padding: '60px 0',margin:'0'}}
+                // style ={{padding: '60px 0 120 0',margin:'0'}}
+            >
                 <Menu className='menubackground' defaultSelectedKeys={['1']} mode="vertical" >
                     {menu.map((categorie, index) => {
                         if (categorie.subroutes && !categorie.xy && categorie.subroutes.length > 0) {
@@ -47,7 +64,7 @@ class Main extends React.Component {
                                                         <span>{item.titel}</span>
                                                     </Link>
                                                 }
-                                            </Menu.Item>
+                                            </Menu.Item> 
                                         )
                                     })}
                                 </SubMenu>
@@ -72,36 +89,28 @@ class Main extends React.Component {
                             <span>Trainingsgelände</span>
                         </Link>
                     </Menu.Item> */}
-                    <Menu.Item className='menubackground' key="6">
+                    {/* <Menu.Item className='menubackground' key="8">
                         <Link to='/kontakt'>
                             <span>Kontakt/Anfahrt</span>
                         </Link>
-                    </Menu.Item>
- {/* 09.05.2019 Versuch, den weissen Fleck im menü wegzubekommen */}
-{/*                     <hr style={{
-                            backgroundColor: 'rgb(255, 240, 203)',
-                            height: '50px',
-                            border: '0',
-                            margin: '0',
-                            padding: '0',
-                            width: '100%',
-                        }} /> */}
-
-
+                    </Menu.Item> */}
                 </Menu>
                 <div id='Logo' />
-                <Col xs={30}>
-                <img src={pic3} alt='bild' style={{
+                 <Col xs={30}>
+                    <img src={pic3} alt='bild' style={{
                                     maxHeight: '100%',
                                     maxWidth: '100%',
                                     // height: '100%',
                                     // display: 'inline-block',
                                     // width: 'auto',
                                 }} />
-                <div className='citeBox'>
-                <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu-n-de.de</a>
-                </div>
-                    </Col>
+                    <div className='citeBox'>
+                        <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu-n-de.de</a>
+                    </div>
+                    <div className='citeBox'>
+                    <a href="http://hundefreu-n-de-forum.xobor.de/" target="_blank">Forum</a> 
+                    </div>         
+                </Col>
             </Sider>
 
 
@@ -112,6 +121,8 @@ class Main extends React.Component {
     public render() {
         return (
             // tslint:disable-next-line:no-unused-expression
+            <div className='background'>
+
             <Router >
                 <Layout className='layout background' style={{ minHeight: "100%" }}>
                     <Header className='header' style={{ width: '100%', padding: '0px', height: 'auto' }} >
@@ -125,21 +136,39 @@ class Main extends React.Component {
                             }}
                             justify={'center'}
                         >
-                            <Col xs={6}>
+                            <Col xs={3}style={{
+                                backgroundColor: 'white'
+                            }}>
                                 <img src={pic2} alt='bild' style={{
                                     maxHeight: '100%',
-                                    maxWidth: '100%'
+                                    maxWidth: '100%',
+                                    backgroundColor:'white' 
                                     // height: '100%',
                                     // display: 'inline-block',
                                     // width: 'auto'
                                 }} />
                             </Col>
-                            <Col xs={18}>
+                            <Col xs={18}style={{
+                                backgroundColor: 'white'
+                            }}>
                                 <img src={pic1} alt='bild' style={{
                                     maxHeight: '100%',
-                                    maxWidth: '100%'
+                                    maxWidth: '100%',
+                                    backgroundColor:'white' 
                                 }} />
                             </Col>
+                            <Col xs={3}style={{
+                                backgroundColor: 'white'
+                            }}>
+                                <img src={pic4} alt='bild' style={{
+                                 padding: "5px" ,
+                                    float: 'right',
+                                    maxHeight: '80%',
+                                    maxWidth: '80%',
+                                    backgroundColor:'white' 
+                                }} />
+                            </Col>
+
                         </Row>
                         <hr style={{
                             backgroundColor: 'rgb(255, 212, 45)',
@@ -174,7 +203,13 @@ class Main extends React.Component {
                                 }
                             /> }
 
-                            <Route exact={true} path='/willkommen' render={
+                            <Route exact={true} path='/willkommen'   render={
+                                () => (
+                                    <WelcomePage name='diete' />
+                                )
+                            } />
+
+                            <Route exact={true} path='/'   render={
                                 () => (
                                     <WelcomePage name='diete' />
                                 )
@@ -187,12 +222,6 @@ class Main extends React.Component {
                             } />
                             {this.renderRoutes()}
 
-
-                            {/* <Route exact={true} path='/gelaende' render={
-                                () => (
-                                    <Gelaende name='diete' />
-                                )
-                            } /> */}
                             <Route exact={true} path='/kontakt' render={
                                 () => (
                                     <Kontakt name='diete' />
@@ -201,12 +230,15 @@ class Main extends React.Component {
                         </Content>
 
                     </Layout>
-                    <Footer className='footer2'>
+                    <Footer className='footer2' style={{padding: '0'}}>
+                    <div style={{padding: '0'}}>
                         <DogCarousel />
+                    </div>
                     </Footer>
                 </Layout>
 
             </Router >
+            </div>
         );
     }
     public renderRoutes() {
@@ -234,29 +266,20 @@ class Main extends React.Component {
                     for (const item of categorie.subroutes) {
                         if (item.path !== undefined && item.text !== undefined) {
                             const text: string = item.text;
-                            // const br: string = "\n \r \n \t";
                             if (item.text1 !==undefined) 
                             { 
-                                // const nlocation =  item.text1.search('<br>');
-                                // const nlength = item.text1.length;
-                                // const text1:string  = item.text1.substring(0,nlocation);
-                                // const teil2:string = item.text1.substring(nlocation + 4,nlength);
                                const text1:string = item.text1; 
-                               // let text2:string = "";
-                               // const ctext:string[] = item.ctext[];
-                                // if(nlength > nlocation) { text2 = teil2} else {text2= "";};
                                 obj.push(
                                     (
                                         <Route key={'route' + item.titel} exact={true} path={item.path} render={
                                             () => {
                                                 return (
-                                                    <BasicPage utitel={utitel} titel={item.titel} text={text} text1={text1} pics={item.pics} />
+                                                    <Training utitel={utitel} titel={item.titel} text={text} text1={text1} pics={item.pics} />
                                                 )
                                             }}
                                         />
                                     )
                                 )
-    
                             }
                             else
                             {
@@ -265,7 +288,7 @@ class Main extends React.Component {
                                         <Route key={'route' + item.titel} exact={true} path={item.path} render={
                                             () => {
                                                 return (
-                                                    <BasicPage utitel={utitel} titel={item.titel} text={text} text1={""} pics={item.pics} />
+                                                    <Training utitel={utitel} titel={item.titel} text={text} text1={""} pics={item.pics} />
                                                 )
                                             }}
                                         />
@@ -291,7 +314,7 @@ class Main extends React.Component {
                                 () => {
                                     
                                         return (
-                                            <BasicPage utitel={utitel} titel="" text={text} text1={text1} pics={categorie.pics} />
+                                            <Training utitel={utitel} titel="" text={text} text1={text1} pics={categorie.pics} />
                                         )
                                     
                                 }}
