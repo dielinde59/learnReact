@@ -17,6 +17,28 @@ $footerHeight: 220px;
    // background-color: (255,240,203);
 }
 
+.scroll {
+  background-color: rgb(255, 240, 203);
+  height: 60%;
+  overflow: auto;
+  width: 70%;
+  border: 1px solid #000;
+  padding: 10px;
+  } 
+
+
+.scrcontainer {
+  scroll-margin-left: 11;
+  scroll-behavior: smooth; 
+  color: black;
+  font-size: 18px;
+  background-color: rgb(255, 240, 203);
+  font-family: BlacklightD, "Times New Roman", Times, serif;
+  max-height: 60%;
+  overflow: scroll, clip;
+ // background-color: (255,240,203);
+}
+
 a {
   color: #d7a200;
 }
@@ -100,6 +122,8 @@ p {
   background-color: rgb(255, 240, 203);
   height: auto;
 }
+
+
 
 .menubackground {
   background-color: rgb(255, 240, 203);

@@ -2,8 +2,9 @@ import { Layout, Row, Col} from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
 import pic from '../../images/lauser.jpg';
-import './Kontakt.scss';
+// import './Kontakt.scss';
 // const { Header, Footer, Sider, Content } = Layout;
+import '../../Main.scss';
 
 interface IProps {
   name: string;
@@ -18,7 +19,7 @@ class Kontakt extends React.Component<IProps, object> {
     // const ageX10 = this.props.age ? this.props.age * 10 : 0;
 
     return (
-      <Layout className='container'>
+      <Layout className='scrcontainer'>
         <Row type='flex' justify="center">
           <Col className='center' span={24}>
             <div className='titlegross'> Kontakt / Anfahrt </div>
@@ -50,12 +51,10 @@ class Kontakt extends React.Component<IProps, object> {
                 <br/>
                 <p className='link'><a href='https://www.google.de/maps/place/Sch%C3%B6nreit+1,+83308+Trostberg/@48.0602285,12.5311945,17z/data=!3m1!4b1!4m5!3m4!1s0x4775df0ee6f5adb9:0xe930772648571d63!8m2!3d48.0602285!4d12.5333832?hl=de'  target="_blank">Anfahrt</a></p>
                 </div>
-                <br />
-                <br />
-                <br />
-                <br />
+
 
             </Row>
+
           </Col>
 
           <Col>

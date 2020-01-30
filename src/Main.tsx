@@ -15,12 +15,12 @@ import './Main.scss';
 // import Welpen from './SubPages/Welpen/Welpen';
 import Kontakt from './SubPages/Kontakt/Kontakt';
 import { menu } from './SubPages/pageContent';
-import agbs from './SubPages/agbs/agbs';
 import Training  from './SubPages/Training/Training';
 // import BasicPage from './SubPages/BasicPage/BasicPage';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
 import ListPage from './SubPages/ListPage/ListPage'
+import AGBs from './SubPages/AGBs/AGBs'
 // import Impressum from './SubPages/Impressum/Impressum'
 
 const { Header, Sider, Content, Footer } = Layout;
@@ -189,7 +189,6 @@ class Main extends React.Component<any,IMainState> {
                     </Header>
 
                     <Layout>
-
                         {this.renderSider()}
 
                         <Content className='background' style={{ overflow: 'hidden' }}>
@@ -227,6 +226,11 @@ class Main extends React.Component<any,IMainState> {
                                     <Kontakt name='diete' />
                                 )
                             } />
+                            <Route exact={true} path='/AGBs' render={
+                                () => (
+                                    <AGBs />
+                                )
+                            } />
                         </Content>
 
                     </Layout>
@@ -244,6 +248,7 @@ class Main extends React.Component<any,IMainState> {
     public renderRoutes() {
         const obj: JSX.Element[] = [];
         for (const categorie of menu) {
+            
             const utitel: string=categorie.titel;
             if (categorie.xy) {
                 // mach das selbe nur mit 

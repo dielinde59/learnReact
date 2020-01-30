@@ -23,7 +23,7 @@ class UeberUns extends React.Component<IProps, object> {
       width: "80%",
     } */
     return (
-      <Layout className='container'>
+      <Layout className='srcontainer'>
         <Row type='flex' justify="center">
           <Col className='center' span={24}>
             <div className='titlegross'>Über uns</div>
