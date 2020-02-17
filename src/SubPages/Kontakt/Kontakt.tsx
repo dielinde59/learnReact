@@ -1,9 +1,10 @@
-import { Col, Layout, Row } from 'antd';
+import { Layout, Row, Col} from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
 import pic from '../../images/lauser.jpg';
-import './Kontakt.scss';
+// import './Kontakt.scss';
 // const { Header, Footer, Sider, Content } = Layout;
+import '../../Main.scss';
 
 interface IProps {
   name: string;
@@ -18,32 +19,47 @@ class Kontakt extends React.Component<IProps, object> {
     // const ageX10 = this.props.age ? this.props.age * 10 : 0;
 
     return (
-      <Layout className='container'>
+      <Layout className='scrcontainer'>
         <Row type='flex' justify="center">
           <Col className='center' span={24}>
-            <h1 style={{ color: '#D7A200' }}>Kontakt / Anfahrt</h1>
-
+            <div className='titlegross'> Kontakt / Anfahrt </div>
           </Col>
         </Row>
-        <Row>
 
+        <Row>
           <Col xl={{ span: 10 }} xxl={{ span: 15 }}>
             <Row type='flex' >
-              <div className='citeBox'>
-                <div>
-                  <p>Kontakt</p>
-                  <br />
-                  <p>Text2!</p>
+
+            <br />
+
+                <div className='title citeBox'>
+                  Hundeschule 
                 </div>
-              </div>
+                <div className='citeBox'> 
+                  <p>Hundefreu(n)de - Monika Frei</p>
+                  Schönreit 1
+                  <br />
+                  D-83308 Trostberg 
+                  <br />
+                  <br />
+                  Tel.: +49 (0)178 7308459
+                  <br />
+                  info@hundefreu-n-de.de
+                  <br />
+                  www.hundefreu-n-de.de
+                <br/>
+                <br/>
+                <p className='link'><a href='https://www.google.de/maps/place/Sch%C3%B6nreit+1,+83308+Trostberg/@48.0602285,12.5311945,17z/data=!3m1!4b1!4m5!3m4!1s0x4775df0ee6f5adb9:0xe930772648571d63!8m2!3d48.0602285!4d12.5333832?hl=de'  target="_blank">Anfahrt</a></p>
+                </div>
+
+
             </Row>
+
           </Col>
 
           <Col>
             <div className='colRight'>
-              <div>
                 <img className='image35' src={pic} alt='bild' />
-              </div>
             </div>
           </Col>
 
