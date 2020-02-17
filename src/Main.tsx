@@ -11,16 +11,16 @@ import pic4 from './images/header-photo1.jpg';
 import pic1 from './images/header-text.jpg';
 import pic3 from './images/Logo.jpg';
 import './Main.scss';
+import AGBs from './SubPages/AGBs/AGBs';
 // import Gelaende from './SubPages/Gelaende/Gelaende';
 // import Welpen from './SubPages/Welpen/Welpen';
 import Kontakt from './SubPages/Kontakt/Kontakt';
+import ListPage from './SubPages/ListPage/ListPage';
 import { menu } from './SubPages/pageContent';
-import Training  from './SubPages/Training/Training';
+import Training from './SubPages/Training/Training';
 // import BasicPage from './SubPages/BasicPage/BasicPage';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
-import ListPage from './SubPages/ListPage/ListPage'
-import AGBs from './SubPages/AGBs/AGBs'
 // import Impressum from './SubPages/Impressum/Impressum'
 
 const { Header, Sider, Content } = Layout;
