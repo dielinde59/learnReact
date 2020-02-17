@@ -19,7 +19,7 @@ class WelcomePage extends React.Component<IProps, object> {
     // const ageX10 = this.props.age ? this.props.age * 10 : 0;
 
     return (
-      <Layout className='srcontainer'>
+      <Layout className='container'>
         <Row type='flex' justify="center">
           <Col className='text-center' span={20}>
           <div className='titlegross'>Willkommen </div>

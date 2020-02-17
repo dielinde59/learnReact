@@ -23,7 +23,7 @@ import ListPage from './SubPages/ListPage/ListPage'
 import AGBs from './SubPages/AGBs/AGBs'
 // import Impressum from './SubPages/Impressum/Impressum'
 
-const { Header, Sider, Content, Footer } = Layout;
+const { Header, Sider, Content } = Layout;
 interface IMainState {
     collapsed: boolean
 }
@@ -95,22 +95,23 @@ class Main extends React.Component<any,IMainState> {
                         </Link>
                     </Menu.Item> */}
                 </Menu>
-                <div id='Logo' />
-                 <Col xs={30}>
-                    <img src={pic3} alt='bild' style={{
-                                    maxHeight: '100%',
-                                    maxWidth: '100%',
-                                    // height: '100%',
-                                    // display: 'inline-block',
-                                    // width: 'auto',
-                                }} />
-                    <div className='citeBox'>
-                        <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu-n-de.de</a>
-                    </div>
-                    <div className='citeBox'>
-                    <a href="http://hundefreu-n-de-forum.xobor.de/" target="_blank">Forum</a> 
-                    </div>         
-                </Col>
+                <div id='Logo'>
+                    <Col xs={30}>
+                        <img src={pic3} alt='bild' style={{
+                                        maxHeight: '100%',
+                                        maxWidth: '100%',
+                                        // height: '100%',
+                                        // display: 'inline-block',
+                                        // width: 'auto',
+                                    }} />
+                        <div className='citeBox'>
+                            <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu-n-de.de</a>
+                        </div>
+                        <div className='citeBox'>
+                        <a href="http://hundefreu-n-de-forum.xobor.de/" target="_blank">Forum</a> 
+                        </div>         
+                    </Col>
+                </div>         
             </Sider>
 
 
@@ -234,11 +235,11 @@ class Main extends React.Component<any,IMainState> {
                         </Content>
 
                     </Layout>
-                    <Footer className='footer2' style={{padding: '0'}}>
+                    <div className='footer2' style={{}}>
                     <div style={{padding: '0'}}>
                         <DogCarousel />
                     </div>
-                    </Footer>
+                    </div>
                 </Layout>
 
             </Router >
