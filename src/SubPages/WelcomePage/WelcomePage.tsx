@@ -30,7 +30,7 @@ class WelcomePage extends React.Component<IProps, object> {
         }}
         />
         <Row type='flex' justify="center"  >
-          <Col >
+          <Col span={24}>
             <img id='welcomeIMG' src={pic} alt='bild' />
             <div className='text-center' style={{fontSize: "18px"}}>
               <p>Jede Beziehung zwischen einem Tier und einem Menschen</p>

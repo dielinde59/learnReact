@@ -35,7 +35,7 @@ class Training extends React.Component<IProps, object> {
           </Row>
         <Row type={'flex'} justify="center">
           <Col span={24} lg={{ span: 18 }}>
-            <div className='title citeBox'> {this.props.titel}</div>
+            <div className='title'> {this.props.titel}</div>
             <br />
             <div className='citeBox'>
               <p>

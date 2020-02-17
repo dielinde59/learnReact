@@ -47,7 +47,7 @@ export const menu: IMenuItem[] =
             subroutes: [
                 {
                     titel: 'Trainingsplan',
-                    subtitel: 'ab November 2018',
+                    subtitel: '',
                     pics: [require('../images/welpen1k.jpg'), require('../images/Welpen2k.jpg')],
                     text: '',
                     text1: 'An dieser Stelle finden sie den aktuellen Trainingsplan',
@@ -238,9 +238,12 @@ export const menu: IMenuItem[] =
             titel: "AGBs",
             path: "/agbs",
         },
-
         {
-            titel: "",
+            titel: "Datenschutzerklärung",
+            path: "/datenschutz",
+        },
+        {
+            titel: "Impressum",
             path: "/impressum",
         }
 
