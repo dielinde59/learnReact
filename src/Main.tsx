@@ -122,128 +122,127 @@ class Main extends React.Component<any,IMainState> {
     public render() {
         return (
             // tslint:disable-next-line:no-unused-expression
-            <div className='background'>
-
-            <Router >
-                <Layout className='layout background' style={{ minHeight: "100%" }}>
-                    <Header className='header' style={{ width: '100%', padding: '0px', height: 'auto' }} >
-                        <Row type={"flex"}
-                            align={'middle'}
-                            style={{
-                                // width: '100%',
+        <div id='page'>
+            <Layout id='header_and_content' className='layout background' style={{}}>
+                <Header className='header' style={{ width: '100%', padding: '0px', height: 'auto' }} >
+                    <Row type={"flex"}
+                        align={'middle'}
+                        style={{
+                            // width: '100%',
+                            // display: 'inline-block',
+                            maxHeight: '120px',
+                            backgroundColor: 'white'
+                        }}
+                        justify={'center'}
+                    >
+                        <Col xs={3}style={{
+                            backgroundColor: 'white'
+                        }}>
+                            <img src={pic2} alt='bild' style={{
+                                maxHeight: '100%',
+                                maxWidth: '100%',
+                                backgroundColor:'white' 
+                                // height: '100%',
                                 // display: 'inline-block',
-                                maxHeight: '120px',
-                                backgroundColor: 'white'
-                            }}
-                            justify={'center'}
-                        >
-                            <Col xs={3}style={{
-                                backgroundColor: 'white'
-                            }}>
-                                <img src={pic2} alt='bild' style={{
-                                    maxHeight: '100%',
-                                    maxWidth: '100%',
-                                    backgroundColor:'white' 
-                                    // height: '100%',
-                                    // display: 'inline-block',
-                                    // width: 'auto'
-                                }} />
-                            </Col>
-                            <Col xs={18}style={{
-                                backgroundColor: 'white'
-                            }}>
-                                <img src={pic1} alt='bild' style={{
-                                    maxHeight: '100%',
-                                    maxWidth: '100%',
-                                    backgroundColor:'white' 
-                                }} />
-                            </Col>
-                            <Col xs={3}style={{
-                                backgroundColor: 'white'
-                            }}>
-                                <img src={pic4} alt='bild' style={{
-                                 padding: "5px" ,
-                                    float: 'right',
-                                    maxHeight: '80%',
-                                    maxWidth: '80%',
-                                    backgroundColor:'white' 
-                                }} />
-                            </Col>
+                                // width: 'auto'
+                            }} />
+                        </Col>
+                        <Col xs={18}style={{
+                            backgroundColor: 'white'
+                        }}>
+                            <img src={pic1} alt='bild' style={{
+                                maxHeight: '100%',
+                                maxWidth: '100%',
+                                backgroundColor:'white' 
+                            }} />
+                        </Col>
+                        <Col xs={3}style={{
+                            backgroundColor: 'white'
+                        }}>
+                            <img src={pic4} alt='bild' style={{
+                                padding: "5px" ,
+                                float: 'right',
+                                maxHeight: '80%',
+                                maxWidth: '80%',
+                                backgroundColor:'white' 
+                            }} />
+                        </Col>
 
-                        </Row>
-                        <hr style={{
-                            backgroundColor: 'rgb(255, 212, 45)',
-                            height: '8px',
-                            border: '0',
-                            margin: '0',
-                            padding: '0',
-                            width: '100%',
-                        }} />
-                        <hr style={{
-                            backgroundColor: 'rgb(255, 255, 255)',
-                            height: '3px',
-                            border: '0',
-                            margin: '0',
-                            padding: '0',
-                            width: '100%',
-                        }} />
-                    </Header>
+                    </Row>
+                    <hr style={{
+                        backgroundColor: 'rgb(255, 212, 45)',
+                        height: '8px',
+                        border: '0',
+                        margin: '0',
+                        padding: '0',
+                        width: '100%',
+                    }} />
+                    <hr style={{
+                        backgroundColor: 'rgb(255, 255, 255)',
+                        height: '3px',
+                        border: '0',
+                        margin: '0',
+                        padding: '0',
+                        width: '100%',
+                    }} />
+                </Header>
 
-                    <Layout>
-                        {this.renderSider()}
+                <Layout>
+                    <Router >
+                        <div id='page_content'>
+                            {this.renderSider()}
+                            <Content className='background' style={{ overflow: 'hidden' }}>
+                                        { <Route
+                                            exact={true}
+                                            path='/willkommen'
+                                            render={() => {
+                                                return(
+                                                    <div/>
+                                                )}
+                                            }
+                                        /> }
 
-                        <Content className='background' style={{ overflow: 'hidden' }}>
-                             { <Route
-                                exact={true}
-                                path='/willkommen'
-                                render={() => {
-                                    return(
-                                        <div/>
-                                    )}
-                                }
-                            /> }
+                                        <Route exact={true} path='/willkommen'   render={
+                                            () => (
+                                                <WelcomePage name='diete' />
+                                            )
+                                        } />
 
-                            <Route exact={true} path='/willkommen'   render={
-                                () => (
-                                    <WelcomePage name='diete' />
-                                )
-                            } />
+                                        <Route exact={true} path='/'   render={
+                                            () => (
+                                                <WelcomePage name='diete' />
+                                            )
+                                        } />
 
-                            <Route exact={true} path='/'   render={
-                                () => (
-                                    <WelcomePage name='diete' />
-                                )
-                            } />
+                                        <Route exact={true} path='/ueberUns' render={
+                                            () => (
+                                                <UeberUns name='' />
+                                            )
+                                        } />
+                                        {this.renderRoutes()}
 
-                            <Route exact={true} path='/ueberUns' render={
-                                () => (
-                                    <UeberUns name='' />
-                                )
-                            } />
-                            {this.renderRoutes()}
+                                        <Route exact={true} path='/kontakt' render={
+                                            () => (
+                                                <Kontakt name='diete' />
+                                            )
+                                        } />
+                                        <Route exact={true} path='/AGBs' render={
+                                            () => (
+                                                <AGBs />
+                                            )
+                                        } />
+                                    </Content>
+                        </div>
+                    </Router >
 
-                            <Route exact={true} path='/kontakt' render={
-                                () => (
-                                    <Kontakt name='diete' />
-                                )
-                            } />
-                            <Route exact={true} path='/AGBs' render={
-                                () => (
-                                    <AGBs />
-                                )
-                            } />
-                        </Content>
-
-                    </Layout>
-                    <div className='footer2' style={{}}>
-                    <div style={{padding: '0'}}>
-                        <DogCarousel />
-                    </div>
-                    </div>
                 </Layout>
-
-            </Router >
+            </Layout>
+            <div id='fixed_footer' style={{}}>
+                {/* <div style={{padding: '0'}}> */}
+                <DogCarousel />
+                {/* </div> */}
             </div>
+        </div>
         );
     }
     public renderRoutes() {

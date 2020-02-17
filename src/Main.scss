@@ -1,6 +1,36 @@
 $headerHeight: 100px;
 $footerHeight: 220px;
 
+#page {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#header_and_content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 125px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#fixed_footer {
+  line-height: normal;
+  background-color: rgb(255, 240, 203);
+  padding:0 5px 0 5px ;
+  margin: 0 0 0 0;
+
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0px;
+}
+#page_content {
+  display: flex;
+}
 * {
     color: black;
     background-color: rgb(255, 240, 203);
@@ -218,18 +248,7 @@ p {
 }
 
 
-.footer2 {
-  line-height: normal;
-  background-color: rgb(255, 240, 203);
-  padding:0 5px 0 5px ;
-  margin: 0 0 0 0;
 
-  display: block;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  bottom: 0px;
-}
 
 .alignRight {
   text-align: right;
