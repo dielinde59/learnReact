@@ -1,8 +1,7 @@
 import { Col, Row } from 'antd';
-import { Layout } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-import pic from '../../images/Startseite.jpg'
+import pic from '../../images/Startseite.jpg';
 import './WelcomePage.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
@@ -19,7 +18,7 @@ class WelcomePage extends React.Component<IProps, object> {
     // const ageX10 = this.props.age ? this.props.age * 10 : 0;
 
     return (
-      <Layout className='container'>
+      <div className=''>
         <Row type='flex' justify="center">
           <Col className='text-center' span={20}>
           <div className='titlegross'>Willkommen </div>
@@ -31,7 +30,7 @@ class WelcomePage extends React.Component<IProps, object> {
         }}
         />
         <Row type='flex' justify="center"  >
-          <Col span={24} >
+          <Col >
             <img id='welcomeIMG' src={pic} alt='bild' />
             <div className='text-center' style={{fontSize: "18px"}}>
               <p>Jede Beziehung zwischen einem Tier und einem Menschen</p>
@@ -48,7 +47,7 @@ class WelcomePage extends React.Component<IProps, object> {
           border: '0'
         }}
         />
-      </Layout>
+      </div>
     );
   }
 }

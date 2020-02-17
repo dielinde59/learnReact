@@ -123,7 +123,7 @@ class Main extends React.Component<any,IMainState> {
         return (
             // tslint:disable-next-line:no-unused-expression
         <div id='page'>
-            <Layout id='header_and_content' className='layout background' style={{}}>
+            <div id='header_and_content' className='layout background' style={{}}>
                 <Header className='header' style={{ width: '100%', padding: '0px', height: 'auto' }} >
                     <Row type={"flex"}
                         align={'middle'}
@@ -187,21 +187,11 @@ class Main extends React.Component<any,IMainState> {
                     }} />
                 </Header>
 
-                <Layout>
+            <div>
                     <Router >
                         <div id='page_content'>
                             {this.renderSider()}
                             <Content className='background' style={{ overflow: 'hidden' }}>
-                                        { <Route
-                                            exact={true}
-                                            path='/willkommen'
-                                            render={() => {
-                                                return(
-                                                    <div/>
-                                                )}
-                                            }
-                                        /> }
-
                                         <Route exact={true} path='/willkommen'   render={
                                             () => (
                                                 <WelcomePage name='diete' />
@@ -235,8 +225,8 @@ class Main extends React.Component<any,IMainState> {
                         </div>
                     </Router >
 
-                </Layout>
-            </Layout>
+                </div>
+            </div>
             <div id='fixed_footer' style={{}}>
                 {/* <div style={{padding: '0'}}> */}
                 <DogCarousel />
