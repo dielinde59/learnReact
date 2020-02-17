@@ -1,5 +1,5 @@
 // tslint:disable:jsx-no-lambda
-import { Col, Layout, Menu, Row } from 'antd';
+import { Col, Layout, Menu } from 'antd';
 import SubMenu from 'antd/lib/menu/SubMenu';
 import 'rc-menu/assets/index.css';
 import * as React from 'react';
@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { DogCarousel } from './components/DogCarousel';
 //  Photo links
 import pic2 from './images/header-photo.jpg';
-import pic4 from './images/header-photo1.jpg';
+import pic4 from './images/header-photo1Cropped.jpg';
 import pic1 from './images/header-text.jpg';
 import pic3 from './images/Logo.jpg';
 import './Main.scss';
@@ -23,7 +23,7 @@ import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
 // import Impressum from './SubPages/Impressum/Impressum'
 
-const { Header, Sider, Content } = Layout;
+const {Sider, Content } = Layout;
 interface IMainState {
     collapsed: boolean
 }
@@ -124,68 +124,36 @@ class Main extends React.Component<any,IMainState> {
             // tslint:disable-next-line:no-unused-expression
         <div id='page'>
             <div id='header_and_content' className='layout background' style={{}}>
-                <Header className='header' style={{ width: '100%', padding: '0px', height: 'auto' }} >
-                    <Row type={"flex"}
-                        align={'middle'}
-                        style={{
-                            // width: '100%',
-                            // display: 'inline-block',
-                            maxHeight: '120px',
-                            backgroundColor: 'white'
-                        }}
-                        justify={'center'}
-                    >
-                        <Col xs={3}style={{
-                            backgroundColor: 'white'
-                        }}>
+                
+                <div id='header' style={{}} >
+                    <div style={{display: 'flex'}}>
+                        <div className='header_item' style={{width:'12.5%', float: 'left'}}>
                             <img src={pic2} alt='bild' style={{
-                                maxHeight: '100%',
-                                maxWidth: '100%',
-                                backgroundColor:'white' 
-                                // height: '100%',
-                                // display: 'inline-block',
-                                // width: 'auto'
+                                
                             }} />
-                        </Col>
-                        <Col xs={18}style={{
-                            backgroundColor: 'white'
-                        }}>
-                            <img src={pic1} alt='bild' style={{
-                                maxHeight: '100%',
-                                maxWidth: '100%',
-                                backgroundColor:'white' 
-                            }} />
-                        </Col>
-                        <Col xs={3}style={{
-                            backgroundColor: 'white'
-                        }}>
-                            <img src={pic4} alt='bild' style={{
-                                // padding: "5px" ,
-                                float: 'right',
-                                maxHeight: '80%',
-                                maxWidth: '80%',
-                                backgroundColor:'white' 
-                            }} />
-                        </Col>
-
-                    </Row>
-                    <hr style={{
-                        backgroundColor: 'rgb(255, 212, 45)',
-                        height: '8px',
-                        border: '0',
-                        margin: '0',
-                        padding: '0',
-                        width: '100%',
-                    }} />
-                    <hr style={{
-                        backgroundColor: 'rgb(255, 255, 255)',
-                        height: '3px',
-                        border: '0',
-                        margin: '0',
-                        padding: '0',
-                        width: '100%',
-                    }} />
-                </Header>
+                        </div>
+                        <div className='header_item' style={{width: '75%'}}>
+                            <img src={pic1} alt='bild' style={{}} />
+                        </div>
+                        <div className='header_item' style={{width:'12.5%', float: 'right'}}>
+                            <img src={pic4} alt='bild' style={{}} />
+                    </div>
+                    </div>
+                    <div style={{width: '100%'}}>
+                        <hr style={{
+                            backgroundColor: 'rgb(255, 212, 45)',
+                            height: '8px',
+                            border: '0',
+                            width: '100%',
+                        }} />
+                        <hr style={{
+                            backgroundColor: 'rgb(255, 255, 255)',
+                            height: '3px',
+                            border: '0',
+                            width: '100%',
+                        }} />
+                    </div>
+                </div>
 
             <div>
                     <Router >
