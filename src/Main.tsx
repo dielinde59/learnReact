@@ -12,7 +12,7 @@ import pic1 from './images/header-text.jpg';
 import pic3 from './images/Logo.jpg';
 import './Main.scss';
 import AGBs from './SubPages/AGBs/AGBs';
-// import Gelaende from './SubPages/Gelaende/Gelaende';
+import Datenschutz from './SubPages/Datenschutz/Datenschutz';
 // import Welpen from './SubPages/Welpen/Welpen';
 import Kontakt from './SubPages/Kontakt/Kontakt';
 import ListPage from './SubPages/ListPage/ListPage';
@@ -160,7 +160,7 @@ class Main extends React.Component<any,IMainState> {
                             backgroundColor: 'white'
                         }}>
                             <img src={pic4} alt='bild' style={{
-                                padding: "5px" ,
+                                // padding: "5px" ,
                                 float: 'right',
                                 maxHeight: '80%',
                                 maxWidth: '80%',
@@ -219,6 +219,11 @@ class Main extends React.Component<any,IMainState> {
                                         <Route exact={true} path='/AGBs' render={
                                             () => (
                                                 <AGBs />
+                                            )
+                                        } />
+                                        <Route exact={true} path='/Datenschutz' render={
+                                            () => (
+                                                <Datenschutz />
                                             )
                                         } />
                                     </Content>

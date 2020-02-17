@@ -240,7 +240,7 @@ export const menu: IMenuItem[] =
         },
         {
             titel: "Datenschutzerklärung",
-            path: "/datenschutz",
+            path: "/Datenschutz",
         },
         {
             titel: "Impressum",

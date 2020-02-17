@@ -13,7 +13,7 @@ $footerHeight: 220px;
   left: 0px;
   bottom: 125px;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #fixed_footer {
@@ -181,7 +181,13 @@ p {
     font-weight: bold;
     color: #d7a200;
     }
-  
+  .linkklein {
+  background-color: rgb(255, 240, 203);
+  font-family: BlacklightD, "Times New Roman", Times, serif;
+  // font-size: 14px;
+  font-weight: bold;
+  color: #d7a200;
+  }
 .header {
   //background-color: white;
   background-color: rgb(255, 240, 203);
@@ -219,7 +225,11 @@ p {
   font-weight: bold;
   margin-left: 10px;
 }
- 
+
+.titleleft {
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .image {
   width: 100%;
