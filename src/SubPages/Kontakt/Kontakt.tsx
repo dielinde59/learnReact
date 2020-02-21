@@ -1,7 +1,8 @@
 import { Layout, Row, Col} from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-import pic from '../../images/lauser.jpg';
+import pic  from '../../images/Anfahrt1.jpg';
+import pic1 from '../../images/Anfahrt2.jpg';
 // import './Kontakt.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 import '../../Main.scss';
@@ -49,7 +50,7 @@ class Kontakt extends React.Component<IProps, object> {
                   www.hundefreu-n-de.de
                 <br/>
                 <br/>
-                <p className='link'><a href='https://www.google.de/maps/place/Sch%C3%B6nreit+1,+83308+Trostberg/@48.0602285,12.5311945,17z/data=!3m1!4b1!4m5!3m4!1s0x4775df0ee6f5adb9:0xe930772648571d63!8m2!3d48.0602285!4d12.5333832?hl=de'  target="_blank">Anfahrt</a></p>
+                <p className='link'><a href='https://www.google.de/maps/place/Sch%C3%B6nreit+1,+83308+Trostberg/@48.0602285,12.5311945,17z/data=!3m1!4b1!4m5!3m4!1s0x4775df0ee6f5adb9:0xe930772648571d63!8m2!3d48.0602285!4d12.5333832?hl=de'  target="_blank">Hier Klicken um Google Maps zu öffnen</a></p>
                 </div>
 
 
@@ -57,10 +58,20 @@ class Kontakt extends React.Component<IProps, object> {
 
           </Col>
 
-          <Col>
-            <div className='colRight'>
-                <img className='image35' src={pic} alt='bild' />
-            </div>
+          <Col span={8}>
+            <Row justify="center">
+              <div className='colRight'>
+                <div>
+                  <img className='image35' src={pic} alt='bild' style={{ width: "80%" }} />
+                </div>
+              </div>
+            </Row>
+            <Row>
+
+              <div>
+                <img className='image35' src={pic1} alt='bild' style={{ width: "80%" }} />
+              </div>
+            </Row>
           </Col>
 
         </Row>

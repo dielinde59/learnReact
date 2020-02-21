@@ -33,7 +33,7 @@ class WelcomePage extends React.Component<IProps, object> {
           <Col span={24}>
             <img id='welcomeIMG' src={pic} alt='bild' />
             <div className='text-center' style={{fontSize: "18px"}}>
-              <p>Jede Beziehung zwischen einem Tier und einem Menschen</p>
+              <p text-align="center">Jede Beziehung zwischen einem Tier und einem Menschen</p>
               <p>ist eine einzigartige Brücke, gebaut, um nur diese beiden zu tragen.</p>
               <p>Deshalb muss sie auch von ihnen selbst erschaffen werden.</p>
               <div className='author'>Suzanne Clothier</div>

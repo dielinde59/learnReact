@@ -49,9 +49,9 @@ export const menu: IMenuItem[] =
                     titel: 'Trainingsplan',
                     subtitel: '',
                     pics: [require('../images/welpen1k.jpg'), require('../images/Welpen2k.jpg')],
-                    text: '',
-                    text1: 'An dieser Stelle finden sie den aktuellen Trainingsplan',
-                    pdf: './pdfs/Trainingsplan.pdf'
+                    text: "Montag \n10:00-11:00 Uhr Unterordnung \n18:00-19:00 Unterordnung \n19:00-20:00 Uhr Stöbern \n \nMittwoch \n09:00-10:00 Uhr Longieren \n17:30-18:30 Uhr Obi-Agi \n18:30-19:30 Uhr Obedience \n",
+                    text1: "Freitag \n09:00-10:00 Uhr Gruppe gem. (Longieren/UO/Agi) \n17:00-18:00 Uhr Unterordnung gem. \n18:00-19:00 Uhr Unterordnung/Agility \n \nSamstag \n10:00-11:00 Uhr Fortgeschrittene \n12:00-13:00 Uhr Longieren \n15:00-16:00 Uhr Welpen \n16:00-17:00 Uhr Junghunde \n \nSonntag \n10:00-11:00 Uhr Stadtgang \n",
+                    pdf: ''
                 },
                 {
                     titel: 'Termine 2019',
@@ -156,7 +156,7 @@ export const menu: IMenuItem[] =
                     titel: 'Kurse externer Experten',
                     pics: [require('../images/Experten1.jpg'), require('../images/Experten2.jpg'), require('../images/Experten3.jpg')],
                     text: 'Wir laden immer wieder auswärtige Trainer und Hundeexperten ein, die in speziellen Seminaren ihre Fachgebiete und Trainingsmethoden vorstellen.',
-                    text1: 'Rund um das Thema Gesundheit des Hundes referierten bereits mehrere Tierärzte.\nZuletzt vermittelte uns Frau Dr. Christine Mayer Wissenswertes in allen Notfallsituationen bei einem Erste Hilfe Kurs. Frau Dr. Mayer arbeitete in spezialisierten Kleintierpraxen in Berlin und Regensburg sowie in der Tierklinik Teisendorf. Seit 2014 betreibt sie ihre eigene Tierarztpraxis in Neuötting. \nBereits des öfteren durften wir Georg Weichselbaumer bei seinen sehr lehrreichen Seminaren zum Thema „Wesensanalyse von Hunden“ und auch bei seinen Stöberkursen hier bei uns erleben. Der ehemalige Polizeihundeführer beschäftigt sich seit ca. 40 Jahren mit Hunden, führt zusammen mit seiner Frau eine Hundeschule und erstellt als Sachverständiger für das Hundewesen Gutachten für Behörden, Gerichte usw. \nBei einem besonderen Highlight durften wir die Philosophie und Trainingsmethoden des Schweizer Hundeexperten Hans Schlegel kennenlernen. Wie man durch eine klare, harmonische Beziehung unerwünschte Verhaltensmuster beeinflussen kann war das Hauptthema. Hans Schlegel bildete Polizeihundestaffeln in den USA aus, er lebte unter Wölfen und ist heute einer der renommiertesten Experten in Sachen Hundeerziehung.',
+                    text1: 'Rund um das Thema Gesundheit des Hundes referierten bereits mehrere Tierärzte.\nZuletzt vermittelte uns Frau Dr. Christine Mayer Wissenswertes in allen Notfallsituationen bei einem Erste Hilfe Kurs. Frau Dr. Mayer arbeitete in spezialisierten Kleintierpraxen in Berlin und Regensburg sowie in der Tierklinik Teisendorf. Seit 2014 betreibt sie ihre eigene Tierarztpraxis in Neuötting. \n\nBereits des öfteren durften wir Georg Weichselbaumer bei seinen sehr lehrreichen Seminaren zum Thema „Wesensanalyse von Hunden“ und auch bei seinen Stöberkursen hier bei uns erleben. Der ehemalige Polizeihundeführer beschäftigt sich seit ca. 40 Jahren mit Hunden, führt zusammen mit seiner Frau eine Hundeschule und erstellt als Sachverständiger für das Hundewesen Gutachten für Behörden, Gerichte usw. \n\nBei einem besonderen Highlight durften wir die Philosophie und Trainingsmethoden des Schweizer Hundeexperten Hans Schlegel kennenlernen. Wie man durch eine klare, harmonische Beziehung unerwünschte Verhaltensmuster beeinflussen kann war das Hauptthema. Hans Schlegel bildete Polizeihundestaffeln in den USA aus, er lebte unter Wölfen und ist heute einer der renommiertesten Experten in Sachen Hundeerziehung.',
                     path: '/kurse',
                 },
 
@@ -184,9 +184,16 @@ export const menu: IMenuItem[] =
                                 text1: '',
                             }, */
                 {
+                    titel: 'Adventswanderung in Meggenthal',
+                    subtitel: 'am 01.12.2019',
+                    pics: [require('../images/Advent1.JPG'), require('../images/Advent2.JPG'), require('../images/Advent3.JPG')],
+                    text: 'Am Sonntag, 1. Advent, fand auch in diesem Jahr traditionsgemäß unsere Adventswanderung auf dem Walderlebnispfad in Meggenthal statt. 32 Hunde mit ihren über 40 Menschen trafen sich zu der gemeinsamen Winterwanderung. Auch wenn uns kein winterliches Schneetreiben sondern die üblichen Regenschauer begleiteten, durften wir einen wunderschönen Nachmittag erleben. Für die Hunde (und deren Halter) war es ein spannendes Erlebnis in einem so großen Rudel gemeinsam in Ruhe „zu ziehen“ und das, je nach Ausbildungsstand, natürlich auch ohne Leine. Somit hatten sich alle eine Pause an der Krippe wohl verdient, in der sich die Menschen ein wenig stärkten und die Hunde endlich entspannen konnten.',
+                    text1: 'Wir sind immer wieder gerne an diesem wunderschönen vorweihnachtlichen Ausflugsziel und freuen uns schon auf das nächste Jahr!',
+                },
+                {
                     titel: 'Seminar Wesensanalyse von Hunden mit Georg Weichselbaumer',
                     subtitel: 'am 5. und 6. Mai 2012',
-                    pics: [require('../images/analyse1.jpg'), require('../images/analyse2.jpg'), require('../images/analyse3.jpg'), require('../images/IMG_5765.jpg'), require('../images/IMG_5793.jpg'), require('../images/HansSchlegelHund.jpg')],
+                    pics: [require('../images/analyse1.jpg'), require('../images/analyse2.jpg'), require('../images/analyse3.jpg')],
                     text: 'An diesem Wochenende konnten wir zwei sehr lehrreiche und spannende Tage erleben, an denen die Teilnehmer sowohl viel theoretisches Wissen als auch einige neue Erkenntnisse über die eigenen Vierbeiner erfahren durften. Das Wetter war zwar ebenso „anspruchsvoll“ wie das Seminar, wodurch sich die begeisterten Hundler aber nicht abschrecken ließen. \nAm Samstag vermittelte uns Georg Weichselbaumer erst mal ausführlich die Wesensgrundlagen und Wesenseigenschaften von Hunden. Dabei wurden u. a. die einzelnen Entwicklungsphasen des Hundes vom Welpen bis zum erwachsenen Hund erläutert und darauf eingegangen, welche Eigenschaften des Hundes genetisch bedingt sind und wie sich diverse Einflüsse in diesen Phasen auf die Charakterbildung auswirken. Bereits hier wurde so manchem Hundehalter bewusst, dass in dem ersten entscheidenden Lebensjahr seines Hundes wohl manches hätte anders laufen sollen und dass bei der Hundeerziehung eben immer wieder „menschliche Fehler“ passieren, die sich bei der Entwicklung des Hundes fatal auswirken können.',
                     text1: 'Anschließend wurden alle teilnehmenden Hunde einzeln auf ihr Wesen beurteilt. Hierbei waren so einige Hundehalter überrascht, wie ihre Vierbeiner in mancher Reizsituation reagieren. Der berühmte Ausspruch „das hat er ja noch nie gemacht“ war durchaus des öfteren zu hören. Fasziniert beobachteten die Teilnehmer die Beurteilungen und versuchten anhand der theoretisch erlernten Kenntnisse die diversen Wesenszüge einzuschätzen. \nAm Sonntag erlernten wir zunächst in Theorie die Zusammenhänge der erfahrenen Wesensgrundlagen und das sich daraus ergebende Lernverhalten der einzelnen Hundetypen. Die entsprechenden Lern- und Trainingsmethoden wurden anschließend mit den einzelnen Mensch-Hund-Teams praktiziert und jegliche weitere Fragen individuell diskutiert und mögliche Lösungsansätze besprochen. \nEin herzliches Dankeschön an Georg Weichselbaumer für dieses sehr informative und beeindruckende Seminar!',
                 },
@@ -197,9 +204,9 @@ export const menu: IMenuItem[] =
                     text: 'Unser Sepp mit seinem Mali-Galgo-Mix Teddy trat am SV OG Traunreut zu seiner Begleithundeprüfung an! Nervenstark (und fast nicht aufgeregt...) haben die Beiden souverän und zuverlässig alle Lektionen durchgeführt und erfolgreich bestanden. Wir gratulieren ganz herzlich und sind stolz auf euch - ihr seid ein tolles Team! Herzlichen Glückwunsch! \n\n',
                     text1: 'Ebenso waren unsere Katharina mit der kleinen Mischlings-Dame Lotte zur BH-Prüfung angetreten. Die süße Lotte, die für ihre ausgeprägte Willensstärke bekannt ist, hatte diesen Termin allerdings wohl eher als Testlauf gesehen und irgendwie ihren Einsatz verpaßt. Ist nicht so schlimm, wahrscheinlich wollte der Richter die Beiden in ein paar Wochen einfach nochmals sehen! Also macht euch nichts draus, wir fanden euch super!',
                 }, {
-                    titel: 'Das erste Sommerfest zum1. Geburtstag der Hundefreu(n)de',
+                    titel: 'Das erste Sommerfest zum 1. Geburtstag der Hundefreu(n)de',
                     subtitel: 'am Samstag, 06. August 2011',
-                    // pics: [require('../images/welpen1k.jpg'),require('../images/Welpen2k.jpg')],
+                    pics: [require('../images/IMG_5765.jpg'), require('../images/IMG_5793.jpg')],
                     text: 'Bei herrlichstem Wetter konnten Hunde und Halter einen wundervollen gemeinsamen Tag genießen. \nNachdem alle Gäste bei einem Gläschen Sekt begrüßt wurden, eröffnete Tierarzt Dr. Matzner das offizielle Programm. Er beantwortete den Hundlern jegliche Fragen rund um den Hund, wie z. B. zum richtigen Füttern und Impfen sowie zur Zeckenproblematik, und stand auch zur persönlichen Beratung noch den ganzen Tag zur Verfügung. \nAnschließend wurde uns die Hundesportart Obedience, „die hohe Schule der Unterordnung“ vorgestellt. Unsere Akteure, Elisabeth mit Ferro – Sepp mit Teddy – Christoph mit Moritz und Hans mit Vicko, zeigten trotz großer Nervosität eine wunderschöne Vorführung, die das Publikum sehr begeisterte. Herzlichen Dank an unsere tapferen Hunde und deren Halter!',
                     text1: 'Und dann waren alle dran! Beim ersten Wettbewerb „schneller als die Polizei erlaubt“ wurde der Hund prämiert, der am schnellsten zu seinem Frauchen oder Herrchen lief, das wild mit Leckerli und Spielzeug wedelnd am anderen Ende des Platzes stand. So mancher kam nur über Umwege an, aber auf jeden Fall hatten alle einen riesigen Spaß. \nDer zweite Wettbewerb „Teamwork ist alles“ entfachte vor allem bei den Hundehaltern einen gigantischen Ehrgeiz. Hier mussten Zwei- und Vierbeiner gemeinsam einen Parcours aus diversen Hürden, Tunnel, Wasserbecken etc. meistern. Die teilweise waghalsigen Stunts der Teilnehmer sorgten bei den Zuschauern für große Erheiterung. Am Ende kamen schließlich doch alle gesund und munter an, auch wenn mancher mit seinem Hund unterm Arm durchs Ziel raste! \nNach der glorreichen Siegerehrung war dann auch das Spanferkel fertig, das die komplette Familie Moosbauer über viele Stunden vorzüglichst für uns zubereitet hatte. Abschließend wurden die vielen Ereignisse noch bei einem gemütlichen Zusammensitzen ausführlich besprochen. Die einheitliche Meinung zum Tage: Das machen wir nächstes Jahr wieder!',
                 },
@@ -244,7 +251,7 @@ export const menu: IMenuItem[] =
         },
         {
             titel: "Impressum",
-            path: "/impressum",
+            path: "/Impressum"
         }
 
     ]

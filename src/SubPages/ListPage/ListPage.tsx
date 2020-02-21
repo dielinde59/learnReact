@@ -52,7 +52,7 @@ class ListPage extends React.Component<IProps, object> {
                             )
                           } else {
                             return (
-                              <img key={`list:${title}picture#${picIndex}`} className='image70' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0' }} />
+                              <img key={`list:${title}picture#${picIndex}`} className='image70' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0', marginTop: "5px"  }} />
                             )
                           }
                         }

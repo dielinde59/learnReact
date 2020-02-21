@@ -21,7 +21,7 @@ import Training from './SubPages/Training/Training';
 // import BasicPage from './SubPages/BasicPage/BasicPage';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
-// import Impressum from './SubPages/Impressum/Impressum'
+ import Impr from './SubPages/Impressum/Impressum'
 
 const {Sider, Content } = Layout;
 interface IMainState {
@@ -194,6 +194,12 @@ class Main extends React.Component<any,IMainState> {
                                                 <Datenschutz />
                                             )
                                         } />
+                                        <Route exact={true} path='/Impressum' render={
+                                            () => (
+                                                <Impr name =''/>
+                                            )
+                                        } />
+
                                     </Content>
                         </div>
                     </Router >

@@ -67,15 +67,46 @@ class Datenschutz extends React.Component<IProps, object> {
                   Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.
                    </p>
                   <p>
-                  Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter:<p/><p className='linkklein'><a href='https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html'  target="_blank">Text</a></p>
+                  Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter:<p/><p className='linkklein'><a href='https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html' target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a></p>
                   </p>
-                  <p className='link'><a href='https://www.google.de/maps/place/Sch%C3%B6nreit+1,+83308+Trostberg/@48.0602285,12.5311945,17z/data=!3m1!4b1!4m5!3m4!1s0x4775df0ee6f5adb9:0xe930772648571d63!8m2!3d48.0602285!4d12.5333832?hl=de'  target="_blank">Anfahrt</a></p>
+                  <br/>
+                  <h3 className='titlegrossleft'>Verwendung von Google Maps</h3>
+                  <h3 className='titleleft'>Art und Zweck der Verarbeitung:</h3>
                   <p>
-                  9. Bei unzumutbaren Witterungsbedingungen sowie Gefahr für Hund und Halter kann das Training seitens Hundeschule kurzfristig abgesagt bzw. abgebrochen werden.  Den Anweisungen des Trainers ist Folge zu leisten. 
+                  Auf dieser Webseite nutzen wir das Angebot von Google Maps. Google Maps wird von Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (nachfolgend „Google“) betrieben. Dadurch können wir Ihnen interaktive Karten direkt in der Webseite anzeigen und ermöglichen Ihnen die komfortable Nutzung der Karten-Funktion.
                   </p>
                   <p>
-                  10. Die Unwirksamkeit einzelner Bedingungen hat nicht die Unwirksamkeit der gesamten Geschäftsbedingungen zur Folge. 
+                  Nähere Informationen über die Datenverarbeitung durch Google können Sie den Google-Datenschutzhinweisen entnehmen. Dort können Sie im Datenschutzcenter auch Ihre persönlichen Datenschutz-Einstellungen verändern.
                   </p>
+                  <p>
+                  Ausführliche Anleitungen zur Verwaltung der eigenen Daten im Zusammenhang mit Google-Produkten finden Sie hier.
+                  </p>
+                  <br/>
+                  <h3 className='titleleft'>Rechtsgrundlage:</h3>
+                  <p>
+                  Rechtsgrundlage für die Einbindung von Google Maps und dem damit verbundenen Datentransfer zu Google ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
+                  </p>
+                  <br/>
+                  <h3 className='titleleft'>Empfänger:</h3>
+                  <p>
+                  Durch den Besuch der Webseite erhält Google Informationen, dass Sie die entsprechende Unterseite unserer Webseite aufgerufen haben. Dies erfolgt unabhängig davon, ob Google ein Nutzerkonto bereitstellt, über das Sie eingeloggt sind, oder ob keine Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten direkt Ihrem Konto zugeordnet.
+                  </p>
+                  <p>Wenn Sie die Zuordnung in Ihrem Profil bei Google nicht wünschen, müssen Sie sich vor Aktivierung des Buttons bei Google ausloggen. Google speichert Ihre Daten als Nutzungsprofile und nutzt sie für Zwecke der Werbung, Marktforschung und/oder bedarfsgerechter Gestaltung seiner Webseite. Eine solche Auswertung erfolgt insbesondere (selbst für nicht eingeloggte Nutzer) zur Erbringung bedarfsgerechter Werbung und um andere Nutzer des sozialen Netzwerks über Ihre Aktivitäten auf unserer Webseite zu informieren. Ihnen steht ein Widerspruchsrecht zu gegen die Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung dessen an Google richten müssen.</p>
+                  <br/>
+                  <h3 className='titleleft'>Speicherdauer:</h3>
+                  <p>Wir erheben keine personenbezogenen Daten, durch die Einbindung von Google Maps.</p>
+                  <br/>
+                  <h3 className='titlegrossleft'>Änderung unserer Datenschutzbestimmungen</h3>
+                  <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+                  <br/>
+                  <h3 className='titlegrossleft'>Fragen an den Datenschutzbeauftragten</h3>
+                  <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:<br/>Hundefreu(n)de<br/> Monika Frei<br/>Schönreit 1<br/>83308 Trostberg<br/>E-Mail: info@hundefreu-n-de.de </p>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <p>Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für externe Datenschutzbeauftragte (Version #2019-04-10).</p>
+                  <br/>
+                  <br/>
                   </div>
              
   
