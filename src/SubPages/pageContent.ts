@@ -166,7 +166,7 @@ export const menu: IMenuItem[] =
             titel: "Trainingsgelände",
             path: "/gelaende",
             xy: false,
-            pics: [require('../images/Trainingsplatz.jpg'), require('../images/Stüberl4.jpg')],
+            pics: [require('../images/Gelaende01.jpg'), require('../images/Gelaende02.jpg')],
             text: "Die Hundeschule Hundefreu(n)de – Monika Frei liegt im schönen Chiemgau in Oberbayern. Unser ca. 2.500 m² großer, eingezäunter Trainingsplatz befindet sich in ländlicher Umgebung mit freiem Bergblick und garantiert entspannte Atmosphäre für Hund und Halter. \nAn heißen Tagen steht selbstverständlich jedem ein entspanntes Schattenplätzchen zur Verfügung. \nDank unserer Außenbeleuchtung können wir auch in der Winterzeit unsere regulären Trainingszeiten bis in die Abendstunden einhalten. \nIn unserem gemütlichen „Stüberl“ nehmen wir uns Zeit für Theorie und Sachkundeunterricht, feiern aber auch gerne die Erfolge unserer Hundefreunde.",
             text1: " \n \nHundeschule \nHundefreu(n)de – Monika Frei \nSchönreit 1 \nD-83308 Trostberg ",
         },
@@ -206,7 +206,7 @@ export const menu: IMenuItem[] =
                 }, {
                     titel: 'Das erste Sommerfest zum 1. Geburtstag der Hundefreu(n)de',
                     subtitel: 'am Samstag, 06. August 2011',
-                    pics: [require('../images/IMG_5765.jpg'), require('../images/IMG_5793.jpg')],
+                    pics: [require('../images/SF2011_01.jpg'), require('../images/SF2011_02.jpg')],
                     text: 'Bei herrlichstem Wetter konnten Hunde und Halter einen wundervollen gemeinsamen Tag genießen. \nNachdem alle Gäste bei einem Gläschen Sekt begrüßt wurden, eröffnete Tierarzt Dr. Matzner das offizielle Programm. Er beantwortete den Hundlern jegliche Fragen rund um den Hund, wie z. B. zum richtigen Füttern und Impfen sowie zur Zeckenproblematik, und stand auch zur persönlichen Beratung noch den ganzen Tag zur Verfügung. \nAnschließend wurde uns die Hundesportart Obedience, „die hohe Schule der Unterordnung“ vorgestellt. Unsere Akteure, Elisabeth mit Ferro – Sepp mit Teddy – Christoph mit Moritz und Hans mit Vicko, zeigten trotz großer Nervosität eine wunderschöne Vorführung, die das Publikum sehr begeisterte. Herzlichen Dank an unsere tapferen Hunde und deren Halter!',
                     text1: 'Und dann waren alle dran! Beim ersten Wettbewerb „schneller als die Polizei erlaubt“ wurde der Hund prämiert, der am schnellsten zu seinem Frauchen oder Herrchen lief, das wild mit Leckerli und Spielzeug wedelnd am anderen Ende des Platzes stand. So mancher kam nur über Umwege an, aber auf jeden Fall hatten alle einen riesigen Spaß. \nDer zweite Wettbewerb „Teamwork ist alles“ entfachte vor allem bei den Hundehaltern einen gigantischen Ehrgeiz. Hier mussten Zwei- und Vierbeiner gemeinsam einen Parcours aus diversen Hürden, Tunnel, Wasserbecken etc. meistern. Die teilweise waghalsigen Stunts der Teilnehmer sorgten bei den Zuschauern für große Erheiterung. Am Ende kamen schließlich doch alle gesund und munter an, auch wenn mancher mit seinem Hund unterm Arm durchs Ziel raste! \nNach der glorreichen Siegerehrung war dann auch das Spanferkel fertig, das die komplette Familie Moosbauer über viele Stunden vorzüglichst für uns zubereitet hatte. Abschließend wurden die vielen Ereignisse noch bei einem gemütlichen Zusammensitzen ausführlich besprochen. Die einheitliche Meinung zum Tage: Das machen wir nächstes Jahr wieder!',
                 },

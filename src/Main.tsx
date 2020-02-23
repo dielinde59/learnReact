@@ -95,6 +95,8 @@ class Main extends React.Component<any,IMainState> {
                         </Link>
                     </Menu.Item> */}
                 </Menu>
+                <br/>
+                <br/>
                 <div id='Logo'>
                     <Col xs={30}>
                         <img src={pic3} alt='bild' style={{

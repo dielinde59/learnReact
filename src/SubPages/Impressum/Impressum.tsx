@@ -22,7 +22,7 @@ class Impr extends React.Component<IProps, object> {
       <Layout className='container'>
         <Row type='flex' justify="center">
         <Col className='center' span={24}>
-            <div className='titlegross'>Impressums</div>
+            <div className='titlegross'>Impressum</div>
             <br />
           </Col>
         </Row>

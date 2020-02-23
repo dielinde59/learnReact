@@ -58,14 +58,6 @@ class BasicPage extends React.Component<IProps, object> {
               <br />
               <div className='citeBox2'>
 
-{/*                 <div>
-                  {this.props.text}
-                </div> */}
-
-                {/* <div>
-                  {this.props.text1}
-                </div> */}
-
                 {retval &&
                   <Col>
                   {
@@ -103,21 +95,6 @@ class BasicPage extends React.Component<IProps, object> {
             </Row>
           </Col>
            
-{/*                   {retval &&
-                  <Col>
-                  {
-                    retval.map((cval,index,array) => {
-                    return (
-                      <div key={cval+index}>
-                        {cval}
-                      </div>
-                    )
-                  })
-                  }
-                  </Col>
-                  }
- */}
-
 
 {this.props.pics &&
           <Col>
@@ -146,7 +123,5 @@ class BasicPage extends React.Component<IProps, object> {
     );
   }
 }
-
-
 
 export default BasicPage;
