@@ -46,15 +46,21 @@ export const menu: IMenuItem[] =
             xy: true,
             subroutes: [
                 {
+                    titel: 'Unterricht entfällt am 7. März',
+                    text: 'Am Samstag, 7. März 2020, findet kein Unterricht statt, da wir auswärts auf Seminar sind!',
+                    text1: '',
+                    pdf: './pdfs/Termine.pdf'
+                },
+                {
                     titel: 'Trainingsplan',
                     subtitel: '',
-                    pics: [require('../images/welpen1k.jpg'), require('../images/Welpen2k.jpg')],
+                    // pics: [require('../images/welpen1k.jpg'), require('../images/Welpen2k.jpg')],
                     text: "Montag \n10:00-11:00 Uhr Unterordnung \n18:00-19:00 Unterordnung \n19:00-20:00 Uhr Stöbern \n \nMittwoch \n09:00-10:00 Uhr Longieren \n17:30-18:30 Uhr Obi-Agi \n18:30-19:30 Uhr Obedience \n",
                     text1: "Freitag \n09:00-10:00 Uhr Gruppe gem. (Longieren/UO/Agi) \n17:00-18:00 Uhr Unterordnung gem. \n18:00-19:00 Uhr Unterordnung/Agility \n \nSamstag \n10:00-11:00 Uhr Fortgeschrittene \n12:00-13:00 Uhr Longieren \n15:00-16:00 Uhr Welpen \n16:00-17:00 Uhr Junghunde \n \nSonntag \n10:00-11:00 Uhr Stadtgang \n",
                     pdf: ''
                 },
                 {
-                    titel: 'Termine 2019',
+                    titel: 'Termine 2020',
                     text: '',
                     text1: 'Hier finden Sie alle wichtigen Termine des laufenden Jahres',
                     pdf: './pdfs/Termine.pdf'
@@ -189,6 +195,13 @@ export const menu: IMenuItem[] =
                     pics: [require('../images/Advent1.JPG'), require('../images/Advent2.JPG'), require('../images/Advent3.JPG')],
                     text: 'Am Sonntag, 1. Advent, fand auch in diesem Jahr traditionsgemäß unsere Adventswanderung auf dem Walderlebnispfad in Meggenthal statt. 32 Hunde mit ihren über 40 Menschen trafen sich zu der gemeinsamen Winterwanderung. Auch wenn uns kein winterliches Schneetreiben sondern die üblichen Regenschauer begleiteten, durften wir einen wunderschönen Nachmittag erleben. Für die Hunde (und deren Halter) war es ein spannendes Erlebnis in einem so großen Rudel gemeinsam in Ruhe „zu ziehen“ und das, je nach Ausbildungsstand, natürlich auch ohne Leine. Somit hatten sich alle eine Pause an der Krippe wohl verdient, in der sich die Menschen ein wenig stärkten und die Hunde endlich entspannen konnten.',
                     text1: 'Wir sind immer wieder gerne an diesem wunderschönen vorweihnachtlichen Ausflugsziel und freuen uns schon auf das nächste Jahr!',
+                },
+                {
+                    titel: 'Wanderwochenende im Bayerischen Wald',
+                    subtitel: '18.-20. Oktober 2019',
+                    pics: [require('../images/BW201910_01.jpg'), require('../images/BW201910_02.jpg'), require('../images/BW201910_03.jpg'), require('../images/BW201910_04.jpg')],
+                    text: 'Am Freitag Nachmittag starteten wir zu unserem diesjährigen Herbstausflug in den Bayerischen Wald. Nach einem ersten geselligen Kennenlernabend ging es am Samstag zu unserem ersten Ausflugsziel dem „Nationalparkzentrum Falkenstein“. Bei herrlichem Wetter genossen wir eine wunderschöne Wanderung durch die Wildtiergehege. Nur die Wölfe ließen sich leider nicht sehen. In den wohlverdienten Pausen durften sich unsere Hunde entspannen und die Halter wurden auf ihre Theoriekenntnisse rund um den Hund sowie ihr „Einfühlungsvermögen“ beim blinden Ertasten von Hunden geprüft. Anschließend ging es an den Großen Arbersee, der von allen, die noch gehen konnten und wollten, noch umrundet wurde. Beim gemeinsamen Abendessen durfte dann der ermittelte „Hundeexperte“ seinen schwer erkämpften Wanderpokal in Empfang nehmen.',
+                    text1: 'Am Sonntag Morgen fuhren wir bei wiederum blauem Himmel und Sonnenschein nach Frauenau zur Trinkwassertalsperre. Die mehrstündige Wanderung herum bot wunderschöne Naturerlebnisse, was Hunden und Haltern riesig Spaß machte. \nAbgesehen davon, dass beim abschließenden Einkehren so mancher vom Wirt schlichtweg nicht beachtet wurde und somit auf Zwangsdiät gesetzt wurde, war es ein rundum herrlicher und erlebnisreicher Ausflug!',
                 },
                 {
                     titel: 'Seminar Wesensanalyse von Hunden mit Georg Weichselbaumer',

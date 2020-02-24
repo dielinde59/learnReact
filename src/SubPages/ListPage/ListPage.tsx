@@ -21,6 +21,7 @@ class ListPage extends React.Component<IProps, object> {
             <div className='titlegross'> {title} </div>
           </Col>
         </Row>
+        <br />
 
         <Row className='container'>
           {eintraege.map((eintrag, index) => {

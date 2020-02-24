@@ -1,8 +1,8 @@
 import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-import pic from '../../images/Ueberuns1.jpg'
-import pic1 from '../../images/Ueberuns2.jpg'
+import pic from '../../images/Impressum01.jpg'
+import pic1 from '../../images/Impressum02.jpg'
 import '../../Main.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 

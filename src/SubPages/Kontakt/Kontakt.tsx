@@ -20,7 +20,7 @@ class Kontakt extends React.Component<IProps, object> {
     // const ageX10 = this.props.age ? this.props.age * 10 : 0;
 
     return (
-      <Layout className='scrcontainer'>
+      <Layout className='container'>
         <Row type='flex' justify="center">
           <Col className='center' span={24}>
             <div className='titlegross'> Kontakt / Anfahrt </div>
@@ -45,7 +45,7 @@ class Kontakt extends React.Component<IProps, object> {
                   <br />
                   Tel.: +49 (0)178 7308459
                   <br />
-                  info@hundefreu-n-de.de
+                  <a href="mailto:info@hundefreu-n-de.de" className='linkklein'>info@hundefreu-n-de.de</a>
                   <br />
                   www.hundefreu-n-de.de
                 <br/>

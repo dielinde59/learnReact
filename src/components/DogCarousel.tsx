@@ -25,7 +25,7 @@ export class DogCarousel extends React.Component {
 
         const imgStyle:CSSProperties ={
             maxWidth: '100%',
-            maxHeight: '120px'
+            // maxHeight: '120px'
         }
         return (
             <div className="container">
@@ -34,7 +34,7 @@ export class DogCarousel extends React.Component {
                         imgArray.map((pic,index)=>{
                             return( 
                             <div key={'carousel'+index}>
-                                <img src={pic} style={imgStyle}/>
+                                <img className='footerImg' src={pic} style={imgStyle}/>
                             </div>
                         )
                         })

@@ -1,5 +1,6 @@
 $headerHeight: 100px;
-$footerHeight: 220px;
+$footerHeight: 10%;
+$footerHeightMax: 120px;
 
 #page {
   height: 100%;
@@ -49,12 +50,17 @@ $footerHeight: 220px;
   background-color: rgb(255, 240, 203);
   padding:0 5px 0 5px ;
   margin: 0 0 0 0;
-
+  height: $footerHeight;
+  max-height: $footerHeightMax;
   display: block;
   position: absolute;
   left: 0;
   width: 100%;
   bottom: 0px;
+}
+.footerImg {
+  height: $footerHeight;
+  max-height: $footerHeightMax;
 }
 #page_content {
   display: flex;
@@ -63,6 +69,7 @@ $footerHeight: 220px;
     color: black;
     background-color: rgb(255, 240, 203);
     font-size: 18px;
+    //font-family: Verdana, Arial, Helvetica, sans-serif;
     font-family: BlacklightD, "Times New Roman", Times, serif;
 }
 .container {
@@ -71,7 +78,8 @@ $footerHeight: 220px;
     color: black;
     font-size: 18px;
     background-color: rgb(255, 240, 203);
-    font-family: BlacklightD, "Times New Roman", Times, serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+   // font-family: BlacklightD, "Times New Roman", Times, serif;
    // background-color: (255,240,203);
 }
 
@@ -91,7 +99,8 @@ $footerHeight: 220px;
   color: black;
   font-size: 18px;
   background-color: rgb(255, 240, 203);
-  font-family: BlacklightD, "Times New Roman", Times, serif;
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+// font-family: BlacklightD, "Times New Roman", Times, serif;
   max-height: 60%;
   overflow: scroll, clip;
  // background-color: (255,240,203);
@@ -181,8 +190,6 @@ p {
   height: auto;
 }
 
-
-
 .menubackground {
   background-color: rgb(255, 240, 203);
   padding: 0;
@@ -196,7 +203,7 @@ p {
 }
 .link {
   background-color: rgb(255, 240, 203);
-  font-family: BlacklightD, "Times New Roman", Times, serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #d7a200;
@@ -204,15 +211,16 @@ p {
 
   .link:visited{
     background-color: rgb(255, 240, 203);
-    font-family: BlacklightD, "Times New Roman", Times, serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #d7a200;
     }
+
   .linkklein {
   background-color: rgb(255, 240, 203);
-  font-family: BlacklightD, "Times New Roman", Times, serif;
-  // font-size: 14px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   // font-weight: bold;
   color: #d7a200;
   }
@@ -227,10 +235,9 @@ p {
 
 .citeBox  {
   white-space: pre-wrap;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0px;
   padding: 0px;
-  font-size: 18px;
   margin-left: 10px;
   padding-right: 15%;
   width: 100%;
@@ -241,6 +248,7 @@ p {
   background-color: #2bad32;
 }
 .titlegross {
+  font-family: Verdana;
   font-size: 28px;
   color: #D7A200;
   width: 100%;
@@ -249,11 +257,13 @@ p {
 }
 
 .title {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
   margin-left: 10px;
 }
 .titlegrossleft {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: bold;
   // color: #D7A200;
@@ -262,6 +272,7 @@ p {
 }
 
 .titleleft {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
@@ -286,16 +297,12 @@ p {
   padding: 0;
 }
 
-
 .image20 {
   width: 20%;
   box-align: right;
   vertical-align: top;
   padding: 0;
 }
-
-
-
 
 .alignRight {
   text-align: right;
