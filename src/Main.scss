@@ -68,9 +68,9 @@ $footerHeightMax: 120px;
 * {
     color: black;
     background-color: rgb(255, 240, 203);
-    font-size: 18px;
-    //font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-family: BlacklightD, "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    // font-family: BlacklightD, "Times New Roman", Times, serif;
 }
 .container {
     scroll-margin-left: 11;
@@ -78,7 +78,7 @@ $footerHeightMax: 120px;
     color: black;
     font-size: 18px;
     background-color: rgb(255, 240, 203);
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
    // font-family: BlacklightD, "Times New Roman", Times, serif;
    // background-color: (255,240,203);
 }
@@ -96,7 +96,7 @@ $footerHeightMax: 120px;
 .scrcontainer {
   scroll-margin-left: 11;
   scroll-behavior: smooth; 
-  color: black;
+  // color: black;
   font-size: 18px;
   background-color: rgb(255, 240, 203);
  font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -122,7 +122,7 @@ p {
 
 .ant-menu-vertical {
   .ant-menu-submenu {
-    font-family: BlacklightD, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif, BlacklightD, sans-serif;
     font-size: 20px;
     font-weight: bold;
     height: 40px;
@@ -140,7 +140,7 @@ p {
   }
 
   .ant-menu-item {
-    font-family: BlacklightD, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif,BlacklightD, sans-serif;
     font-size: 20px;
     font-weight: bold;
     height: 40px;
@@ -152,7 +152,7 @@ p {
     }
   }
   .ant-menu-item-active {
-    font-family: BlacklightD, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif, BlacklightD, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -172,7 +172,7 @@ p {
   .ant-menu-item:not(:last-child) {
     height: 40px;
     margin: 0;
-    font-family: BlacklightD, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif, BlacklightD, sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -181,7 +181,7 @@ p {
   }
 }
 .layout {
-  font-family: BlacklightD, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif, BlacklightD, "Times New Roman", Times, serif;
   color: #d7a200;
   padding: 0 5%;
 }
@@ -235,7 +235,7 @@ p {
 
 .citeBox  {
   white-space: pre-wrap;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0px;
   padding: 0px;
   margin-left: 10px;
@@ -314,6 +314,7 @@ p {
 
 .text-center {
   text-align: center;
+  color: #D7A200;
 }
 
 #root {

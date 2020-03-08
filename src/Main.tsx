@@ -47,7 +47,7 @@ class Main extends React.Component<any,IMainState> {
                 // collapsible /// diese zeile entfernen um normale seitenleist zu bekommen
                 collapsed={this.state.collapsed}
                 onCollapse={this.onCollapse}
-                style={{padding: '60px 0',margin:'0'}}
+                style={{padding: '60px 0',margin:'0 20px 0 0'}}
                 // style ={{padding: '60px 0 120 0',margin:'0'}}
             >
                 <Menu className='menubackground' defaultSelectedKeys={['1']} mode="vertical" >
@@ -106,10 +106,10 @@ class Main extends React.Component<any,IMainState> {
                                         // display: 'inline-block',
                                         // width: 'auto',
                                     }} />
-                        <div className='citeBox'>
+{/*                         <div className='citeBox'>
                             <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu-n-de.de</a>
                         </div>
-                        <div className='citeBox'>
+ */}                        <div className='citeBox'>
                         <a href="http://hundefreu-n-de-forum.xobor.de/" target="_blank">Forum</a> 
                         </div>         
                     </Col>

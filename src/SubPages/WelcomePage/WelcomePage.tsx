@@ -18,7 +18,7 @@ class WelcomePage extends React.Component<IProps, object> {
     // const ageX10 = this.props.age ? this.props.age * 10 : 0;
 
     return (
-      <div className=''>
+      <div className='srcontainer'>
         <Row type='flex' justify="center">
           <Col className='text-center' span={20}>
           <div className='titlegross'>Willkommen </div>
@@ -33,9 +33,12 @@ class WelcomePage extends React.Component<IProps, object> {
           <Col span={24}>
             <img id='welcomeIMG' src={pic} alt='bild' />
             <div className='text-center' style={{fontSize: "18px"}}>
-              <p text-align="center">Jede Beziehung zwischen einem Tier und einem Menschen</p>
-              <p>ist eine einzigartige Brücke, gebaut, um nur diese beiden zu tragen.</p>
-              <p>Deshalb muss sie auch von ihnen selbst erschaffen werden.</p>
+{/*               <p text-align="center" color= '#d7a200'>Jede Beziehung zwischen einem Tier und einem Menschen</p>
+              <p color= '#d7a200'>ist eine einzigartige Brücke, gebaut, um nur diese beiden zu tragen.</p>
+              <p color= '#d7a200'>Deshalb muss sie auch von ihnen selbst erschaffen werden.</p> */}
+              Jede Beziehung zwischen einem Tier und einem Menschen
+              <br/>ist eine einzigartige Brücke, gebaut, um nur diese beiden zu tragen.
+              <br/>Deshalb muss sie auch von ihnen selbst erschaffen werden.
               <div className='author'>Suzanne Clothier</div>
             </div>
           </Col>

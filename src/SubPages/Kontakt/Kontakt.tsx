@@ -45,9 +45,9 @@ class Kontakt extends React.Component<IProps, object> {
                   <br />
                   Tel.: +49 (0)178 7308459
                   <br />
-                  <a href="mailto:info@hundefreu-n-de.de" className='linkklein'>info@hundefreu-n-de.de</a>
+                  <a href="mailto:info@hundefreu-n-de.de" className='link'>info@hundefreu-n-de.de</a>
+
                   <br />
-                  www.hundefreu-n-de.de
                 <br/>
                 <br/>
                 <p className='link'><a href='https://www.google.de/maps/place/Sch%C3%B6nreit+1,+83308+Trostberg/@48.0602285,12.5311945,17z/data=!3m1!4b1!4m5!3m4!1s0x4775df0ee6f5adb9:0xe930772648571d63!8m2!3d48.0602285!4d12.5333832?hl=de'  target="_blank">Hier Klicken um Google Maps zu öffnen</a></p>
