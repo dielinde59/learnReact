@@ -2,7 +2,7 @@
   "name": "Hundefreunde",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://www.hundefreu-n-de.de/",
+  "homepage": "http://www.hundefreu-n-de.de/",
   "dependencies": {
     "antd": "^3.5.1",
     "react": "^16.3.2",
@@ -11,7 +11,8 @@
     "react-router-dom": "^4.3.1",
     "react-scripts-ts-antd": "2.15.1",
     "react-slick": "^0.23.1",
-    "react-transition-group": "^2.4.0"
+    "react-transition-group": "^2.4.0",
+    "serve": "^11.3.1"
   },
   "scripts": {
     "start": "react-scripts-ts-antd start",

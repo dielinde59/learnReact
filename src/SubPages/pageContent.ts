@@ -82,7 +82,7 @@ export const menu: IMenuItem[] =
                 {
                     titel: 'Welpen',
                     // titel1: "Grundausbildung",
-                    pics: [require('../images/welpen1k.jpg'), require('../images/Welpen3.jpg')],
+                    pics: [require('../images/Welpen1.jpg'), require('../images/Welpen3.jpg')],
                     text: "Nachdem der Welpe die ersten Wochen im neuen Zuhause verbracht und in dieser Zeit eine Beziehung zu seinen Menschen aufgebaut hat, wird er nun bei uns behutsam an Artgenossen und die restliche „große Welt“ herangeführt./nIn unseren Welpenstunden vermitteln wir ersten Grundbenimm im Umgang mit anderen Hunden und Menschen bei gleichzeitiger Festigung der Bindung zum Halter.",
                     text1: 'Wir helfen, die Grundkommandos Sitz, Platz und Steh mit viel Spaß und Zuneigung sowie notwendiger Konsequenz zu erlernen. \nBeim kontrollierten Spiel mit Artgenossen ist meistens ein gut sozialisierter, erwachsener Hund anwesend. Zudem werden die Welpen nach Größe und Temperament aufeinander abgestimmt.',
                     path: '/welpen',
@@ -96,7 +96,7 @@ export const menu: IMenuItem[] =
                 },
                 {
                     titel: 'Gemischte Gruppen',
-                    pics: [require('../images/GemischteGruppen1.jpg'), require('../images/GemischteGruppen2.jpg')],
+                    pics: [require('../images/GemischteGruppen2.jpg'), require('../images/GemischteGruppen1.jpg')],
                     text: 'Nach erfolgreicher erster Grundausbildung werden die bekannten Übungen intensiviert und der Schwierigkeitsgrad bei Konfrontationen und Ablenkungen erhöht. Neben der Unterordnung (Fuß-Gehen, Sitz und Platz aus der Bewegung etc.) gibt es immer wieder Spielerisches wie Apportieren, Hürdenspringen u.a.',
                     text1: 'Wir arbeiten mit maximal sechs Hunden pro Gruppe/Stunde, um genügend Zeit zu haben, uns der Probleme der einzelnen Mensch-Hund-Teams anzunehmen.',
                     path: '/gemischt',
@@ -192,7 +192,7 @@ export const menu: IMenuItem[] =
                 {
                     titel: 'Adventswanderung in Meggenthal',
                     subtitel: 'am 01.12.2019',
-                    pics: [require('../images/Advent1.JPG'), require('../images/Advent2.JPG'), require('../images/Advent3.JPG')],
+                    pics: [require('../images/Advent1.jpg'), require('../images/Advent2.jpg'), require('../images/Advent3.jpg')],
                     text: 'Am Sonntag, 1. Advent, fand auch in diesem Jahr traditionsgemäß unsere Adventswanderung auf dem Walderlebnispfad in Meggenthal statt. 32 Hunde mit ihren über 40 Menschen trafen sich zu der gemeinsamen Winterwanderung. Auch wenn uns kein winterliches Schneetreiben sondern die üblichen Regenschauer begleiteten, durften wir einen wunderschönen Nachmittag erleben. Für die Hunde (und deren Halter) war es ein spannendes Erlebnis in einem so großen Rudel gemeinsam in Ruhe „zu ziehen“ und das, je nach Ausbildungsstand, natürlich auch ohne Leine. Somit hatten sich alle eine Pause an der Krippe wohl verdient, in der sich die Menschen ein wenig stärkten und die Hunde endlich entspannen konnten.',
                     text1: 'Wir sind immer wieder gerne an diesem wunderschönen vorweihnachtlichen Ausflugsziel und freuen uns schon auf das nächste Jahr!',
                 },

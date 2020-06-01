@@ -70,6 +70,8 @@ class UeberUns extends React.Component<IProps, object> {
                 Eben in dieser Zeit, nach Absolvieren des ersten Prüfungsteils, ist Ördög plötzlich und unerwartet
                 von dieser Welt gegangen… Konrad Lorenz schreibt „Es fehlt mir die Ausdrucksmöglichkeit, um zu beschreiben,
                 wie sehr mir dieser Hund abgeht...“
+                </p>
+              <p>
                 Um Banya und mich wieder in Schwung zu bringen, ist einige Monate später Murphy bei uns eingezogen. Der zu
                 der Zeit ca. 1,5-jährige Mischlingsrüde ist der beste „Nachwuchslauser“, den wir uns hätten wünschen können.
                 Er hat sich mit viel Feingefühl seinen Platz in unseren Herzen erobert. Vielen Dank dafür!
@@ -79,7 +81,7 @@ class UeberUns extends React.Component<IProps, object> {
 
           <Col span={10} lg={{ span: 6 }}>
             {/* <Row> */}
-              <img style={{ padding: "10px 0", marginTop: "5px" }} className='image' src={pic} alt='bild' />
+              <img style={{ padding: "0px, 0", marginTop: "0px" }} className='image' src={pic} alt='bild' />
             {/* </Row> */}
 
             <Row>

@@ -57,7 +57,7 @@ class Training extends React.Component<IProps, object> {
                   if (index === 0) {
                     return (
                       // <div key={this.props.titel+index} className='colRight'>
-                      <img style={{ padding: "10px 0", marginTop: "58px" }} key={this.props.titel + index} className='image' src={pic} alt='bild' />
+                      <img style={{ padding: "0px 0", marginTop: "20px" }} key={this.props.titel + index} className='image' src={pic} alt='bild' />
                       // </div>
                     )
                   } else {

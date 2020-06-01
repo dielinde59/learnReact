@@ -46,7 +46,7 @@ class Gelaende extends React.Component<IProps, object> {
               <div className='citeBox'>
                 <p>Die Hundeschule Hundefreu(n)de – Monika Frei liegt im schönen Chiemgau in Oberbayern. Unser ca. 2.500 m² großer, eingezäunter Trainingsplatz befindet sich in ländlicher Umgebung mit freiem Bergblick und garantiert entspannte Atmosphäre für Hund und Halter.</p>
                 <br />
-                <p>An heißen Tagen steht selbstverständlich jedem ein entspanntes Schattenplätzchen zur Verfügung.</p>
+                <p>An sehr heißen Tagen steht selbstverständlich jedem ein entspanntes Schattenplätzchen zur Verfügung.</p>
                 <br/>
                 <p>Dank unserer Außenbeleuchtung können wir auch in der Winterzeit unsere regulären Trainingszeiten bis in die Abendstunden einhalten.</p>
                 <br/>
