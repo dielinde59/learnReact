@@ -20,8 +20,9 @@ import Training from './SubPages/Training/Training';
 // import BasicPage from './SubPages/BasicPage/BasicPage';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
-// import Stellen from './SubPages/Stellen/Stellen';
+import Stellen from './SubPages/Stellen/Stellen';
 import Impr from './SubPages/Impressum/Impressum'
+// import Iframe from 'react-iframe'
 // import HTMLDocument from '../node_modules/react-html-document';
 
 // tslint:disable-next-line:no-var-requires
@@ -206,7 +207,9 @@ class Main extends React.Component<any, IMainState> {
                                     } />
                                     <Route exact={true} path='/Stellen' render={
                                         () => (
-                                            <iframe style={{ width: '100%', height: '100%' }} src='./Aktuell.html' />
+                                            <Stellen name = '' />
+                                           // <iframe style={{width: '90%', height: '100%'}}  src='./Aktuell.html' />
+                                           // <Iframe url= './Aktuell.html' width='90%' height='100%' position='center' />
                                         )
                                     } />
                                 </Content>
