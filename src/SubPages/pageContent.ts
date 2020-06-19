@@ -46,17 +46,17 @@ export const menu: IMenuItem[] =
             xy: true,
             subroutes: [
                 {
-                    titel: 'Unterricht entfällt am 7. März',
-                    text: 'Am Samstag, 7. März 2020, findet kein Unterricht statt, da wir auswärts auf Seminar sind!',
-                    text1: '',
+                    titel: '... es geht weiter',
+                    text: 'Liebe Hundefreu(n)de,\n\nendlich dürfen auch wir wieder in kleinen Gruppen arbeiten!!!\nDamit wir die begrenzte Teilnehmerzahl nicht überschreiten und keiner umsonst anreist, müsst ihr euch allerdings für die Trainingsstunden bitte zuverlässig bei mir an- oder abmelden. Es reicht z.B. eine WhatsApp mit gewünschtem Tag und Uhrzeit und wenn die Gruppe schon voll sein sollte, melde ich mich bei euch.\nUm möglichst alle Teams auch wieder unterzubringen, habe ich die gewöhnlich stark besuchten Stunden auf zweimal 45 Minuten aufgeteilt. Durch die geringe Teilnehmerzahl können wir intensiver arbeiten und jeder kommt mindestens so oft dran wie zuvor in 60 Minuten, so dass wieder alle auf ihre Kosten kommen. Die genauen Trainingszeiten findet ihr im aktuellen Trainingsplan! Bei Bedarf können wir noch weitere Stunden aufteilen. ',
+                    text1: 'BITTE BEACHTEN:\n* Bitte haltet euch auch zu eurer eigenen Sicherheit an die Hygienemaßnahmen und Abstandsregelungen.\n* Bitte mit ausreichend Abstand hintereinander Parken (nicht Kofferraum an Kofferraum, damit auch beim Aussteigen der Hunde der geforderte Abstand eingehalten werden kann).\n* Das Tor wird ausschließlich vom Trainer geöffnet und geschlossen.\n* Bei Verwendung jeglicher Trainingsutensilien der Hundeschule müssen vorher und nachher die Hände gereinigt und desinfiziert werden.\n* Ein Desinfektionsmittelständer befindet sich im Eingang zum Gerätekammerl.\n* Bitte denkt daran, dass ihr eure eigene Mund-Nase-Bedeckung (Tuch, Schal, Maske) dabei habt.\n\nIch wünsche euch einen schönen Tag und freue mich schon, euch bald wieder zu sehen!\n\nLiebe Grüße,\n\nMonika ',
                     pdf: './pdfs/Termine.pdf'
                 },
                 {
                     titel: 'Trainingsplan',
                     subtitel: '',
                     // pics: [require('../images/welpen1k.jpg'), require('../images/Welpen2k.jpg')],
-                    text: "Montag \n10:00-11:00 Uhr Unterordnung \n18:00-19:00 Unterordnung \n19:00-20:00 Uhr Stöbern \n \nMittwoch \n09:00-10:00 Uhr Longieren \n17:30-18:30 Uhr Obi-Agi \n18:30-19:30 Uhr Obedience \n",
-                    text1: "Freitag \n09:00-10:00 Uhr Gruppe gem. (Longieren/UO/Agi) \n17:00-18:00 Uhr Unterordnung gem. \n18:00-19:00 Uhr Unterordnung/Agility \n \nSamstag \n10:00-11:00 Uhr Fortgeschrittene \n12:00-13:00 Uhr Longieren \n15:00-16:00 Uhr Welpen \n16:00-17:00 Uhr Junghunde \n \nSonntag \n10:00-11:00 Uhr Stadtgang \n",
+                    text: "Montag \n10:00-11:00 Uhr Unterordnung \n17:30-18:15 Uhr Unterordnung \n18:15-19:00 Uhr Unterordnung \n19:00-20:00 Uhr Stöbern \n \nMittwoch \n09:00-10:00 Uhr Longieren \n17:30-18:30 Uhr Obi-Agi \n18:30-19:30 Uhr Obedience \n\n",
+                    text1: "Freitag \n09:00-10:00 Uhr Gruppe gem. (Longieren/UO/Agi) \n17:00-18:00 Uhr Unterordnung gem. \n18:00-18:45 Uhr Unterordnung/Agility \n18:45-19:30 Uhr Unterordnung/Agility \n \nSamstag \n09:00-09:30 Uhr Longieren \n09:30-10:00 Uhr Longieren \n10:00-11:00 Uhr Fortgeschrittene \n16:00-17:00 Uhr Welpen \n17:00-18:00 Uhr Junghunde \n",
                     pdf: ''
                 },
                 {
@@ -67,7 +67,7 @@ export const menu: IMenuItem[] =
                 },
                 {
                     titel: 'Stadtgang am Sonntag',
-                    text: 'Treffpunkt ',
+                    text: 'entfällt vorübergehend ',
                     text1: '',
                     pdf: ''
 
@@ -82,7 +82,7 @@ export const menu: IMenuItem[] =
                 {
                     titel: 'Welpen',
                     // titel1: "Grundausbildung",
-                    pics: [require('../images/Welpen1.jpg'), require('../images/Welpen3.jpg')],
+                    pics: [require('../images/Welpen1.jpg'), require('../images/Welpen2.jpg')],
                     text: "Nachdem der Welpe die ersten Wochen im neuen Zuhause verbracht und in dieser Zeit eine Beziehung zu seinen Menschen aufgebaut hat, wird er nun bei uns behutsam an Artgenossen und die restliche „große Welt“ herangeführt./nIn unseren Welpenstunden vermitteln wir ersten Grundbenimm im Umgang mit anderen Hunden und Menschen bei gleichzeitiger Festigung der Bindung zum Halter.",
                     text1: 'Wir helfen, die Grundkommandos Sitz, Platz und Steh mit viel Spaß und Zuneigung sowie notwendiger Konsequenz zu erlernen. \nBeim kontrollierten Spiel mit Artgenossen ist meistens ein gut sozialisierter, erwachsener Hund anwesend. Zudem werden die Welpen nach Größe und Temperament aufeinander abgestimmt.',
                     path: '/welpen',
@@ -96,7 +96,7 @@ export const menu: IMenuItem[] =
                 },
                 {
                     titel: 'Gemischte Gruppen',
-                    pics: [require('../images/GemischteGruppen2.jpg'), require('../images/GemischteGruppen1.jpg')],
+                    pics: [require('../images/gemGruppen_oben.jpg'), require('../images/GemischteGruppen1.jpg')],
                     text: 'Nach erfolgreicher erster Grundausbildung werden die bekannten Übungen intensiviert und der Schwierigkeitsgrad bei Konfrontationen und Ablenkungen erhöht. Neben der Unterordnung (Fuß-Gehen, Sitz und Platz aus der Bewegung etc.) gibt es immer wieder Spielerisches wie Apportieren, Hürdenspringen u.a.',
                     text1: 'Wir arbeiten mit maximal sechs Hunden pro Gruppe/Stunde, um genügend Zeit zu haben, uns der Probleme der einzelnen Mensch-Hund-Teams anzunehmen.',
                     path: '/gemischt',
@@ -124,7 +124,7 @@ export const menu: IMenuItem[] =
             subroutes: [
                 {
                     titel: 'Agility',
-                    pics: [require('../images/Agility1.jpg'), require('../images/Agility2.jpg')],
+                    pics: [require('../images/Agi1.jpg'), require('../images/Agi2.jpg')],
                     text: 'Bei der ursprünglich aus England stammenden Hundesportart Agility muss der Hund  einen aus mehreren Hindernissen bestehenden Parcours in einer festgelegten Reihenfolge und innerhalb einer vorgegebenen Zeit überwinden. Nach Reglement befinden sich auf dieser Strecke die unterschiedlichsten Hindernissen wie Reifen, Schrägwand, Laufsteg, Slalom, Wippe, Tunnel sowie verschiedene Sprunggeräte und wir haben noch Elemente wie Hängebrücke und Wackelbrett hinzugefügt.',
                     text1: 'Bei dieser Hundesportart kommt es sehr auf das Zusammenspiel zwischen Mensch und Hund an, denn der Hundehalter lenkt seinen Hund lediglich durch Körpersprache und Hörzeichen durch den Parcours. Selbstverständlich muss sich der Hund die verschiedenen Geräte erst langsam erarbeiten und kennenlernen, um sie im Parcours sicher bewältigen zu können. \nWir trainieren nicht nach strengen FCI Regeln wie z. B. Vorgaben an Kontaktzonen, Zeitlimit und Mindesthöhen. Unser Ziel ist es, spielerisch durch gemeinsame neue Herausforderungen die Kooperation und Harmonie zwischen Hund und Halter zu stärken und dabei einfach Spaß zu haben.',
                     path: '/agi',
@@ -189,7 +189,14 @@ export const menu: IMenuItem[] =
                                 text: '',
                                 text1: '',
                             }, */
-                {
+                            {
+                                titel:'Erste Trainings- und Wandertage am Edberghof im Bayerischen Wald',
+                                subtitel:'11.-15. März 2020',
+                                pics: [require('../images/Edberghof1.jpg'),require('../images/Edberghof2.jpg'),,require('../images/Edberghof3.jpg'),,require('../images/Edberghof3a.jpg')],
+                                text: 'Kurz bevor die Ausgangsbeschränkungen aufgrund der Corona Pandemie beschlossen wurden hatten wir noch das große Glück unsere ersten Trainings- und Wandertage am Edberghof im Bayerischen Wald genießen zu können. Wir wurden auf dem schönen Hof in Alleinlage mit allen Trainings- und Wandermöglichkeiten, die sich ein Hundehalter so wünscht, von einer sehr netten Gastgeberfamilie begrüßt. \n \nVormittags wurde mit den Hunden trainiert. Es stand Agility in der Halle, Hoopers auf dem eingezäunten Außenplatz, Longieren oder Stöbern auf den großen dazugehörenden Wiesen auf dem Programm. ',
+                                text1: 'Jeder machte das, was ihm eben Spaß machte. Nach der Mittagspause, die man entweder für sich oder bei einem gemütlichen Hundlerratsch an der Aufenthaltshütte am Hof verbrachte, ging es nachmittags zu einer gemeinsamen Wanderung. Dabei bot das Wetter alles, was es so bieten konnte. Von Schnee und Eis, Regen, Wind und Sturm, aber auch strahlendem Sonnenschein war alles dabei. Für Hunde und Halter waren es auf jeden Fall immer spannende und wunderschöne Ausflüge. Die Abende verbrachten wir beim gemeinsamen Essen in der gemütlichen Aufenthaltshütte. Wohl vorsorglich auf das was nach unserem Aufenthalt passierte wurden dabei schon die ein oder anderen Bakterien und Viren bekämpft... Es waren rundum herrliche und entspannte Tage unter Gleichgesinnten, an die wir alle sehr gerne zurück denken! \n \nWir freuen uns schon auf ein nächstes Mal!',
+                            },
+                            {
                     titel: 'Adventswanderung in Meggenthal',
                     subtitel: 'am 01.12.2019',
                     pics: [require('../images/Advent1.jpg'), require('../images/Advent2.jpg'), require('../images/Advent3.jpg')],
@@ -204,9 +211,15 @@ export const menu: IMenuItem[] =
                     text1: 'Am Sonntag Morgen fuhren wir bei wiederum blauem Himmel und Sonnenschein nach Frauenau zur Trinkwassertalsperre. Die mehrstündige Wanderung herum bot wunderschöne Naturerlebnisse, was Hunden und Haltern riesig Spaß machte. \nAbgesehen davon, dass beim abschließenden Einkehren so mancher vom Wirt schlichtweg nicht beachtet wurde und somit auf Zwangsdiät gesetzt wurde, war es ein rundum herrlicher und erlebnisreicher Ausflug!',
                 },
                 {
+                    titel: '',
+                    subtitel: '',
+                    text: '',
+                    text1: '*** Aus dem Archiv ***',
+                },
+                {
                     titel: 'Seminar Wesensanalyse von Hunden mit Georg Weichselbaumer',
                     subtitel: 'am 5. und 6. Mai 2012',
-                    pics: [require('../images/analyse1.jpg'), require('../images/analyse2.jpg'), require('../images/analyse3.jpg')],
+                    pics: [require('../images/analyse1.jpg'), require('../images/analyse2.jpg'), require('../images/analyse3.jpg'),, require('../images/ArchivWesen.jpg')],
                     text: 'An diesem Wochenende konnten wir zwei sehr lehrreiche und spannende Tage erleben, an denen die Teilnehmer sowohl viel theoretisches Wissen als auch einige neue Erkenntnisse über die eigenen Vierbeiner erfahren durften. Das Wetter war zwar ebenso „anspruchsvoll“ wie das Seminar, wodurch sich die begeisterten Hundler aber nicht abschrecken ließen. \nAm Samstag vermittelte uns Georg Weichselbaumer erst mal ausführlich die Wesensgrundlagen und Wesenseigenschaften von Hunden. Dabei wurden u. a. die einzelnen Entwicklungsphasen des Hundes vom Welpen bis zum erwachsenen Hund erläutert und darauf eingegangen, welche Eigenschaften des Hundes genetisch bedingt sind und wie sich diverse Einflüsse in diesen Phasen auf die Charakterbildung auswirken. Bereits hier wurde so manchem Hundehalter bewusst, dass in dem ersten entscheidenden Lebensjahr seines Hundes wohl manches hätte anders laufen sollen und dass bei der Hundeerziehung eben immer wieder „menschliche Fehler“ passieren, die sich bei der Entwicklung des Hundes fatal auswirken können.',
                     text1: 'Anschließend wurden alle teilnehmenden Hunde einzeln auf ihr Wesen beurteilt. Hierbei waren so einige Hundehalter überrascht, wie ihre Vierbeiner in mancher Reizsituation reagieren. Der berühmte Ausspruch „das hat er ja noch nie gemacht“ war durchaus des öfteren zu hören. Fasziniert beobachteten die Teilnehmer die Beurteilungen und versuchten anhand der theoretisch erlernten Kenntnisse die diversen Wesenszüge einzuschätzen. \nAm Sonntag erlernten wir zunächst in Theorie die Zusammenhänge der erfahrenen Wesensgrundlagen und das sich daraus ergebende Lernverhalten der einzelnen Hundetypen. Die entsprechenden Lern- und Trainingsmethoden wurden anschließend mit den einzelnen Mensch-Hund-Teams praktiziert und jegliche weitere Fragen individuell diskutiert und mögliche Lösungsansätze besprochen. \nEin herzliches Dankeschön an Georg Weichselbaumer für dieses sehr informative und beeindruckende Seminar!',
                 },
@@ -219,7 +232,7 @@ export const menu: IMenuItem[] =
                 }, {
                     titel: 'Das erste Sommerfest zum 1. Geburtstag der Hundefreu(n)de',
                     subtitel: 'am Samstag, 06. August 2011',
-                    pics: [require('../images/SF2011_01.jpg'), require('../images/SF2011_02.jpg')],
+                    pics: [require('../images/SF2011_01.jpg'), require('../images/SF2011_02.jpg'),require('../images/IMG_5889.jpg'), require('../images/IMG_7064.jpg')],
                     text: 'Bei herrlichstem Wetter konnten Hunde und Halter einen wundervollen gemeinsamen Tag genießen. \nNachdem alle Gäste bei einem Gläschen Sekt begrüßt wurden, eröffnete Tierarzt Dr. Matzner das offizielle Programm. Er beantwortete den Hundlern jegliche Fragen rund um den Hund, wie z. B. zum richtigen Füttern und Impfen sowie zur Zeckenproblematik, und stand auch zur persönlichen Beratung noch den ganzen Tag zur Verfügung. \nAnschließend wurde uns die Hundesportart Obedience, „die hohe Schule der Unterordnung“ vorgestellt. Unsere Akteure, Elisabeth mit Ferro – Sepp mit Teddy – Christoph mit Moritz und Hans mit Vicko, zeigten trotz großer Nervosität eine wunderschöne Vorführung, die das Publikum sehr begeisterte. Herzlichen Dank an unsere tapferen Hunde und deren Halter!',
                     text1: 'Und dann waren alle dran! Beim ersten Wettbewerb „schneller als die Polizei erlaubt“ wurde der Hund prämiert, der am schnellsten zu seinem Frauchen oder Herrchen lief, das wild mit Leckerli und Spielzeug wedelnd am anderen Ende des Platzes stand. So mancher kam nur über Umwege an, aber auf jeden Fall hatten alle einen riesigen Spaß. \nDer zweite Wettbewerb „Teamwork ist alles“ entfachte vor allem bei den Hundehaltern einen gigantischen Ehrgeiz. Hier mussten Zwei- und Vierbeiner gemeinsam einen Parcours aus diversen Hürden, Tunnel, Wasserbecken etc. meistern. Die teilweise waghalsigen Stunts der Teilnehmer sorgten bei den Zuschauern für große Erheiterung. Am Ende kamen schließlich doch alle gesund und munter an, auch wenn mancher mit seinem Hund unterm Arm durchs Ziel raste! \nNach der glorreichen Siegerehrung war dann auch das Spanferkel fertig, das die komplette Familie Moosbauer über viele Stunden vorzüglichst für uns zubereitet hatte. Abschließend wurden die vielen Ereignisse noch bei einem gemütlichen Zusammensitzen ausführlich besprochen. Die einheitliche Meinung zum Tage: Das machen wir nächstes Jahr wieder!',
                 },
@@ -227,21 +240,21 @@ export const menu: IMenuItem[] =
                 {
                     titel: '1. Stöberkurs mit Georg Weichselbaumer',
                     subtitel: 'am 15. Mai 2011',
-                    pics: [require('../images/Stoeberkurs_10.jpg')],
+                    pics: [require('../images/Stoeberkurs_10.jpg'),require('../images/Stoeberkurs_25.jpg')],
                     text: 'Das Wetter war zwar ziemlich kalt und teilweise nass, dennoch hatten alle Teilnehmer, Hunde sowie deren Halter, viel Spaß an dieser „Nasenarbeit“. Nach einer theoretischen Einführung lernte Georg Weichselbaumer den Teams einzeln auf sehr angenehme, ruhige Art und Weise die ersten Übungen zum korrekten Stöbern und Verweisen und ging dabei ganz individuell auf jedes Mensch-Hund-Team ein. So konnte jeder Hund auf artgerechte Weise, seinem Charakter und Temperament entsprechend, lernen, diese natürliche Beschäftigung korrekt umzusetzen – auch wenn’s mal etwas länger dauerte!',
                     text1: 'Nachdem uns Georg mit seinem Diensthund Jimmy zum Kursende vorführte, wie das Ganze professionell aussieht, stand er uns noch für jegliche Fragen rund um den Hund ausgiebig zur Verfügung. \n Da die maximale Teilnehmerzahl für den Kurs sehr schnell erreicht war und einige Interessenten somit nicht mehr teilnehmen konnten, wollen wir Georg Weichselbaumer für den Herbst zu einem zweiten Kurs einladen. Für die Teams aus dem ersten Kurs werden die Basiskenntnisse ausgebaut und die Schwierigkeitsstufen entsprechend erhöht. ',
                 },
+                // {
+                //     titel: '2. Stöberkurs mit Georg Weichselbaumer',
+                //     subtitel: 'am Sonntag, 13. November 2011',
+                //     pics: [require('../images/Stoeberkurs_25.jpg')],
+                //     text: 'Am 13. November 2011 fand der 2. Teil des Stöberkurses mit Georg Weichselbaumer hier am Außentrainingsplatz in Schönreit statt. Da die maximale Teilnehmerzahl beim 1. Kurs im Mai diesen Jahres sehr schnell erreicht war und einige Interessenten somit nicht mehr teilnehmen konnten, hatten wir beschlossen, Georg Weichselbaumer im Herbst zu einem zweiten Kurs einzuladen, der wiederum sehr schnell ausgebucht war. Für die Teams aus dem ersten Kurs wurden die bereits erlernten Basiskenntnisse überprüft und die Schwierigkeitsstufen entsprechend erhöht. Die „Neulinge“ (Hunde wie Halter) sahen dabei gebannt zu und setzten daraufhin die ersten Übungen zum korrekten Stöbern und Verweisen mit großer Begeisterung sehr schnell um.',
+                //     text1: 'Bei schönstem Sonnenschein durften wir wieder einen sehr interessanten und lehrreichen Tag genießen. Vielen Dank an Georg!',
+                //     // pdf: './pdfs/Schlegel2011.pdf'
+                // },
                 {
-                    titel: '2. Stöberkurs mit Georg Weichselbaumer',
-                    subtitel: 'am Sonntag, 13. November 2011',
-                    pics: [require('../images/Stoeberkurs_25.jpg')],
-                    text: 'Am 13. November 2011 fand der 2. Teil des Stöberkurses mit Georg Weichselbaumer hier am Außentrainingsplatz in Schönreit statt. Da die maximale Teilnehmerzahl beim 1. Kurs im Mai diesen Jahres sehr schnell erreicht war und einige Interessenten somit nicht mehr teilnehmen konnten, hatten wir beschlossen, Georg Weichselbaumer im Herbst zu einem zweiten Kurs einzuladen, der wiederum sehr schnell ausgebucht war. Für die Teams aus dem ersten Kurs wurden die bereits erlernten Basiskenntnisse überprüft und die Schwierigkeitsstufen entsprechend erhöht. Die „Neulinge“ (Hunde wie Halter) sahen dabei gebannt zu und setzten daraufhin die ersten Übungen zum korrekten Stöbern und Verweisen mit großer Begeisterung sehr schnell um.',
-                    text1: 'Bei schönstem Sonnenschein durften wir wieder einen sehr interessanten und lehrreichen Tag genießen. Vielen Dank an Georg!',
-                    // pdf: './pdfs/Schlegel2011.pdf'
-                },
-                {
-                    titel: 'Seminarwochenende mit dem schweizer Hundeexperten Hans Schlegel ',
-                    subtitel: 'am 12. und 13. Februar 2011 in unserer Trainingshalle in Kastl',
+                    titel: 'Seminarwochenende mit dem schweizer Hundeexperten Hans Schlegel am 12. und 13. Februar 2011',
+                    subtitel: 'in unserer Trainingshalle in Kastl',
                     pics: [require('../images/schlegel_train_2.jpg'), require('../images/schlegel_train_1.jpg'), require('../images/schlegel_train_3.jpg')],
                     text: 'Für den Workshop am Samstag mit dem Thema „Unerwünschte Verhaltensmuster“ konnte sich jeder Hundeliebhaber mit oder ohne Hund anmelden. Durch die genaue Mensch-Hund-Analyse von Hans Schlegel und seiner klaren und eindeutigen Trainingsmethode wurde den Teilnehmern dabei geholfen, eine harmonische Beziehung zu ihren Hunden aufzubauen, und somit bei unerwünschten Verhaltensmustern, wie Jagen, Leinenzerren, Ängstlichkeit oder Aggression sicherer mit der Situation umgehen und auf den Hund eingehen zu können. \n',
                     text1: 'Der Sonntag stand ganz im Zeichen der Hundesportfreunde. An dem „Exklusiven Sporthundetag“, der von Hans Schlegel regulär gar nicht mehr angeboten wird, konnten Hundesportler mit bereits erfolgreicher Turnierteilnahme in min. Klasse 1 teilnehmen. Zuschauer ohne Hund waren natürlich auch ohne Turniererfahrung willkommen. Die Themen „Motivationstheorie und Spannungsaufbau – Lernzielzerlegung – Sequenzarbeiten zur Förderung der positiven Erwartungshaltung – Hundeführerschulung und mentale Vorbereitung – Korrektes Führen und Lenken an Prüfungen“ wurden ausführlich und sehr individuell mit jedem Teilnehmer durchgearbeitet. \n \n An beiden Tagen wurde das angesetzte Kursende weit überzogen. Trotz eisiger Temperaturen wurden bis spät abends noch Unklarheiten und Probleme mit Hans Schlegel besprochen bis wirklich alle offenen Fragen geklärt waren und die Teilnehmer somit auch zu Hause und im Alltag auch weiterhin das Erlernte umsetzten können. Für uns alle war es ein sehr spannendes und interessantes Wochenende, an dem wir viel von den langjährigen Erfahrungen von Hans Schlegel lernen konnten. Wir würden uns sehr freuen, ihn wieder bei uns begrüßen zu dürfen.',

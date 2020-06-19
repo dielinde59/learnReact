@@ -23,12 +23,12 @@ class Impr extends React.Component<IProps, object> {
         <Row type='flex' justify="center">
         <Col className='center' span={24}>
             <div className='titlegross'>Impressum</div>
-            <br />
           </Col>
         </Row>
-        <Row>
-          <Col span={18}>
+        <Row type={'flex'} justify="center">
+          <Col span={24} lg={{ span: 18 }}>
             <div className='citeBox'>
+            <br />
               <p>Hundefreu(n)de</p> 
               <p>Monika Frei</p>
               <p>Schönreit 1</p>
@@ -43,13 +43,13 @@ class Impr extends React.Component<IProps, object> {
             </div>
           </Col>
 
-          <Col span={10} lg={{ span: 6 }}>
+          <Col span={24} lg={{ span: 6 }}>
             {/* <Row> */}
-              <img style={{ padding: "10px 0", marginTop: "5px" }} className='image' src={pic} alt='bild' />
+              <img style={{ padding: "0px 0", marginTop: "20px" }} className='image' src={pic} alt='bild' />
             {/* </Row> */}
 
             <Row>
-            <img style={{ padding: "10px 0", marginTop: "5px" }} className='image' src={pic1} alt='bild' />
+            <img style={{ padding: "10px 0", marginTop: "0px" }} className='image' src={pic1} alt='bild' />
               {/* <img className='image70' src={pic1} alt='bild' style={picStyle} /> */}
             </Row>
 

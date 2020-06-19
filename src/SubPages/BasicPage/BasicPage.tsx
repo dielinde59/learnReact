@@ -41,7 +41,7 @@ class BasicPage extends React.Component<IProps, object> {
     return (
 
       
-      <Layout className='container'>
+      <Layout className='container1'>
         <br />
         <Row type={'flex'} justify="center">
           <Col className='center' span={24}>
@@ -49,21 +49,19 @@ class BasicPage extends React.Component<IProps, object> {
           </Col>
         </Row>
         <br />
-
         <Row>
-          
           <Col xl={{ span: 15 }} xxl={{ span: 25 }}>
             <Row type={'flex'}  >
               <div className='title'> {this.props.titel}</div>
               <br />
-              <div className='citeBox2'>
+              <div className='citeBox'>
 
                 {retval &&
                   <Col>
                   {
                     retval.map((cval,index,array) => {
                     return (
-                      <div  className='citebox2' key={cval+index}>
+                      <div  className='citebox' key={cval+index}>
                         {cval}
                       </div>
                     )
@@ -71,10 +69,7 @@ class BasicPage extends React.Component<IProps, object> {
                   }
                   </Col>
                   }
-
-<br />
-
-            
+                  <br />
                 {retval1 &&
                   <Col>
                   {
@@ -89,8 +84,6 @@ class BasicPage extends React.Component<IProps, object> {
                   }
                   </Col>
                   }
-
-
               </div>
             </Row>
           </Col>

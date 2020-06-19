@@ -20,6 +20,7 @@ interface IProps {
 
 class Training extends React.Component<IProps, object> {
   public render() {
+    // --- macht die Seiten aus Grundausbildung und Sondertraining
     // let test = { titel: 'hallo' };
     // const test3 = test.titel;
     // test = test;

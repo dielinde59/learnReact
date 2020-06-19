@@ -83,7 +83,9 @@ $footerHeightMax: 120px;
     max-height: 50%;
     // font-family: BlacklightD, "Times New Roman", Times, serif;
    // background-color: (255,240,203);
+   padding-left: 25px;
 }
+
 
 .scroll {
   background-color: rgb(255, 240, 203);
@@ -96,7 +98,8 @@ $footerHeightMax: 120px;
 
 
 .scrcontainer {
-  scroll-margin-left: 11;
+  max-height: 90%;
+  scroll-margin-left: 10;
   scroll-behavior: smooth; 
   // color: black;
   font-size: 18px;
@@ -235,7 +238,7 @@ p {
   
 }
 .layout {
-  font-family: Georgia, "Times New Roman", Times, serif, BlacklightD, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif, BlacklightD, sans-serif;
   color: #d7a200;
   padding: 0 5%;
 }
@@ -302,6 +305,19 @@ p {
 //  scroll-behavior: smooth;
 //  scroll-margin: 3px; 
 }
+.citeBox1  {
+  white-space: pre-wrap;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 10px;
+  padding-right: 15%;
+  width: 100%;
+  font-family:  "Times New Roman", Times, serif;
+  // font-weight: bold;
+}
+
+
 .citeBox::selection {
   background-color: #2bad32;
 }

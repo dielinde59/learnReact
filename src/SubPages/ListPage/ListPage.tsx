@@ -11,19 +11,20 @@ interface IProps {
 
 class ListPage extends React.Component<IProps, object> {
   public render() {
+        // --- macht die Seiten aus Rückblick
+
     const { title, eintraege } = this.props;
 
     return (
       <Layout className='container'>
-
         <Row type={'flex'} justify="center">
           <Col className='center' span={24} >
             <div className='titlegross'> {title} </div>
           </Col>
         </Row>
-        <br />
 
         <Row className='container'>
+        <br />
           {eintraege.map((eintrag, index) => {
             return (
 
@@ -33,9 +34,9 @@ class ListPage extends React.Component<IProps, object> {
                     <div className='title citeBox'>{eintrag.titel}</div>
                     <div className='title citeBox'>{eintrag.subtitel}</div>
                     <br />
-                    <div className='citeBox'>
-                      <p> {eintrag.text} </p>
-                      <p> {eintrag.text1}  </p>
+                    <div className='citeBox1'>
+                       {eintrag.text} 
+                       {eintrag.text1}  
                       <br />
                       {eintrag.pdf &&
                         <a href={eintrag.pdf} target="_blank">weiterlesen</a>
@@ -49,11 +50,11 @@ class ListPage extends React.Component<IProps, object> {
                         {eintrag.pics.map((pic, picIndex) => {
                           if (picIndex === 0) {
                             return (
-                              <img key={`list:${title}picture#${picIndex}`} className='image70' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0', marginTop: "58px" }} />
+                              <img key={`list:${title}picture#${picIndex}`} className='image' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0', marginTop: "58px" }} />
                             )
                           } else {
                             return (
-                              <img key={`list:${title}picture#${picIndex}`} className='image70' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0', marginTop: "5px"  }} />
+                              <img key={`list:${title}picture#${picIndex}`} className='image' src={pic} alt='bild' style={picIndex === 0 ? { padding: '0 10px 0 0 ' } : { padding: '0 10px 0 0', marginTop: "5px"  }} />
                             )
                           }
                         }

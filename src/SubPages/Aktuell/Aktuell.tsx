@@ -8,7 +8,7 @@ interface IProps {
   age?: number;
 }
 
-class Stellen extends React.Component<IProps, object> {
+class Aktuell extends React.Component<IProps, object> {
   public render() {
     // let test = { titel: 'hallo' };
     // const test3 = test.titel;
@@ -18,17 +18,14 @@ class Stellen extends React.Component<IProps, object> {
     return (
       <Layout >
            <Row type='flex' justify="center">
-          <Col className='center' span={22}>
-          <div className='titlegross'> Kontakt / Anfahrt </div>
-          <br/>
-          <iframe style={{width: '100%', height: '150%' }}  src='./Aktuell.html' />
-          </Col>
- </Row>
-
-
+             <Col className='center' span={22}>
+              {/* <div className='titlegross'> Aktuelles </div> */}
+              <iframe style={{width: '105%', height: '420%'}}  src='./Aktuell.html' />
+            </Col>
+          </Row>
       </Layout>
     );
   }
 }
 
-export default Stellen;
+export default Aktuell;

@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { DogCarousel } from './components/DogCarousel';
 //  Photo links
 import pic2 from './images/header-photo.jpg';
-import pic4 from './images/header-photo1CroppedRand2.jpg';
+import pic4 from './images/header-photo1.jpg';
 import pic1 from './images/header-text.jpg';
 import pic3 from './images/Logo.jpg';
 import './Main.scss';
@@ -20,7 +20,7 @@ import Training from './SubPages/Training/Training';
 // import BasicPage from './SubPages/BasicPage/BasicPage';
 import UeberUns from './SubPages/UeberUns/UeberUns';
 import WelcomePage from './SubPages/WelcomePage/WelcomePage';
-import Stellen from './SubPages/Stellen/Stellen';
+import Aktuell from './SubPages/Aktuell/Aktuell';
 import Impr from './SubPages/Impressum/Impressum'
 // import Iframe from 'react-iframe'
 // import HTMLDocument from '../node_modules/react-html-document';
@@ -92,14 +92,11 @@ class Main extends React.Component<any, IMainState> {
                         }
                     })}
                     {<Menu.Item key="12">
-                        <Link to='/Stellen'>
-                            <span>Stellen</span>
+                        <Link to='/Aktuell'>
+                            <span>Aktuell</span>
                         </Link>
                     </Menu.Item>}
-
                 </Menu>
-                <br />
-                <br />
                 <div id='Logo'>
                     <Col xs={30}>
                         <img src={pic3} alt='bild' style={{
@@ -205,9 +202,9 @@ class Main extends React.Component<any, IMainState> {
                                             <Impr name='' />
                                         )
                                     } />
-                                    <Route exact={true} path='/Stellen' render={
+                                    <Route exact={true} path='/Aktuell' render={
                                         () => (
-                                            <Stellen name = '' />
+                                            <Aktuell name = '' />
                                            // <iframe style={{width: '90%', height: '100%'}}  src='./Aktuell.html' />
                                            // <Iframe url= './Aktuell.html' width='90%' height='100%' position='center' />
                                         )
