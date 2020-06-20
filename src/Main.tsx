@@ -6,10 +6,10 @@ import * as React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { DogCarousel } from './components/DogCarousel';
 //  Photo links
-import pic2 from './images/header-photo.jpg';
-import pic4 from './images/header-photo1.jpg';
 import pic1 from './images/header-text.jpg';
+import pic2 from './images/header-photo.jpg';
 import pic3 from './images/Logo.jpg';
+import pic4 from './images/header-photo1.jpg';
 import './Main.scss';
 import AGBs from './SubPages/AGBs/AGBs';
 import Datenschutz from './SubPages/Datenschutz/Datenschutz';

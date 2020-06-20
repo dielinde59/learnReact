@@ -19,7 +19,6 @@ class Aktuell extends React.Component<IProps, object> {
       <Layout >
            <Row type='flex' justify="center">
              <Col className='center' span={22}>
-              {/* <div className='titlegross'> Aktuelles </div> */}
               <iframe style={{width: '105%', height: '420%'}}  src='./Aktuell.html' />
             </Col>
           </Row>

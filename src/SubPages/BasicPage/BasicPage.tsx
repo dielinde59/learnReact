@@ -1,8 +1,6 @@
 import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-// import pic1 from {this:props.foto1}
-// import pic2 from {this:props.foto2}
 import '../../Main.scss';
 // const { Header, Footer, Sider, Content } = Layout;
 
@@ -39,8 +37,6 @@ class BasicPage extends React.Component<IProps, object> {
      
     
     return (
-
-      
       <Layout className='container1'>
         <br />
         <Row type={'flex'} justify="center">

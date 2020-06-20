@@ -1,12 +1,7 @@
 import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-// import pic from '../../images/lauser.jpg';
-// import pic1 from {this:props.foto1}
-// import pic2 from {this:props.foto2}
 import '../../Main.scss';
-
-// const { Header, Footer, Sider, Content } = Layout;
 
 interface IProps {
   age?: number;
@@ -34,10 +29,8 @@ class AGBs extends React.Component<IProps, object> {
           <Row>
             <Col xl={{ span: 25 }} xxl={{ span: 35 }}>
               <Row type='flex' >
-  
-              <br />
-  
-                <div className='citeBox'>
+                <br />
+                  <div className='citeBox'>
                   <ol>
                     <li>Die Hundeschule Hundefreu(n)de – Monika Frei übernimmt keinerlei Haftung für Personen-, Sach- oder Vermögensschäden, die dem Kunden, seinem Hund oder Begleitpersonen während der Trainingsstunden entstehen. Einzige Ausnahme für den Haftungsausschluss wäre vorsätzliches oder grob fahrlässiges Handeln.</li>
                     <li>Für jeden teilnehmenden Hund muss eine Tierhalterhaftpflichtversicherung bestehen, die für Schäden an anderen Hunden sowie für jegliche Personen-, Sach- oder Vermögensschäden haftet.</li>
@@ -51,19 +44,9 @@ class AGBs extends React.Component<IProps, object> {
                     <li>Die Unwirksamkeit einzelner Bedingungen hat nicht die Unwirksamkeit der gesamten Geschäftsbedingungen zur Folge.</li>
                   </ol>
                 </div>
-             
-  
               </Row>
             </Col>
-  
-            {/* <Col>
-              <div className='colRight'>
-                  <img className='image35' src={pic} alt='bild' />
-              </div>
-            </Col> */}
-  
           </Row>
-  
         </Layout>
       );
   }

@@ -1,9 +1,6 @@
 import { Col, Layout, Row } from 'antd';
 import * as React from 'react';
 import { } from 'react-router';
-// import pic from '../../images/lauser.jpg';
-// import pic1 from {this:props.foto1}
-// import pic2 from {this:props.foto2}
 import '../../Main.scss';
 
 // const { Header, Footer, Sider, Content } = Layout;
@@ -108,19 +105,9 @@ class Datenschutz extends React.Component<IProps, object> {
                   <br/>
                   <br/>
                   </div>
-             
-  
               </Row>
             </Col>
-  
-            {/* <Col>
-              <div className='colRight'>
-                  <img className='image35' src={pic} alt='bild' />
-              </div>
-            </Col> */}
-  
           </Row>
-  
         </Layout>
       );
   }
