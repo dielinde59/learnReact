@@ -91,11 +91,11 @@ class Main extends React.Component<any, IMainState> {
                             )
                         }
                     })}
-                    {<Menu.Item key="12">
+                    {/* {<Menu.Item key="12">
                         <Link to='/Aktuell'>
-                            <span>Aktuell</span>
+                            <span>Aktuelles</span>
                         </Link>
-                    </Menu.Item>}
+                    </Menu.Item>} */}
                 </Menu>
                 <div id='Logo'>
                     <Col xs={30}>
@@ -180,6 +180,13 @@ class Main extends React.Component<any, IMainState> {
                                             <UeberUns name='' />
                                         )
                                     } />
+                                    <Route exact={true} path='/Aktuell' render={
+                                        () => (
+                                            <Aktuell name = '' />
+                                           // <iframe style={{width: '90%', height: '100%'}}  src='./Aktuell.html' />
+                                           // <Iframe url= './Aktuell.html' width='90%' height='100%' position='center' />
+                                        )
+                                    } />
                                     {this.renderRoutes()}
 
                                     <Route exact={true} path='/kontakt' render={
@@ -200,13 +207,6 @@ class Main extends React.Component<any, IMainState> {
                                     <Route exact={true} path='/Impressum' render={
                                         () => (
                                             <Impr name='' />
-                                        )
-                                    } />
-                                    <Route exact={true} path='/Aktuell' render={
-                                        () => (
-                                            <Aktuell name = '' />
-                                           // <iframe style={{width: '90%', height: '100%'}}  src='./Aktuell.html' />
-                                           // <Iframe url= './Aktuell.html' width='90%' height='100%' position='center' />
                                         )
                                     } />
                                 </Content>

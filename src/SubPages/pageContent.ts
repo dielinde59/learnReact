@@ -42,39 +42,43 @@ export const menu: IMenuItem[] =
         },
         {
             titel: "Aktuelles",
-            path: "/aktuelles",
-            xy: true,
-            subroutes: [
-                {
-                    titel: '... es geht weiter',
-                    text: 'Liebe Hundefreu(n)de,\n\nendlich dürfen auch wir wieder in kleinen Gruppen arbeiten!!!\nDamit wir die begrenzte Teilnehmerzahl nicht überschreiten und keiner umsonst anreist, müsst ihr euch allerdings für die Trainingsstunden bitte zuverlässig bei mir an- oder abmelden. Es reicht z.B. eine WhatsApp mit gewünschtem Tag und Uhrzeit und wenn die Gruppe schon voll sein sollte, melde ich mich bei euch.\nUm möglichst alle Teams auch wieder unterzubringen, habe ich die gewöhnlich stark besuchten Stunden auf zweimal 45 Minuten aufgeteilt. Durch die geringe Teilnehmerzahl können wir intensiver arbeiten und jeder kommt mindestens so oft dran wie zuvor in 60 Minuten, so dass wieder alle auf ihre Kosten kommen. Die genauen Trainingszeiten findet ihr im aktuellen Trainingsplan! Bei Bedarf können wir noch weitere Stunden aufteilen. ',
-                    text1: 'BITTE BEACHTEN:\n* Bitte haltet euch auch zu eurer eigenen Sicherheit an die Hygienemaßnahmen und Abstandsregelungen.\n* Bitte mit ausreichend Abstand hintereinander Parken (nicht Kofferraum an Kofferraum, damit auch beim Aussteigen der Hunde der geforderte Abstand eingehalten werden kann).\n* Das Tor wird ausschließlich vom Trainer geöffnet und geschlossen.\n* Bei Verwendung jeglicher Trainingsutensilien der Hundeschule müssen vorher und nachher die Hände gereinigt und desinfiziert werden.\n* Ein Desinfektionsmittelständer befindet sich im Eingang zum Gerätekammerl.\n* Bitte denkt daran, dass ihr eure eigene Mund-Nase-Bedeckung (Tuch, Schal, Maske) dabei habt.\n\nIch wünsche euch einen schönen Tag und freue mich schon, euch bald wieder zu sehen!\n\nLiebe Grüße,\n\nMonika ',
-                    pdf: './pdfs/Termine.pdf'
-                },
-                {
-                    titel: 'Trainingsplan',
-                    subtitel: '',
-                    // pics: [require('../images/welpen1k.jpg'), require('../images/Welpen2k.jpg')],
-                    text: "Montag \n10:00-11:00 Uhr Unterordnung \n17:30-18:15 Uhr Unterordnung \n18:15-19:00 Uhr Unterordnung \n19:00-20:00 Uhr Stöbern \n \nMittwoch \n09:00-10:00 Uhr Longieren \n17:30-18:30 Uhr Obi-Agi \n18:30-19:30 Uhr Obedience \n\n",
-                    text1: "Freitag \n09:00-10:00 Uhr Gruppe gem. (Longieren/UO/Agi) \n17:00-18:00 Uhr Unterordnung gem. \n18:00-18:45 Uhr Unterordnung/Agility \n18:45-19:30 Uhr Unterordnung/Agility \n \nSamstag \n09:00-09:30 Uhr Longieren \n09:30-10:00 Uhr Longieren \n10:00-11:00 Uhr Fortgeschrittene \n16:00-17:00 Uhr Welpen \n17:00-18:00 Uhr Junghunde \n",
-                    pdf: ''
-                },
-                {
-                    titel: 'Termine 2020',
-                    text: '',
-                    text1: 'Hier finden Sie alle wichtigen Termine des laufenden Jahres',
-                    pdf: './pdfs/Termine.pdf'
-                },
-                {
-                    titel: 'Stadtgang am Sonntag',
-                    text: 'entfällt vorübergehend ',
-                    text1: '',
-                    pdf: ''
-
-                },
-            ]
-
+            path: "/Aktuell",
         },
+        // {
+        //     titel: "Aktuelles",
+        //     path: "/aktuelles",
+        //     xy: true,
+        //     subroutes: [
+        //         {
+        //             titel: '... es geht weiter',
+        //             text: 'Liebe Hundefreu(n)de,\n\nendlich dürfen auch wir wieder in kleinen Gruppen arbeiten!!!\nDamit wir die begrenzte Teilnehmerzahl nicht überschreiten und keiner umsonst anreist, müsst ihr euch allerdings für die Trainingsstunden bitte zuverlässig bei mir an- oder abmelden. Es reicht z.B. eine WhatsApp mit gewünschtem Tag und Uhrzeit und wenn die Gruppe schon voll sein sollte, melde ich mich bei euch.\nUm möglichst alle Teams auch wieder unterzubringen, habe ich die gewöhnlich stark besuchten Stunden auf zweimal 45 Minuten aufgeteilt. Durch die geringe Teilnehmerzahl können wir intensiver arbeiten und jeder kommt mindestens so oft dran wie zuvor in 60 Minuten, so dass wieder alle auf ihre Kosten kommen. Die genauen Trainingszeiten findet ihr im aktuellen Trainingsplan! Bei Bedarf können wir noch weitere Stunden aufteilen. ',
+        //             text1: 'BITTE BEACHTEN:\n* Bitte haltet euch auch zu eurer eigenen Sicherheit an die Hygienemaßnahmen und Abstandsregelungen.\n* Bitte mit ausreichend Abstand hintereinander Parken (nicht Kofferraum an Kofferraum, damit auch beim Aussteigen der Hunde der geforderte Abstand eingehalten werden kann).\n* Das Tor wird ausschließlich vom Trainer geöffnet und geschlossen.\n* Bei Verwendung jeglicher Trainingsutensilien der Hundeschule müssen vorher und nachher die Hände gereinigt und desinfiziert werden.\n* Ein Desinfektionsmittelständer befindet sich im Eingang zum Gerätekammerl.\n* Bitte denkt daran, dass ihr eure eigene Mund-Nase-Bedeckung (Tuch, Schal, Maske) dabei habt.\n\nIch wünsche euch einen schönen Tag und freue mich schon, euch bald wieder zu sehen!\n\nLiebe Grüße,\n\nMonika ',
+        //             pdf: './pdfs/Termine.pdf'
+        //         },
+        //         {
+        //             titel: 'Trainingsplan',
+        //             subtitel: '',
+        //             // pics: [require('../images/welpen1k.jpg'), require('../images/Welpen2k.jpg')],
+        //             text: "Montag \n10:00-11:00 Uhr Unterordnung \n17:30-18:15 Uhr Unterordnung \n18:15-19:00 Uhr Unterordnung \n19:00-20:00 Uhr Stöbern \n \nMittwoch \n09:00-10:00 Uhr Longieren \n17:30-18:30 Uhr Obi-Agi \n18:30-19:30 Uhr Obedience \n\n",
+        //             text1: "Freitag \n09:00-10:00 Uhr Gruppe gem. (Longieren/UO/Agi) \n17:00-18:00 Uhr Unterordnung gem. \n18:00-18:45 Uhr Unterordnung/Agility \n18:45-19:30 Uhr Unterordnung/Agility \n \nSamstag \n09:00-09:30 Uhr Longieren \n09:30-10:00 Uhr Longieren \n10:00-11:00 Uhr Fortgeschrittene \n16:00-17:00 Uhr Welpen \n17:00-18:00 Uhr Junghunde \n",
+        //             pdf: ''
+        //         },
+        //         {
+        //             titel: 'Termine 2020',
+        //             text: '',
+        //             text1: 'Hier finden Sie alle wichtigen Termine des laufenden Jahres',
+        //             pdf: './pdfs/Termine.pdf'
+        //         },
+        //         {
+        //             titel: 'Stadtgang am Sonntag',
+        //             text: 'entfällt vorübergehend ',
+        //             text1: '',
+        //             pdf: ''
+
+        //         },
+        //     ]
+
+        // },
         {
             titel: "Grundausbildung",
             subroutes: [

@@ -100,7 +100,7 @@ class Datenschutz extends React.Component<IProps, object> {
                   <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
                   <br/>
                   <h3 className='titlegrossleft'>Fragen an den Datenschutzbeauftragten</h3>
-                  <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:<br/>Hundefreu(n)de<br/> Monika Frei<br/>Schönreit 1<br/>83308 Trostberg<br/>E-Mail: info@hundefreu-n-de.de </p>
+                  <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:<br/>Hundefreu(n)de<br/>Monika Frei<br/>Schönreit 1<br/>83308 Trostberg<br/>E-Mail: info@hundefreu-n-de.de </p>
                   <br/>
                   <br/>
                   <br/>
